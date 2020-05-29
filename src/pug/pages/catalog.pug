@@ -1,0 +1,20 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Catalog';
+    - var description = 'Catalog';
+    - var pageClass = 'index-page';
+
+block content
+    section
+        .container
+            +item('item title2', 'item descr2')
+
+
+block script
+    script(type='text/javascript').
+        const foo = true;
+        let bar = function() {};
+        if (foo) {
+            bar(1 + 5)
+        }
