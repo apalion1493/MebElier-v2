@@ -2,10 +2,7 @@
 
 ``` bash
 # Download repository:
-git clone https://github.com/vedees/webpack-template-pug webpack-template-pug
-
-# Go to the app:
-cd webpack-template-pug
+git clone https://github.com/apalion1493/MebElier-v2.git
 
 # Install dependencies:
 npm install
@@ -243,9 +240,3 @@ Add vars for font in `/assets/scss/utils/vars.scss`:
 ``` scss
 $mySecontFont : 'Helvetica-Base', Arial, sans-serif;
 ```
-
-
-## License
-[MIT](./LICENSE)
-
-Copyright (c) 2018-present, [Evgenii Vedegis](https://github.com/vedees)
