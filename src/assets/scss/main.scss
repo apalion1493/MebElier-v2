@@ -1,22 +1,24 @@
 @import "utils/libs";
-@import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
-@import "utils/reset";
+//@import "utils/reset";
+@import "utils/vars";
+@import "libs/bootstrap/bootstrap";
+
 
 html {
   line-height: $mainLineHeight;
-	font-size: $mainFontSize;
-	color: $mainFontColor;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
   height: 100%;
   @media screen and (max-width: $desktopWidth) {
-		font-size: 16px;
+    font-size: 16px;
   }
   @media screen and (max-width: $tableWidth) {
-		font-size: 15px;
+    font-size: 15px;
   }
   @media screen and (max-width: $phoneWidth) {
-		font-size: 14px;
+    font-size: 14px;
   }
 }
 
@@ -24,15 +26,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: $mainFont;
-	font-size: $mainFontSize;
   font-weight: $mainFontWeight;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 *, *:before, *:after { box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+h1, .h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+}
 
 a { text-decoration: none; }
 
@@ -56,6 +60,12 @@ section, .section {
   }
 }
 
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -66,7 +76,6 @@ section, .section {
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .container {
@@ -75,8 +84,12 @@ section, .section {
   position: relative;
   margin: 0 auto;
   max-width: $desktopWidth;
+  padding-left: 32px;
+  padding-right: 32px;
   @media screen and (max-width: $smDesktopWidth) {
     max-width: tableWidth;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   @media screen and (max-width: $tableWidth) {
     max-width: phoneWidth;
@@ -86,5 +99,106 @@ section, .section {
   }
 }
 
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-auto {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: $desktopWidth;
+  }
+}
+
+.logo-webdelo {
+  background: url("/assets/img/logoMainWebdelo.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 76px;
+  height: 22px;
+  display: block;
+}
+
+.pinterest-icon {
+  background: url("/assets/img/logo-1.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.instagram-icon {
+  background: url("/assets/img/logo-2.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.faceBook-icon {
+  background: url("/assets/img/logo-3.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.twitter-icon {
+  background: url("/assets/img/logo-4.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.breadcrumb {
+  background: initial;
+  padding: 0;
+  margin-bottom: 8px;
+
+  .breadcrumb-item {
+    font-size: rem(14);
+    line-height: rem(17);
+    color: $fonts-color-9;
+
+    a {
+      font-size: rem(14);
+      line-height: rem(17);
+      color: $fonts-color-9;
+    }
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item:before {
+  content: '>';
+}
+
+.btn {
+  border-radius: 0;
+}
+
+button {
+  &:focus {
+    outline: none !important;
+  }
+}
+
 // Modules
-// @import "modules/my-module.scss";
+
+@import "utils/common";
+@import "modules/footer";
+@import "modules/header";
+@import "modules/blocks/red-squares-list";
+@import "modules/blocks/card-product";
+@import "modules/blocks/form-search";
+@import "modules/blocks/min-product-card";
+@import "modules/blocks/block-article";
+@import "modules/blocks/backlight-block";
+@import "modules/page/catalog";
+
+
+

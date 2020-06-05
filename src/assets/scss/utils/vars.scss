@@ -2,12 +2,12 @@
 $mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
 
 // Size
-$mainFontColor           : #101010;
-$mainFontSize            : 18px;
+$mainFontColor           : #201F1D;
+$mainFontSize            : 16px;
 $mainFontWeight          : 400;
 $mainLineHeight          : 1.4;
 
-$desktopWidth            : 1280px;
+$desktopWidth            : 1600px;
 $smDesktopWidth          : 980px;
 $tableWidth              : 768px;
 $phoneWidth              : 480px;
@@ -33,3 +33,23 @@ $border-base             : #DCDFE6;
 $border-light            : #E4E7ED;
 $border-lighter          : #EBEEF5;
 $border-lightex          : #F2F6FC;
+
+// Fonts Color
+
+$fonts-color-1           : $mainFontColor;
+$fonts-color-2           : #5D4F44;
+$fonts-color-3           : #555555;
+$fonts-color-4           : #333333;
+$fonts-color-5           : #777777;
+$fonts-color-6           : #000000;
+$fonts-color-7           : #F7F2EF;
+$fonts-color-8           : #E5E5E5;
+$fonts-color-9           : #888888;
+
+// Bootstrap Vars
+$navbar-light-color      : $mainFontColor !default;
+$secondary               : #FF5733 !default;
+
+// Titles
+$h1-font-size            : 3rem;
+$h2-font-size            : 2rem;

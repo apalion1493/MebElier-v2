@@ -6,6 +6,7 @@ html(lang='en')
   head
     meta(charset='utf-8')
     title #{title}
+    meta(name='viewport' content='width=device-width, initial-scale=1')
     meta(name="description", content=description)
     block head
 
@@ -16,5 +17,4 @@ html(lang='en')
         .content-wrapper
           block content
         include ../includes/modules/footer
-
     block script

@@ -1,1 +1,147 @@
-// header style
+.header {
+  background: #ffffff;
+  @include boxShadow(0, 1px, 5px, black, .15)
+}
+
+.header__nav {
+  padding: 0;
+
+  .dropdown-menu {
+    background: #FFFFFF;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 0;
+  }
+
+  .dropdown-menu__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 44px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .dropdown-menu__goods {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-menu__goods-title {
+    font-weight: bold;
+    font-size: rem(14);
+    line-height: rem(17);
+    text-transform: uppercase;
+    color: $fonts-color-6;
+    margin-bottom: 15px;
+  }
+
+  .dropdown-menu__title {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: rem(14);
+    line-height: rem(17);
+    color: #000000;
+  }
+
+  .navbar-brand {
+    margin-right: 76px;
+    font-weight: 800;
+    font-size: rem(20);
+    line-height: rem(24);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #201F1D;
+  }
+
+  .nav-item {
+    margin-right: 24px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.show {
+      background: rgba(255, 87, 51, .1);
+    }
+
+    .dropdown-menu {
+      width: 100%;
+      left: 0;
+      right: 0;
+      padding: 29px 39px 39px 35px;
+    }
+  }
+
+  .nav-link {
+    font-size: rem(14);
+    line-height: rem(17);
+    color: $mainFontColor;
+  }
+}
+
+.header__nav-phone {
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: rem(20);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $fonts-color-2;
+
+  &:hover {
+    color: $fonts-color-2;
+  }
+}
+
+.header__favorites {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background: url("/assets/img/passion-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  display: block;
+  margin-left: 30px;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+
+  &:focus,
+  &:hover,
+  &:active {
+    box-shadow: none;
+    border: none;
+  }
+}
+
+.header__shopCard {
+  padding: 0;
+  width: 25px;
+  min-width: 25px;
+  height: 22px;
+  display: block;
+  position: relative;
+  background: url("/assets/img/Union.svg") no-repeat center;
+  background-size: 100% auto;
+  margin-left: 16px;
+  margin-right: 15px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.header__shopCard-counter {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: $secondary;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $fonts-color-7;
+  top: -12px;
+  right: -15px;
+  font-size: 0.75rem;
+  line-height: 15px;
+}

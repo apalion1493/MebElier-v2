@@ -6,15 +6,104 @@ block variables
     - var pageClass = 'index-page';
 
 block content
-    section
+    section.catalog-first-section
         .container
-            +item('item title2', 'item descr2')
+            .row
+                .col-5
+                    nav(aria-label='breadcrumb')
+                        ol.breadcrumb
+                            li.breadcrumb-item
+                                a(href='#') Главная
+                            li.breadcrumb-item.active(aria-current='page') Лестницы
+                    h1.h1 Лестницы на <br> заказ
+                    include ../includes/modules/red-squares-list
+                .col-7
+                    .catalog-slider
+                        h4.catalog-slider__title Виды лестниц
+                        .catalog-slider__list
+                            .variable-width
 
+
+
+
+    section.catalog-second-section
+        .container.catalog-filter
+            .row
+                .col-5
+                    span.h2.catalog-filter__title Каталог моделей
+                .col-7
+                    div.d-flex.align-items-center.catalog-filter__list
+                        .catalog-filter__item
+                            span.mr-3 Тип лестниц:
+                            .dropdown
+                                button#dropdownMenuButton-01.btn.btn-white.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | Все типы
+                                .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuButton-01')
+                                    a.dropdown-item(href='#') Action
+                                    a.dropdown-item(href='#') Another action
+                                    a.dropdown-item(href='#') Something else here
+                        .catalog-filter__item
+                            span.mr-3 Ограждение:
+                            .dropdown
+                                button#dropdownMenuButton-02.btn.btn-white.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | Любое
+                                .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuButton-02')
+                                    a.dropdown-item(href='#') Action
+                                    a.dropdown-item(href='#') Another action
+                                    a.dropdown-item(href='#') Something else here
+                        .catalog-filter__item
+                            span.mr-3 Материал ступений:
+                            .dropdown
+                                button#dropdownMenuButton-03.btn.btn-white.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | Любое
+                                .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuButton-03')
+                                    a.dropdown-item(href='#') Action
+                                    a.dropdown-item(href='#') Another action
+                                    a.dropdown-item(href='#') Something else here
+        .container.catalog-container
+            .row
+                .col-12
+                    div.catalog-second-section__wrapper
+                        +productCard('card-product card-product_bottom-left', 'catalog-1.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-2.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-3.png', 'Дизайнерская лестница', '149 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-4.png', 'Дизайнерская лестница', '149 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-5.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-6.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        .backlight-block
+                            .backlight-block__content
+                                span.backlight-block__content-title Подсветка
+                                p.backlight-block__content-text Светодиодные ленты высокого качества (не перегорят через неделю).
+                                p.backlight-block__content-text Монтаж выполняют опытные специалисты (ваша страховка от короткого замыкания и пожара вследствие непрофессионального монтажа).
+                                a(href='#' class='btn btn-outline-light backlight-block__content-btn') Подробнее
+                        +productCard('card-product card-product_top-left', 'catalog-7.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-8.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-9.png', 'Современная деревянная лестница', '79 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-10.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                        +productCard('card-product card-product_bottom-right', 'catalog-11.png', 'Дизайнерская лестница', '149 990 грн.')
+
+                    button.btn.btn-dark.catalog-container__btn Загрузить еще 12 товаров
+
+        .container
+            .row
+                .col-8
+                    .catalog-second-section__exploitation
+                        .catalog-second-section__exploitation-content
+                            span.catalog-second-section__exploitation-title Нет скрипов при эксплуатации
+                            p.catalog-second-section__exploitation-text Используем правильно высушенную древесину. Подгонку деталей выполняем на высокоточном оборудовании. Стыки во время сборки лестницы тщательно обрабатываем специальными составами.  Используем правильно высушенную древесину.
+                            p.catalog-second-section__exploitation-text Подгонку деталей выполняем на высокоточном оборудовании. Стыки во время сборки лестницы тщательно обрабатываем специальными составами.
+                            a.btn.btn-outline-dark.catalog-second-section__exploitation-btn(href='#') Подробнее
+                .col-4
+                    a.block-article.d-flex.flex-column(href='#')
+                        img(src='assets/img/block-article-1.png')
+                        .block-article__body
+                            span.block-article__title Триплекс — безопасно, надежно, стильно
+                            p.block-article__text При повреждении не рассыпается на осколки. Можно изготовить в любом цвете, нанести художественную матировку, выполнить УФ-печать.
 
 block script
     script(type='text/javascript').
-        const foo = true;
-        let bar = function() {};
-        if (foo) {
-            bar(1 + 5)
-        }
+
+
+
+block head
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')

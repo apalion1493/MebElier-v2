@@ -1,0 +1,47 @@
+.red-squares-list {
+  padding-left: 26px;
+}
+
+.red-squares-list__item {
+  margin-bottom: 24px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #FF5733;
+    top: 6px;
+    left: -26px;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 22px;
+    color: $mainFontColor;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.header__nav {
+  .red-squares-list {
+    width: 33%;
+  }
+
+  .red-squares-list__item {
+    a {
+      font-size: 14px;
+      line-height: 17px;
+      color: $mainFontColor;
+    }
+  }
+
+  .red-squares-list__item:before {
+    top: 9px;
+  }
+}

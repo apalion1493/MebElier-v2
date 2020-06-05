@@ -1,0 +1,38 @@
+.block-article {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: $default-color;
+  border: 1px solid $fonts-color-2;
+  padding-top: 13px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.block-article__body {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 35px 32px 50px;
+}
+
+.block-article__title {
+  font-weight: bold;
+  font-size: rem(24);
+  line-height: rem(29);
+  color: $mainFontColor;
+  margin-bottom: rem(15);
+}
+
+.block-article__text {
+  font-size: rem(14);
+  line-height: rem(24);
+  color: $fonts-color-3;
+}

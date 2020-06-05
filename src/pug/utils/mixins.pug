@@ -2,3 +2,22 @@ mixin item(title, descr)
   .item
     h2.item-title= title
     p.item-descr= descr
+
+
+mixin productCard(productClass, bgImage, textName, textPrice)
+  a(href='#' style="background-image: url('assets/img/"+bgImage+"')", class=productClass)
+    span.card-product__like
+    div.card-product__info
+      p.card-product__info-text=textName
+      span.card-product__info-price=textPrice
+
+//mixin button(textButton, typeBtn)
+//  .button.btn
+
+mixin miniProductCard(bgImage, textName, textPrice)
+  div.min-product-card
+    div.min-product-card__img(style="background-image: url('assets/img/"+bgImage+"')")
+    div.min-product-card__content
+      p.min-product-card__title=textName
+      span.min-product-card__price=textPrice
+      a.min-product-card__link(href='#') Подробнее

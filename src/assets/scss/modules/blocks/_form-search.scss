@@ -1,0 +1,40 @@
+.form-search {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.form-search__btn {
+  border: none;
+  background: url("/assets/img/loupe.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 18px;
+  height: 18px;
+  display: block;
+  padding: 0;
+  box-shadow: none;
+
+  &:focus,
+  &:hover {
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: initial !important;
+  }
+}
+
+.form-search__input {
+  border: none;
+  max-width: 200px;
+  width: 100%;
+  padding-left: 0;
+  margin-left: 14px;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &::-webkit-input-placeholder {color:$mainFontColor; font-size: 0.875rem}
+  &::-moz-placeholder          {color:$mainFontColor; font-size: 0.875rem}/* Firefox 19+ */
+  &:-moz-placeholder           {color:$mainFontColor; font-size: 0.875rem}/* Firefox 18- */
+  &:-ms-input-placeholder      {color:$mainFontColor; font-size: 0.875rem}
+}
