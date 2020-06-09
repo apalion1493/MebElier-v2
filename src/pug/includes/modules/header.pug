@@ -1,5 +1,5 @@
 header.header
-  .container
+  .container-fluid
     .row
       .col-12
         nav.navbar.navbar-expand-lg.navbar-light.header__nav
@@ -58,18 +58,28 @@ header.header
                   | Межкомнатные двери
                 .dropdown-menu(aria-labelledby='navbarDropdown3')
                   a.dropdown-item(href='#') ДВЕРИ
-              li.nav-item.mr-0
+              li.nav-item
                 a#navbarDropdown4.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   | Другое
                 .dropdown-menu(aria-labelledby='navbarDropdown4')
-                  a.dropdown-item(href='#') ДРУГОЕ
+                  a.dropdown-item(href='#') О нас
+                  a.dropdown-item(href='#') Портфолио
+                  a.dropdown-item(href='#') Контакты
+
+              li.nav-item
+                a.nav-link(href='#') О нас
+              li.nav-item
+                a.nav-link(href='#') Портфолио
+              li.nav-item
+                a.nav-link(href='#') Контакты
+
+
             a.header__nav-phone.ml-auto(href='#')
               |+38 050 555 55 55
             form.form-inline.my-2.my-lg-0.form-search
               button.btn.btn-outline-success.my-2.my-sm-0.form-search__btn(type='submit')
               input.form-control.form-search__input(type='search', placeholder='Поиск ...', aria-label='Search')
-            button.header__favorites
-            button.header__shopCard
+            a(href='#').header__favorites
+            a(href='#').header__shopCard
               span.header__shopCard-counter 1
-        .container-dropdown.position-relative
 

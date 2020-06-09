@@ -1,10 +1,9 @@
-@import "utils/libs";
 @import "utils/mixins";
 @import "utils/fonts";
-//@import "utils/reset";
+@import "utils/reset";
 @import "utils/vars";
 @import "libs/bootstrap/bootstrap";
-
+@import "utils/libs";
 
 html {
   line-height: $mainLineHeight;
@@ -76,6 +75,7 @@ section, .section {
 .content-wrapper {
   display: flex;
   flex-direction: column;
+  background: #F9F9F9;
 }
 
 .container {
@@ -187,6 +187,26 @@ button {
   }
 }
 
+.bg-white-color {
+  position: relative;
+
+  * {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    top: -50px;
+    right: 8px;
+    height: 200%;
+    width: 200%;
+    z-index: 0;
+  }
+}
+
 // Modules
 
 @import "utils/common";
@@ -198,6 +218,7 @@ button {
 @import "modules/blocks/min-product-card";
 @import "modules/blocks/block-article";
 @import "modules/blocks/backlight-block";
+@import "modules/blocks/type-stair";
 @import "modules/page/catalog";
 
 

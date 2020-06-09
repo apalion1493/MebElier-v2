@@ -7,17 +7,32 @@ mixin item(title, descr)
 mixin productCard(productClass, bgImage, textName, textPrice)
   a(href='#' style="background-image: url('assets/img/"+bgImage+"')", class=productClass)
     span.card-product__like
-    div.card-product__info
+    .card-product__info
       p.card-product__info-text=textName
       span.card-product__info-price=textPrice
+      ul.card-product__info-list
+        li
+          p Ступени: 14 шт
+        li
+          p Высота: 3 200 мм
+        li
+          p Материал: Дерово
+      p.card-product__info-description Превосходная лестница, с уникальным дизайном поручней, который украсит ваш особняк!
 
-//mixin button(textButton, typeBtn)
-//  .button.btn
 
 mixin miniProductCard(bgImage, textName, textPrice)
-  div.min-product-card
-    div.min-product-card__img(style="background-image: url('assets/img/"+bgImage+"')")
-    div.min-product-card__content
+  .min-product-card
+    .min-product-card__img(style="background-image: url('assets/img/"+bgImage+"')")
+    .min-product-card__content
       p.min-product-card__title=textName
       span.min-product-card__price=textPrice
       a.min-product-card__link(href='#') Подробнее
+
+mixin type-stair(bgImage, textTitle, textDescription)
+    a(href='#').catalog-slider__item.type-stair
+      .type-stair__wrapper-img
+        img(src='assets/img/'+bgImage+'').type-stair__image
+      .type-stair__body
+        span.type-stair__title=textTitle
+        p.type-stair__text=textDescription
+

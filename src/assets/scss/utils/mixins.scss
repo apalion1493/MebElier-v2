@@ -24,3 +24,80 @@
 @mixin boxShadow($forX, $forY, $saturation, $color, $opacity) {
   box-shadow: $forX $forY $saturation rgba($color, $opacity);
 }
+
+
+@mixin smallCard {
+  .card-product__info-description,
+  .card-product__info-list {
+    display: none;
+  }
+}
+
+@mixin middleCard {
+  .card-product__info-description {
+    display: none;
+  }
+
+  .card-product__info {
+    max-width: 262px;
+    padding: 18px 24px 21px;
+  }
+
+  .card-product__info-text {
+    font-size: rem(24);
+    line-height: rem(29);
+    color: $mainFontColor;
+    text-shadow: 0 4px 4px rgba(255, 255, 255, 0.25);
+    margin-bottom: 9px;
+  }
+
+  .card-product__info-price {
+    font-size: rem(32);
+    line-height: rem(39);
+  }
+
+  &.card-product_bottom-left {
+    .card-product__info {
+      bottom: 24px;
+      left: 24px;
+    }
+  }
+
+  &.card-product_top-left {
+    .card-product__info {
+      top: 24px;
+      left: 24px;
+    }
+  }
+}
+
+@mixin bigCard {
+  .card-product__info-list {
+    display: none;
+  }
+
+  .card-product__info {
+    max-width: 486px;
+    padding: 25px 27px 31px;
+  }
+
+  .card-product__info-text,
+  .card-product__info-price {
+    font-size: rem(32);
+    line-height: rem(39);
+  }
+
+  &.card-product_bottom-left {
+    .card-product__info {
+      bottom: 35px;
+      left: 25px;
+    }
+  }
+
+  &.card-product_top-left {
+    .card-product__info {
+      top: 35px;
+      left: 25px;
+    }
+  }
+}

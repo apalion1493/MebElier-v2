@@ -23,6 +23,12 @@
     color: $mainFontColor;
   }
 
+  p {
+    font-size: rem(14);
+    line-height: rem(17);
+    color: $fonts-color-2;
+  }
+
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -44,4 +50,8 @@
   .red-squares-list__item:before {
     top: 9px;
   }
+}
+
+.red-squares-list__wrapper {
+  max-width: 516px;
 }
