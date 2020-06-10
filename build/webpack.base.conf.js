@@ -28,9 +28,9 @@ module.exports = {
     // module: `${PATHS.src}/your-module.js`,
   },
   output: {
-    filename: `${PATHS.assets}js/[name].[hash].js`,
+    filename: `assets/js/[name].[hash].js`,
     path: PATHS.dist,
-    publicPath: '/'
+    // publicPath: '/'
   },
   optimization: {
     splitChunks: {
@@ -122,7 +122,7 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
-      filename: `${PATHS.assets}css/[name].[hash].css`,
+      filename: `assets/css/[name].[hash].css`,
     }),
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
