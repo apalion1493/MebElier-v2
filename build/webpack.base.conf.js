@@ -89,10 +89,13 @@ module.exports = {
         MiniCssExtractPlugin.loader,
         {
           loader: 'css-loader',
-          options: { sourceMap: true }
+          options: { sourceMap: true, url: false }
         }, {
           loader: 'postcss-loader',
           options: { sourceMap: true, config: { path: `./postcss.config.js` } }
+        }, {
+          loader: 'resolve-url-loader',
+          options: { sourceMap: true }
         }, {
           loader: 'sass-loader',
           options: { sourceMap: true }
@@ -122,12 +125,12 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
-      filename: `assets/css/[name].[hash].css`,
+      filename: `${PATHS.assets}/css/[name].[hash].css`,
     }),
     new CopyWebpackPlugin([
-      { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
-      { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
-      { from: `${PATHS.src}/static`, to: '' },
+      { from: `src/assets/img`, to: `assets/img` },
+      { from: `src/assets/fonts`, to: `assets/fonts` },
+      { from: `src/static`, to: '' },
     ]),
 
     // Automatic creation any html pages (Don't forget to RERUN dev server)

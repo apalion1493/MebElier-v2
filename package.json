@@ -45,6 +45,7 @@
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
     "pug-plain-loader": "^1.0.0",
+    "resolve-url-loader": "^3.1.1",
     "sass-loader": "^8.0.0",
     "slick-carousel": "^1.8.1",
     "style-loader": "^1.0.0",
