@@ -1,8 +1,7 @@
 .type-stair {
-  background: #FFFFFF;
   display: flex;
   flex-direction: column;
-  max-width: 226px;
+  max-width: calc(226px + 16px);
   width: 100%;
   height: 385px;
 
@@ -15,6 +14,7 @@
   padding: rem(19) rem(23) rem(20);
   display: flex;
   flex-direction: column;
+  background: #FFFFFF;
 }
 
 .type-stair__title {

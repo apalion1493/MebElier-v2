@@ -23,6 +23,9 @@ block content
                         h4.catalog-slider__title Виды лестниц
                         .catalog-slider__list
                             +type-stair('type-stair-1.jpg', 'Винтовые', 'Это лестницы которые поворачивают')
+                            +type-stair('type-stair-2.jpg', 'Поворотные', 'Это лестницы которые поворачивают')
+                            +type-stair('type-stair-3.jpg', 'Прямые', 'Это лестницы которые поворачивают')
+                            +type-stair('type-stair-4.jpg', 'Металлические', 'Это лестницы которые поворачивают')
 
 
     section.catalog-second-section
@@ -63,10 +66,6 @@ block content
             .row
                 .col-12
                     .catalog-second-section__wrapper
-                        // each val, index in[['card-product card-product_bottom-left', 'catalog-1.png', 'Винтовая дизайнерская', '79 990 грн.'], ['card-product card-product_top-left', 'catalog-2.png', 'Со стеклянными ограждениями', '220 990 грн.'], ['card-product card-product_top-left', 'catalog-3.png', 'Дизайнерская лестница', '149 990 грн.'], ['card-product card-product_top-left', 'catalog-4.png', 'Дизайнерская лестница', '149 990 грн.']]
-                        //     +productCard(val[0], val[1], val[2], val[3])
-
-
                         +productCard('card-product card-product_bottom-left active', 'catalog-1.png', 'Винтовая дизайнерская', '79 990 грн.')
                         +productCard('card-product card-product_top-left', 'catalog-2.png', 'Со стеклянными ограждениями', '220 990 грн.')
                         +productCard('card-product card-product_top-left', 'catalog-3.png', 'Дизайнерская лестница', '149 990 грн.')
@@ -104,9 +103,19 @@ block content
                             p.block-article__text При повреждении не рассыпается на осколки. Можно изготовить в любом цвете, нанести художественную матировку, выполнить УФ-печать.
 
 block script
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js')
     script(type='text/javascript').
-
+        let slider = tns({
+            container: '.catalog-slider__list',
+            autoWidth: true,
+            items: 3.3,
+            gutter: 10,
+            mouseDrag: true,
+            swipeAngle: false,
+            speed: 400
+        });
 
 
 block head
     link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css' rel='stylesheet')
