@@ -55,3 +55,17 @@
 .red-squares-list__wrapper {
   max-width: 516px;
 }
+
+@media (max-width: 767.97px) {
+  .red-squares-list__item {
+    span {
+      font-size: rem(16);
+      line-height: rem(20);
+    }
+
+    p {
+      font-size: rem(12);
+      line-height: rem(15);
+    }
+  }
+}

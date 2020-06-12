@@ -1,7 +1,7 @@
 .card-product {
   background: #ffffff;
   width: 100%;
-  min-height: 466px;
+  min-height: $card-height;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,3 +104,50 @@
     }
   }
 }
+
+@media (max-width: 767.98px) {
+  .card-product {
+    min-height: $card-height - 84px;
+    margin-bottom: 16px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .card-product_bottom-left {
+    .card-product__info {
+      bottom: 16px;
+      left: 16px;
+      width: calc(100% - 32px);
+      max-width: 100%;
+    }
+  }
+
+  .card-product_top-left {
+    .card-product__info {
+      top: auto;
+      bottom: 16px;
+      left: 16px;
+      width: calc(100% - 32px);
+      max-width: 100%;
+    }
+  }
+
+  .card-product__info-text {
+    font-size: rem(14);
+    line-height: rem(17);
+  }
+
+  .card-product__info-price {
+    font-size: rem(18);
+    line-height: rem(22);
+  }
+
+  .card-product__info {
+    padding: 20px 15px !important;
+    max-width: 100% !important;
+  }
+}
+
+

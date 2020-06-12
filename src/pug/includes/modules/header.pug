@@ -2,11 +2,11 @@ header.header
   .container-fluid
     .row
       .col-12
-        nav.navbar.navbar-expand-lg.navbar-light.header__nav
-          a.navbar-brand(href='#') mebElier
-          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        nav.navbar.navbar-expand-xl.navbar-light.header__nav
+          a.navbar-brand(href='#').order-1.order-xl-0 mebElier
+          button.navbar-toggler.order-0.order-xl-1(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
             span.navbar-toggler-icon
-          #navbarSupportedContent.collapse.navbar-collapse
+          #navbarSupportedContent.collapse.navbar-collapse.order-2
             ul.navbar-nav
               li.nav-item
                 a#navbarDropdown1.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
@@ -48,7 +48,7 @@ header.header
                       div.dropdown-menu__goods
                         span.dropdown-menu__goods-title Товар дня
                         +miniProductCard('min-product-card-img.jpg', 'Кухня из дерева', '220 990 грн.')
-              li.nav-item
+              li.nav-item.active
                 a#navbarDropdown2.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   | Лестницы
                 .dropdown-menu(aria-labelledby='navbarDropdown2')
@@ -73,14 +73,14 @@ header.header
                 a.nav-link(href='#') Портфолио
               li.nav-item
                 a.nav-link(href='#') Контакты
-
-
-            a.header__nav-phone.ml-auto(href='#')
-              |+38 050 555 55 55
-            form.form-inline.my-2.my-lg-0.form-search
-              button.btn.btn-outline-success.my-2.my-sm-0.form-search__btn(type='submit')
-              input.form-control.form-search__input(type='search', placeholder='Поиск ...', aria-label='Search')
-            a(href='#').header__favorites
-            a(href='#').header__shopCard
-              span.header__shopCard-counter 1
+          a.header__nav-phone.order-3(href='#')
+            | +38 050 555 55 55
+          form.form-inline.my-2.my-lg-0.form-search.order-4
+            button.btn.btn-outline-success.my-2.my-sm-0.form-search__btn(type='submit')
+            input.form-control.form-search__input(type='search', placeholder='Поиск ...', aria-label='Search')
+          a(href='#').header__favorites.order-5
+          a(href='#').header__shopCard.order-6
+            span.header__shopCard-counter 1
+          #form-search-mobil.form-search-mobil
+            input(type='search' placeholder='Поиск по сайту' )
 

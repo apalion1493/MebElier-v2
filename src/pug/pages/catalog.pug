@@ -9,7 +9,7 @@ block content
     section.catalog-first-section
         .container
             .row
-                .col-5.bg-white-color
+                .col-xl-5.bg-white-color
                     nav(aria-label='breadcrumb')
                         ol.breadcrumb
                             li.breadcrumb-item
@@ -18,7 +18,7 @@ block content
                     h1.h1 Лестницы на <br> заказ
                     .red-squares-list__wrapper
                         include ../includes/modules/red-squares-list
-                .col-7
+                .col-xl-7
                     .catalog-slider
                         h4.catalog-slider__title Виды лестниц
                         .catalog-slider__list
@@ -27,41 +27,40 @@ block content
                             +type-stair('type-stair-3.jpg', 'Прямые', 'Это лестницы которые поворачивают')
                             +type-stair('type-stair-4.jpg', 'Металлические', 'Это лестницы которые поворачивают')
 
-
     section.catalog-second-section
         .container.catalog-filter
             .row
-                .col-5
+                .col-xl-5
                     span.h2.catalog-filter__title Каталог моделей
-                .col-7
-                    div.d-flex.align-items-center.catalog-filter__list
+                .col-xl-7
+                    .catalog-filter__list
                         .catalog-filter__item
-                            span.mr-3 Тип лестниц:
-                            .dropdown
-                                button#dropdownMenuButton-01.btn.btn-white.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                                    | Все типы
-                                .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuButton-01')
-                                    a.dropdown-item(href='#') Action
-                                    a.dropdown-item(href='#') Another action
-                                    a.dropdown-item(href='#') Something else here
+                            .form-group
+                                label(for='inputStateTypeFirst') Тип лестниц:
+                                select#inputStateTypeFirst.form-control
+                                    option(selected='selected') Все типы
+                                    option a
+                                    option as
+                                    option gdfgmsjdfhgjsdfhgjs
+                                    option dfasdf
                         .catalog-filter__item
-                            span.mr-3 Ограждение:
-                            .dropdown
-                                button#dropdownMenuButton-02.btn.btn-white.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                                    | Любое
-                                .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuButton-02')
-                                    a.dropdown-item(href='#') Action
-                                    a.dropdown-item(href='#') Another action
-                                    a.dropdown-item(href='#') Something else here
+                            .form-group
+                                label(for='inputStateTypeSecond') Ограждение:
+                                select#inputStateTypeSecond.form-control
+                                    option(selected='selected') Любое
+                                    option a
+                                    option as
+                                    option gdfgmsjdfhgjsdfhgjs
+                                    option dfasdf
                         .catalog-filter__item
-                            span.mr-3 Материал ступений:
-                            .dropdown
-                                button#dropdownMenuButton-03.btn.btn-white.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                                    | Любое
-                                .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuButton-03')
-                                    a.dropdown-item(href='#') Action
-                                    a.dropdown-item(href='#') Another action
-                                    a.dropdown-item(href='#') Something else here
+                            .form-group
+                                label(for='inputStateTypeThird') Материал ступений:
+                                select#inputStateTypeThird.form-control
+                                    option(selected='selected') Любое
+                                    option a
+                                    option as
+                                    option gdfgmsjdfhgjsdfhgjs
+                                    option dfasdf
         .container.catalog-container
             .row
                 .col-12
@@ -88,31 +87,47 @@ block content
 
         .container
             .row
-                .col-8
+                .col-xl-8.mb-xl-0.mb-4
                     .catalog-second-section__exploitation
                         .catalog-second-section__exploitation-content
                             span.catalog-second-section__exploitation-title Нет скрипов при эксплуатации
                             p.catalog-second-section__exploitation-text Используем правильно высушенную древесину. Подгонку деталей выполняем на высокоточном оборудовании. Стыки во время сборки лестницы тщательно обрабатываем специальными составами.  Используем правильно высушенную древесину.
                             p.catalog-second-section__exploitation-text Подгонку деталей выполняем на высокоточном оборудовании. Стыки во время сборки лестницы тщательно обрабатываем специальными составами.
                             a.btn.btn-outline-dark.catalog-second-section__exploitation-btn(href='#') Подробнее
-                .col-4
-                    a.block-article.d-flex.flex-column(href='#')
+                .col-xl-4
+                    a.block-article(href='#')
                         img(src='assets/img/block-article-1.png')
                         .block-article__body
                             span.block-article__title Триплекс — безопасно, надежно, стильно
                             p.block-article__text При повреждении не рассыпается на осколки. Можно изготовить в любом цвете, нанести художественную матировку, выполнить УФ-печать.
+                            button.btn.btn-outline-dark.catalog-second-section__exploitation-btn.mx-auto(href='#') Подробнее
+                            // кнопка чисто для визуального удобства
 
 block script
     script(src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js')
     script(type='text/javascript').
         let slider = tns({
             container: '.catalog-slider__list',
-            autoWidth: true,
-            items: 3.3,
-            gutter: 10,
+            // autoWidth: false,
+            items: 2,
+            gutter: 16,
             mouseDrag: true,
             swipeAngle: false,
-            speed: 400
+            speed: 400,
+            rewind: false,
+            // responsive: {
+            //     950: {
+            //         items: 3,
+            //         controls: true,
+            //         edgePadding: 30,
+            //         autoWidth: false,
+            //     },
+            //     1199: {
+            //         items: 3,
+            //         autoWidth: false,
+            //         slideBy: 3,
+            //     }
+            // }
         });
 
 

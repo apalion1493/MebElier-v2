@@ -10,15 +10,15 @@ html {
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
-  @media screen and (max-width: $desktopWidth) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: $tableWidth) {
-    font-size: 15px;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    font-size: 14px;
-  }
+  //@media screen and (max-width: $desktopWidth) {
+  //  font-size: 16px;
+  //}
+  //@media screen and (max-width: $tableWidth) {
+  //  font-size: 15px;
+  //}
+  //@media screen and (max-width: $phoneWidth) {
+  //  font-size: 14px;
+  //}
 }
 
 body {
@@ -205,6 +205,52 @@ button {
     height: 200%;
     width: 200%;
     z-index: 0;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .bg-white-color {
+    &:before {
+      content: '';
+      position: absolute;
+      background: #ffffff;
+      top: -17px;
+      right: auto;
+      left: 50%;
+      height: calc(100% + 17px);
+      width: 200%;
+      z-index: 0;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  h1, .h1 {
+    font-size: rem(36);
+  }
+}
+
+@media (max-width: 767.97px) {
+  h1, .h1 {
+    font-size: rem(24) !important;
+  }
+
+  h2, .h2 {
+
+  }
+
+  h4, .h4 {
+    font-size: rem(18);
+  }
+
+  .bg-white-color:before {
+    top: -35px;
+    height: calc(100% + 35px);
+  }
+
+  .content-wrapper {
+    overflow: hidden;
   }
 }
 
