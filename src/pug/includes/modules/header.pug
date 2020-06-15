@@ -2,7 +2,7 @@ header.header
   .container-fluid
     .row
       .col-12
-        nav.navbar.navbar-expand-xl.navbar-light.header__nav
+        nav#header__nav.navbar.navbar-expand-xl.navbar-light.header__nav
           a.navbar-brand(href='#').order-1.order-xl-0 mebElier
           button.navbar-toggler.order-0.order-xl-1(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
             span.navbar-toggler-icon
@@ -13,7 +13,7 @@ header.header
                   | Мебель
                 .dropdown-menu(aria-labelledby='navbarDropdown1')
                   .row
-                    .col-8.d-flex.flex-column
+                    .col-lg-8.d-flex.flex-column
                       div.dropdown-menu__list
                         span.dropdown-menu__title Категории
                         div.d-flex.dropdown-menu__roster
@@ -44,7 +44,7 @@ header.header
                           ul.red-squares-list
                             li.red-squares-list__item
                               a(href='#') Мечта танкиста
-                    .col-4
+                    .col-lg-4
                       div.dropdown-menu__goods
                         span.dropdown-menu__goods-title Товар дня
                         +miniProductCard('min-product-card-img.jpg', 'Кухня из дерева', '220 990 грн.')
@@ -82,5 +82,8 @@ header.header
           a(href='#').header__shopCard.order-6
             span.header__shopCard-counter 1
           #form-search-mobil.form-search-mobil
-            input(type='search' placeholder='Поиск по сайту' )
+            .form-search-mobil__block
+              input(type='search' placeholder='Поиск по сайту' )
+              button
+            .form-search__bg-close
 

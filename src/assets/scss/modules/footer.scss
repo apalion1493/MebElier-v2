@@ -100,8 +100,8 @@ footer {
 
 @media (max-width: 767.97px) {
   .footer__production {
-    flex-direction: column;
     margin-top: 42px;
+    justify-content: center;
   }
 
   .footer__logo {

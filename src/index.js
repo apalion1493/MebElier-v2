@@ -3,6 +3,7 @@
 // export for others scripts to use
 import $ from 'jquery';
 import jQuery from 'jquery';
+import 'slick-carousel';
 window.$ = $;
 window.jQuery = jQuery;
 // import { tns } from 'tiny-slider'
@@ -24,20 +25,69 @@ $('select').change(function(){
 }).change();
 
 $('.form-search__input').on('focus blur', function (evt) {
-    $(this).parent().parent().toggleClass('search-open', evt.type === 'focus');
+    $('#header__nav').toggleClass('search-open', evt.type === 'focus');
 });
 
 $('.form-search').click(function () {
-    $(this).parent().addClass('search-open-mobil')
+    $('#header__nav').addClass('search-open-mobil')
 });
 
-jQuery(function($){
-    $(document).mouseup(function (e){
-        let div = $(".form-search");
-        if (!div.is(e.target) && div.has(e.target).length === 0 && !$('#form-search-mobil').is(e.target)) {
-            div.parent().removeClass('search-open-mobil');
+$('.form-search__bg-close').click(function () {
+    $('.header__nav').removeClass('search-open-mobil');
+    console.log(123)
+});
+
+$('.navbar-toggler').click(function () {
+    $('html').toggleClass('overflow-hidden')
+});
+
+$('.dropdown-toggle').on('hide.bs.dropdown', function () {
+    return false;
+});
+
+$('.dropdown-toggle .dropdown-menu').on({'click': function(e) {
+        console.log('123');
+        e.stopPropagation();
+    }
+});
+
+$('.catalog-slider__list').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    variableWidth: true,
+    arrow: true,
+    lazyLoad: 'progressive',
+    dots: false,
+    responsive: [
+        {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                variableWidth: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 767.98,
+            settings: {
+                variableWidth: false,
+                slidesToScroll: 1,
+                slidesToShow: 2,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 575.98,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: true,
+                infinite: true,
+            }
         }
-    });
+    ]
 });
 
 // SCSS

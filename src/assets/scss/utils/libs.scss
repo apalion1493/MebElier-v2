@@ -1,4 +1,8 @@
 // libs here
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-only-sass-or-css-libs
-//@import "./node_modules/slick-carousel/slick/slick.scss";
-@import "./node_modules/tiny-slider/src/tiny-slider.scss";
+
+$slick-font-path: "~slick-carousel/slick/fonts/";
+$slick-loader-path: "~slick-carousel/slick/";
+
+@import '~slick-carousel/slick/slick', '~slick-carousel/slick/slick-theme';
+//@import "./node_modules/tiny-slider/src/tiny-slider.scss";

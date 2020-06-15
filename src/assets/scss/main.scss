@@ -178,6 +178,14 @@ section, .section {
   content: '>';
 }
 
+.dropdown-toggle:after {
+  border: none;
+  width: 8px;
+  height: 4px;
+  background: url("../../assets/img/check-menu-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
 .btn {
   border-radius: 0;
 }
