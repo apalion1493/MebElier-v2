@@ -73,8 +73,87 @@ header.header
                 a.nav-link(href='#') Портфолио
               li.nav-item
                 a.nav-link(href='#') Контакты
-          a.header__nav-phone.order-3(href='#')
-            | +38 050 555 55 55
+            .menu-list-mob
+              #accordionExample.accordion
+                .card
+                  #headingOne.card-header
+                    h5.mb-0
+                      button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                        | Мебель
+                  #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                    .card-body
+                      ul
+                        li
+                          a(href='#') Спальни
+                        li
+                          a(href='#') Прихожие
+                        li
+                          a(href='#') Гостинные
+                        li
+                          a(href='#') Детские
+                        li
+                          a(href='#') Кухни
+                        li
+                          a(href='#') Дизайнерская
+                .card
+                  #headingTwo.card-header
+                    h5.mb-0
+                      button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                        | Лестницы
+                  #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+                    .card-body
+                      ul
+                        li
+                          a(href='#') Спальни
+                        li
+                          a(href='#') Прихожие
+                        li
+                          a(href='#') Гостинные
+                        li
+                          a(href='#') Детские
+                        li
+                          a(href='#') Кухни
+                        li
+                          a(href='#') Дизайнерская
+                .card
+                  #headingThree.card-header
+                    h5.mb-0
+                      button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                        | Межкомнатные двери
+                  #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+                    .card-body
+                      ul
+                        li
+                          a(href='#') Спальни
+                        li
+                          a(href='#') Прихожие
+                        li
+                          a(href='#') Гостинные
+                        li
+                          a(href='#') Детские
+                        li
+                          a(href='#') Кухни
+                        li
+                          a(href='#') Дизайнерская
+
+                a(href='#') Портфолио
+                a(href='#') О нас
+                a(href='#') Контакты
+          .dropdown.header__nav-phone.order-3
+            button#myselectPhone.btn.btn-default.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true' data-value='+38 (067) 620 01 15') <i class='kyivstar-icon header__nav-phone-icon'></i> Киiвстар
+
+            ul.dropdown-menu(aria-labelledby='myselectPhone')
+              li
+                a(href='#' data-value='+38 (067) 620 01 15') <i class='kyivstar-icon header__nav-phone-icon'></i> Киiвстар
+              li
+                a(href='#' data-value='+38 (050) 620 01 15') <i class='vodafone-icon header__nav-phone-icon'></i> Водафон
+              li
+                a(href='#' data-value='+38 (093) 620 01 15') <i class='turkcell-icon header__nav-phone-icon'></i> Лайфселл
+            #myTextPhone
+              a(href='#') +38 (067) 620 01 15
+
+
+          span.phone-icon-mob.order-3
           form.form-inline.my-2.my-lg-0.form-search.order-4
             button.btn.btn-outline-success.my-2.my-sm-0.form-search__btn(type='submit')
             input.form-control.form-search__input(type='search', placeholder='Поиск ...', aria-label='Search')
@@ -83,7 +162,7 @@ header.header
             span.header__shopCard-counter 1
           #form-search-mobil.form-search-mobil
             .form-search-mobil__block
-              input(type='search' placeholder='Поиск по сайту' )
+              input(type='search' placeholder='Поиск по сайту')
               button
             .form-search__bg-close
 

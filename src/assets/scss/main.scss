@@ -156,6 +156,37 @@ section, .section {
   display: block;
 }
 
+.selectPhone-icon {
+  position: relative;
+}
+
+.kyivstar-icon {
+  display: block;
+  background: url("../../assets/img/Kyivstar.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+}
+
+.vodafone-icon {
+  background: url("../../assets/img/Vodafone.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 16px;
+  height: 16px;
+  display: block;
+  min-width: 16px;
+}
+
+.turkcell-icon {
+  background: url("../../assets/img/Turkcell.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 16px;
+  height: 16px;
+  display: block;
+  min-width: 16px;
+}
+
 .breadcrumb {
   background: initial;
   padding: 0;
@@ -276,5 +307,4 @@ button {
 @import "modules/blocks/type-stair";
 @import "modules/page/catalog";
 
-
-
+@import "modules/blocks/portfolioCard";

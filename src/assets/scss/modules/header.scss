@@ -3,6 +3,11 @@
   @include boxShadow(0, 1px, 5px, black, .15);
   position: relative;
   z-index: 3;
+
+  .navbar-toggler {
+    background: #F7F2EF;
+    border: none;
+  }
 }
 
 .header__nav {
@@ -112,20 +117,88 @@
 
 .header__nav-phone {
   font-weight: 800;
-  font-size: 1rem;
-  line-height: rem(20);
+  font-size: rem(14);
+  line-height: rem(17);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $fonts-color-2;
   margin-left: auto;
-  width: 180px;
   opacity: 1;
   transition: 0.2s;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  min-width: 276px;
 
-  &:hover {
+  a {
     color: $fonts-color-2;
+    font-size: rem(14);
+    line-height: rem(17);
+    margin-left: 13px;
+
+    &:hover {
+      color: $fonts-color-2;
+    }
   }
+
+  .dropdown-menu {
+    a {
+      font-size: 14px;
+      line-height: 17px;
+      color: #201F1D;
+      font-weight: normal;
+      text-transform: initial;
+      letter-spacing: initial;
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+      padding-right: 22px;
+      padding-left: 12px;
+    }
+  }
+
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #201F1D;
+    min-width: 100px;
+
+    &:after {
+      position: absolute;
+      right: 0;
+      z-index: 1001;
+    }
+  }
+
+  .dropdown-menu {
+    &.show {
+      top: -4px;
+      background: #FFFFFF;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 12px;
+      max-width: 119px;
+      width: 100%;
+      min-width: auto;
+      left: -10px;
+    }
+
+    li {
+      margin-bottom: 20px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.header__nav-phone-icon {
+  margin-right: 6px;
 }
 
 .header__favorites {
@@ -135,7 +208,7 @@
   background: url("/assets/img/passion-icon.svg") no-repeat center;
   background-size: 100% auto;
   display: block;
-  margin-left: 30px;
+  margin-left: 12px;
   box-shadow: none;
   border: none;
   padding: 0;
@@ -188,6 +261,14 @@
     overflow: hidden;
     transition: 0.2s;
   }
+}
+
+.phone-icon-mob {
+  display: none;
+}
+
+.menu-list-mob {
+  display: none;
 }
 
 @media (min-width: 1600px) {
@@ -250,7 +331,7 @@
   }
 }
 
-@media (max-width: 1199.99px) {
+@media (max-width: 1199.98px) {
   .header__nav {
     min-height: 80px;
   }
@@ -258,23 +339,44 @@
   .header__nav-phone {
     margin-left: 74px;
   }
-}
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .navbar.search-open {
-    .header__nav-phone {
-      width: auto;
-      white-space: nowrap;
-      opacity: 1;
-      overflow: hidden;
-      transition: 0.2s;
+  .header {
+    .container-fluid {
+      padding-left: 0;
+    }
+
+    .navbar-toggler {
+      height: 80px;
+      padding-left: 18px;
+      padding-right: 18px;
+      margin-right: 15px;
+    }
+
+    .card-header {
+      background: #ffffff;
+
+      button {
+        width: 100%;
+        text-align: left;
+      }
     }
   }
-}
 
-@media (max-width: 991.98px) {
-  .header__favorites {
-    margin-left: 0;
+  .header__nav .collapse.navbar-collapse ul {
+    display: none;
+  }
+
+  .header__nav .collapse.navbar-collapse .accordion ul {
+    display: block;
+  }
+
+  .menu-list-mob {
+    display: block;
+
+    .accordion {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .navbar-collapse {
@@ -301,6 +403,24 @@
       left: -16px;
       transition: 0.2s;
     }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.97px) {
+  .navbar.search-open {
+    .header__nav-phone {
+      width: auto;
+      white-space: nowrap;
+      opacity: 1;
+      overflow: hidden;
+      transition: 0.2s;
+    }
+  }
+}
+
+@media (max-width: 991.96px) {
+  .header__favorites {
+    margin-left: 0;
   }
 
   .header__nav .nav-item {
@@ -336,5 +456,89 @@
 
   .navbar-light .navbar-nav .nav-link {
     color: #5D4F44;
+  }
+
+  .form-search-mobil {
+    width: auto;
+    right: 0;
+    margin-right: -14px;
+  }
+}
+
+@media (max-width: 767.95px) {
+  .phone-icon-mob {
+    display: block;
+    margin-left: auto;
+    background: url("/assets/img/phone-icon.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 15px;
+    height: 15px;
+  }
+
+  .header__nav-phone {
+    display: none;
+  }
+
+  .header__favorites {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+  }
+
+  .header__shopCard {
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+  }
+
+  .form-search {
+    margin-left: 28px;
+  }
+
+  .header__shopCard-counter {
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+  }
+
+  .header__nav .navbar-brand {
+    font-size: 16px;
+  }
+
+  .header .navbar-toggler {
+    width: 40px;
+    height: 48px;
+    padding: 0;
+    position: relative;
+    top: -2px;
+    border-radius: 0;
+    margin-right: 12px;
+  }
+
+  .header__nav {
+    min-height: 48px;
+    height: 48px;
+  }
+
+  .form-inline .form-control.form-search__input {
+    display: none;
+  }
+
+  .header__favorites {
+    margin-left: 28px;
+  }
+}
+
+@media (max-width: 345px)  {
+  .form-search {
+    margin-left: 10px;
+  }
+
+  .header__favorites {
+    margin-left: 10px;
+  }
+
+  .header__shopCard {
+    margin-left: 10px;
   }
 }

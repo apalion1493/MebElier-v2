@@ -36,3 +36,20 @@ mixin type-stair(bgImage, textTitle, textDescription)
         span.type-stair__title=textTitle
         p.type-stair__text=textDescription
 
+mixin portfolioCard(bgImage, titleText, regionText, expirationDate, dataText)
+    .portfolioCard(style="background-image: url('assets/img/"+bgImage+"')")
+      span.icon-like.portfolioCard__like
+      .portfolioCard__body
+        span.portfolioCard__body-title=titleText
+        table.table.portfolioCard__table
+          tbody
+            tr
+              td Регион:
+              td=regionText
+            tr
+              td Срок производства:
+              td=expirationDate
+            tr
+              td Дата:
+              td=dataText
+        a(href='#').btn.btn-outline-light.portfolioCard__btn подробнее

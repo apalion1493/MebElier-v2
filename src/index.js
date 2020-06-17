@@ -6,15 +6,12 @@ import jQuery from 'jquery';
 import 'slick-carousel';
 window.$ = $;
 window.jQuery = jQuery;
-// import { tns } from 'tiny-slider'
 
-// import 'tiny-slider/dist/min/tiny-slider';
 import 'bootstrap/dist/js/bootstrap.min'
 import 'popper.js/dist/popper.min'
 import './js/index'
 
-
-$('select').change(function(){
+$('.catalog-filter__list select').change(function(){
     let text = $(this).find('option:selected').text();
     let $aux = $('<select/>').append($('<option/>').text(text));
     $(this).after($aux);
@@ -49,6 +46,10 @@ $('.dropdown-toggle .dropdown-menu').on({'click': function(e) {
         console.log('123');
         e.stopPropagation();
     }
+});
+
+$(".dropdown-menu li a").click(function(){
+    $(this).parents(".dropdown").find('.btn').val($(this).data('value')).html($(this).html());
 });
 
 $('.catalog-slider__list').slick({

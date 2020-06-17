@@ -1,0 +1,35 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Portfolio';
+    - var description = 'Portfolio';
+    - var pageClass = 'index-page';
+
+block content
+    section
+        .container
+            .row
+
+    section
+        .container
+            .row
+                .col-md-4.mb-3
+                    +portfolioCard('portfolioCard-1.jpg', 'Кухня из дерева', 'Киев', '25 дней', '10 мая 2021')
+                .col-md-4.mb-3
+                    +portfolioCard('portfolioCard-2.jpg', 'Кухня из дерева', 'Киев', '25 дней', '10 мая 2021')
+                .col-md-4.mb-3
+                    +portfolioCard('portfolioCard-3.jpg', 'Кухня из дерева', 'Киев', '25 дней', '10 мая 2021')
+                .col-md-4.mb-3
+                    +portfolioCard('portfolioCard-4.jpg', 'Кухня из дерева', 'Киев', '25 дней', '10 мая 2021')
+                .col-md-4.mb-3
+                    +portfolioCard('portfolioCard-5.jpg', 'Кухня из дерева', 'Киев', '25 дней', '10 мая 2021')
+                .col-md-4.mb-3
+                    +portfolioCard('portfolioCard-6.jpg', 'Кухня из дерева', 'Киев', '25 дней', '10 мая 2021')
+                .col-12
+                    a(href='#').btn.btn-dark.mx-auto Показать еще
+block script
+
+
+block head
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css' rel='stylesheet')
