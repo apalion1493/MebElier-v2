@@ -4,7 +4,7 @@ header.header
       .col-12
         nav#header__nav.navbar.navbar-expand-xl.navbar-light.header__nav
           a.navbar-brand(href='#').order-1.order-xl-0 mebElier
-          button.navbar-toggler.order-0.order-xl-1(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          button.navbar-toggler.order-0.order-xl-1.collapsed(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
             span.navbar-toggler-icon
           #navbarSupportedContent.collapse.navbar-collapse.order-2
             ul.navbar-nav
@@ -136,9 +136,9 @@ header.header
                         li
                           a(href='#') Дизайнерская
 
-                a(href='#') Портфолио
-                a(href='#') О нас
-                a(href='#') Контакты
+                a.menu-list-mob__link(href='#') Портфолио
+                a.menu-list-mob__link(href='#') О нас
+                a.menu-list-mob__link(href='#') Контакты
           .dropdown.header__nav-phone.order-3
             button#myselectPhone.btn.btn-default.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true' data-value='+38 (067) 620 01 15') <i class='kyivstar-icon header__nav-phone-icon'></i> Киiвстар
 
@@ -165,4 +165,5 @@ header.header
               input(type='search' placeholder='Поиск по сайту')
               button
             .form-search__bg-close
+          #phone-mobil-container
 

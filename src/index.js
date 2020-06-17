@@ -31,7 +31,14 @@ $('.form-search').click(function () {
 
 $('.form-search__bg-close').click(function () {
     $('.header__nav').removeClass('search-open-mobil');
-    console.log(123)
+});
+
+// $('.form-search-mobil__block button').click(function () {
+//     $('.header__nav').removeClass('search-open-mobil');
+// });
+
+$('.phone-icon-mob').click(function () {
+
 });
 
 $('.navbar-toggler').click(function () {
