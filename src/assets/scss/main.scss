@@ -296,6 +296,10 @@ button {
 // Modules
 
 @import "utils/common";
+
+@import "modules/page/catalog";
+@import "modules/page/portfolio";
+
 @import "modules/footer";
 @import "modules/header";
 @import "modules/blocks/red-squares-list";
@@ -305,6 +309,4 @@ button {
 @import "modules/blocks/block-article";
 @import "modules/blocks/backlight-block";
 @import "modules/blocks/type-stair";
-@import "modules/page/catalog";
-
 @import "modules/blocks/portfolioCard";
