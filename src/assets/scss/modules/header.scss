@@ -2,7 +2,7 @@
   background: #ffffff;
   @include boxShadow(0, 1px, 5px, black, .15);
   position: relative;
-  z-index: 3;
+  z-index: 100;
 
   .navbar-toggler {
     background: #F7F2EF;
@@ -166,7 +166,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #201F1D;
-    min-width: 100px;
+    min-width: 122px;
 
     &:after {
       position: absolute;
@@ -181,10 +181,10 @@
       background: #FFFFFF;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
       border-radius: 12px;
-      max-width: 119px;
+      max-width: 128px;
       width: 100%;
       min-width: auto;
-      left: 0px;
+      left: 0;
     }
 
     li {
@@ -268,6 +268,119 @@
 }
 
 .menu-list-mob {
+  display: none;
+
+  button {
+    position: relative;
+
+    &.collapsed {
+      &:before {
+        transform: translateY(-50%) rotate(180deg);
+        transition: 0.2s;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 8px;
+      background: url("../../../assets/img/check-svg-menu.svg") no-repeat center;
+      background-size: 100% auto;
+      transition: 0.2s;
+    }
+  }
+}
+
+.phone-mobil-container {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 48px;
+  background: #FFFFFF;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: auto;
+  left: 0;
+  right: 0;
+  margin-right: -8px;
+  padding: 34px 24px 39px 24px;
+  z-index: 3;
+
+  a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  button {
+    width: 16px;
+    height: 16px;
+    background: url(/assets/img/input-close.svg) no-repeat 50%;
+    background-size: 100% auto;
+    position: absolute;
+    top: 18px;
+    right: 16px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+  }
+
+  span {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #5D4F44;
+    display: block;
+    margin-left: 21px;
+  }
+
+  p {
+    margin-bottom: 0;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #201F1D;
+  }
+
+  i {
+    margin-right: 8px;
+  }
+}
+
+.phone-mobil-active {
+  .phone-mobil-container_bg {
+    display: block;
+  }
+
+  .phone-mobil-container {
+    display: flex;
+  }
+}
+
+.phone-mobil-container_bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
   display: none;
 }
 
@@ -684,7 +797,7 @@
   }
 
   .navbar-collapse {
-    top: 50px;
+    top: 48px;
   }
 }
 

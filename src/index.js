@@ -50,7 +50,6 @@ $('.dropdown-toggle').on('hide.bs.dropdown', function () {
 });
 
 $('.dropdown-toggle .dropdown-menu').on({'click': function(e) {
-        console.log('123');
         e.stopPropagation();
     }
 });
@@ -58,6 +57,16 @@ $('.dropdown-toggle .dropdown-menu').on({'click': function(e) {
 $(".dropdown-menu li a").click(function(){
     $(this).parents(".dropdown").find('.btn').val($(this).data('value')).html($(this).html());
 });
+
+$(".phone-icon-mob").click(function () {
+   $('#header__nav').addClass('phone-mobil-active');
+});
+
+$('.phone-mobil-container_bg, .phone-mobil-container button').click(function () {
+    $('#header__nav').removeClass('phone-mobil-active');
+});
+
+
 
 $('.catalog-slider__list').slick({
     infinite: false,

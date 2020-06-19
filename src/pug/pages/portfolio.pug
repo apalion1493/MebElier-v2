@@ -6,23 +6,49 @@ block variables
     - var pageClass = 'index-page';
 
 block content
-    section
+    section.pt-0.pb-1
         .container
             .row
-                .col-10
+                .col-12
                     .portfolio-container
                         h1.h1 Портфолио
-                        span За более чем 10ти лет на рынке мы сделали много интересных проектов
-                .col-2
-                    div
-                        div
-                            img
-                        div
-                            span Мебель
-                            p 20 объектов
-                            a(href='#') Посмотреть
+                        span.portfolio-container__subtitle За более чем 10ти лет на рынке мы сделали много интересных проектов
+                        div.portfolio-container__category.row
+                            .col-xl-8.col-lg-6
+                            .col-xl-4.col-lg-6
+                                .category-block
+                                    .category-block__image
+                                        img(src='assets/img/category-1.png')
+                                    .category-block__body
+                                        span.category-block__title Мебель
+                                        p.category-block__quantity 20 объектов
+                                        a.category-block__link(href='#') Посмотреть
+                                .category-block
+                                    .category-block__image
+                                        img(src='assets/img/category-2.png')
+                                    .category-block__body
+                                        span.category-block__title Лестницы
+                                        p.category-block__quantity 25 объектов
+                                        a.category-block__link(href='#') Посмотреть
+                                .category-block
+                                    .category-block__image
+                                        img(src='assets/img/category-3.png')
+                                    .category-block__body
+                                        span.category-block__title Двери
+                                        p.category-block__quantity 25 объектов
+                                        a.category-block__link(href='#') Посмотреть
+                                .category-block
+                                    .category-block__image
+                                        img(src='assets/img/category-4.png')
+                                    .category-block__body
+                                        span.category-block__title Отделка поверхностей
+                                        a.category-block__link(href='#') Посмотреть
 
-    section
+                        .row.block-white-column
+                            .col-10
+                            .col-xl-2.pl-0
+                                .block-white-column__content
+    section.portfolio-list
         .container
             .row
                 .col-xl-4.col-md-6.mb-3
@@ -38,7 +64,7 @@ block content
                 .col-xl-4.col-md-6.mb-3
                     +portfolioCard('portfolioCard-6.jpg', 'Кухня из дерева', 'Киев', '25 дней', '10 мая 2021')
                 .col-12
-                    a(href='#').btn.btn-dark.mx-auto Показать еще
+                    a(href='#').btn.btn-dark.mx-auto.portfolio-list__btn Показать еще
 block script
 
 

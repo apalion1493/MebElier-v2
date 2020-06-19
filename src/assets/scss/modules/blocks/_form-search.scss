@@ -61,6 +61,7 @@
   padding-right: 17px;
   display: none;
   overflow: hidden;
+  z-index: 10;
 
   input {
     width: calc(100% - 20px);
@@ -148,5 +149,9 @@
   .form-search__btn {
     width: 15px;
     height: 15px;
+  }
+
+  .form-search-mobil {
+    bottom: -52px;
   }
 }

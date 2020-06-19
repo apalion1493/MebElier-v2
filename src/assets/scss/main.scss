@@ -85,19 +85,19 @@ section, .section {
   position: relative;
   margin: 0 auto;
   max-width: $desktopWidth;
-  padding-left: 32px;
-  padding-right: 32px;
-  @media screen and (max-width: $smDesktopWidth) {
-    max-width: tableWidth;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  @media screen and (max-width: $tableWidth) {
-    max-width: phoneWidth;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    max-width: smPhoneWidth;
-  }
+  //padding-left: 32px;
+  //padding-right: 32px;
+  //@media screen and (max-width: $smDesktopWidth) {
+  //  max-width: tableWidth;
+  //  padding-left: 15px;
+  //  padding-right: 15px;
+  //}
+  //@media screen and (max-width: $tableWidth) {
+  //  max-width: phoneWidth;
+  //}
+  //@media screen and (max-width: $phoneWidth) {
+  //  max-width: smPhoneWidth;
+  //}
 }
 
 .row {
@@ -310,3 +310,4 @@ button {
 @import "modules/blocks/backlight-block";
 @import "modules/blocks/type-stair";
 @import "modules/blocks/portfolioCard";
+@import "modules/blocks/category-block";
