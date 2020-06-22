@@ -26,6 +26,7 @@ body {
   padding: 0;
   font-family: $mainFont;
   font-weight: $mainFontWeight;
+  background: $background-color;
 }
 
 *, *:before, *:after { box-sizing: border-box; }
@@ -299,6 +300,7 @@ button {
 
 @import "modules/page/catalog";
 @import "modules/page/portfolio";
+@import "modules/page/product";
 
 @import "modules/footer";
 @import "modules/header";
@@ -311,3 +313,4 @@ button {
 @import "modules/blocks/type-stair";
 @import "modules/blocks/portfolioCard";
 @import "modules/blocks/category-block";
+@import "modules/blocks/product-image";

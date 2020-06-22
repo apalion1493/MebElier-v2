@@ -61,6 +61,7 @@
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.14.3",
+    "slick-lightbox": "^0.2.12",
     "tiny-slider": "^2.9.2",
     "vue": "^2.6.10"
   }

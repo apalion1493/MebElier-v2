@@ -1,0 +1,90 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Product';
+    - var description = 'Product';
+    - var pageClass = 'index-page';
+
+block content
+    section
+        .container
+            .row
+                .col-6
+                    .product-image.items
+                        .product-image__block
+                            img(src='assets/img/product-img.jpg')
+                        .product-image__block
+                            img(src='assets/img/product-img.jpg')
+                        .product-image__block
+                            img(src='assets/img/product-img.jpg')
+                        .product-image__block
+                            img(src='assets/img/product-img.jpg')
+                .col-6
+                    .product-page.product-page_wrapper
+                        nav(aria-label='breadcrumb')
+                            ol.breadcrumb
+                                li.breadcrumb-item
+                                    a(href='#') Главная
+                                li.breadcrumb-item
+                                    a(href='#') Лестницы
+                                li.breadcrumb-item
+                                    a(href='#') С поворотом
+                                li.breadcrumb-item.active(aria-current='page') Дуб
+                        h2.h2 Деревянная лестница
+                        .product-page__left-column
+                            .product-page__row
+                                .product-page__order
+                                    span.product-page__price 150 000 грн.
+                                    .product-page__order-block
+                                        button.btn.btn-dark Сделать заказ
+                                        div
+                                            span
+                                .product-page__guarantee
+                                    span.guarantee-icon
+                                    .product-page__guarantee-body
+                                        span.product-page__guarantee-text-1 3 года
+                                        p.product-page__guarantee-text-2 Гарантии
+                            .product-page__row
+                                span.product-page__row-subTitle Выберите материал
+                                label.product-page__material
+                                    input.card-input-element(type='radio' name='product')
+                                    .panel.panel-default.card-input.product-page__material-card
+                                        .product-page__material-card-img
+                                            div.test-circle
+                                                i.test-circle-1
+                                                span Выбрано
+                                        .product-page__material-card-body
+                                            span.product-page__material-card-body-title Дерево
+                                            p.product-page__material-card-body-text Дерево твердых пород: бук, дуб, граб, ясень
+
+
+                                label.product-page__material
+                                    input.card-input-element(type='radio' name='product')
+                                    .panel.panel-default.card-input.product-page__material-card
+                                        .product-page__material-card-img
+                                            div.test-circle
+                                                i.test-circle-1
+                                                span Выбрано
+                                        .product-page__material-card-body
+                                            span.product-page__material-card-body-title ДСП
+                                            p.product-page__material-card-body-text ДСП толщиной 18 мм.
+                                            p.product-page__material-card-body-num - 20 000 грн.
+
+                                label.product-page__material
+                                    input.card-input-element(type='radio' name='product')
+                                    .panel.panel-default.card-input.product-page__material-card
+                                        .product-page__material-card-img
+                                            div.test-circle
+                                                i.test-circle-1
+                                                span Выбрано
+                                        .product-page__material-card-body
+                                            span.product-page__material-card-body-title Стекло
+                                            p.product-page__material-card-body-text Бронированное стекло, разных цветов
+                                            p.product-page__material-card-body-num + 20 000 грн.
+
+block script
+
+
+block head
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css' rel='stylesheet')

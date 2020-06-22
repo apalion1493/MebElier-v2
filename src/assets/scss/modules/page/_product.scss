@@ -1,0 +1,49 @@
+.product-page {
+  .card-input-element {
+    display: none;
+  }
+}
+
+.product-page__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-page__material-card-body-title {
+  font-weight: bold;
+  font-size: rem(14);
+  line-height: rem(17);
+  color: $fonts-color-2;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.product-page__material-card-body-text {
+  font-size: rem(14);
+  line-height: rem(17);
+  color: $fonts-color-3;
+  margin-bottom: 14px;
+}
+
+.product-page__material-card-body-num {
+  font-size: rem(14);
+  line-height: rem(17);
+  margin-bottom: 0;
+  color: $fonts-color-2;
+}
+
+.product-page__row-subTitle {
+  font-weight: bold;
+  font-size: rem(16);
+  line-height: rem(20);
+  color: $mainFontColor;
+}
+
+.product-page__material-card-img {
+
+  span {
+    font-size: rem(12);
+    line-height: rem(15);
+    color: $fonts-color-3;
+  }
+}

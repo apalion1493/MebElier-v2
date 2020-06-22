@@ -4,12 +4,13 @@
 import $ from 'jquery';
 import jQuery from 'jquery';
 import 'slick-carousel';
-window.$ = $;
 window.jQuery = jQuery;
+window.$ = window.jQuery = $;
 
-import 'bootstrap/dist/js/bootstrap.min'
-import 'popper.js/dist/popper.min'
-import './js/index'
+import 'bootstrap/dist/js/bootstrap.min';
+import 'popper.js/dist/popper.min';
+// import 'slick-lightbox';
+import './js/index';
 
 $('.catalog-filter__list select').change(function(){
     let text = $(this).find('option:selected').text();
@@ -105,6 +106,22 @@ $('.catalog-slider__list').slick({
             }
         }
     ]
+});
+
+$('.product-image').each(function() {
+    let slider = $(this);
+    slider.slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        swipe: false,
+    });
+
+    // let sLightbox = $(this);
+    // sLightbox.slickLightbox({
+    //     src: 'assets/img',
+    //     itemSelector: '.team-image img'
+    // });
 });
 
 // SCSS
