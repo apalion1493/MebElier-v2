@@ -40,6 +40,11 @@ h1, .h1 {
 
 a { text-decoration: none; }
 
+p {
+  font-size: rem(14);
+  color: $fonts-color-3;
+}
+
 ul, li {
   margin: 0;
   padding: 0;
@@ -187,6 +192,70 @@ section, .section {
   height: 16px;
   display: block;
   min-width: 16px;
+}
+
+.interior-icon {
+  background: url("../../assets/img/interior-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+
+.feedback-icon {
+  background: url("../../assets/img/feedback-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 31px;
+  height: 31px;
+  display: block;
+}
+
+.passion-iocn {
+  background: url("../../assets/img/passion-iocn.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.badge-icon {
+  background: url("../../assets/img/badge-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 34px;
+  height: 35px;
+  display: block;
+}
+
+.pinterest-icon-product {
+  background: url("../../assets/img/pinterest-icon-product.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.inst-icon-product {
+  background: url("../../assets/img/inst-icon-product.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.facebook-icon-product {
+  background: url("../../assets/img/facebook-icon-product.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.twitter-icon-product {
+  background: url("../../assets/img/twitter-icon-product.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  height: 15px;
+  display: block;
 }
 
 .breadcrumb {

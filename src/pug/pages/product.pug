@@ -3,7 +3,8 @@ extends ../layout/main
 block variables
     - var title = 'Product';
     - var description = 'Product';
-    - var pageClass = 'index-page';
+    - var pageClass = 'index-page reduced-footer';
+    - var footerMin = true;
 
 block content
     section
@@ -32,55 +33,114 @@ block content
                                 li.breadcrumb-item.active(aria-current='page') Дуб
                         h2.h2 Деревянная лестница
                         .product-page__left-column
+                            .product-page__row.row
+                                .col-10.d-flex
+                                    .product-page__order
+                                        span.product-page__price 150 000 грн.
+                                        .product-page__order-block
+                                            button.btn.btn-dark.product-page__order-block-btn Сделать заказ
+                                            .product-page__order-favorites
+                                                .passion-iocn
+                                    .product-page__guarantee
+                                        span.guarantee-icon.badge-icon
+                                        .product-page__guarantee-body
+                                            span.product-page__guarantee-text-1 3 года
+                                            p.product-page__guarantee-text-2 Гарантии
+                            .product-page__row.row
+                                .col-10
+                                    span.product-page__row-subTitle.mb-3 Выберите материал
+                                    label.product-page__material
+                                        input.card-input-element(type='radio' name='product' checked='checked')
+                                        .panel.panel-default.card-input.product-page__material-card
+                                            .product-page__material-card-img(style='background-image: url(assets/img/product-page-img-material-1.jpg)')
+                                                .product-page__material-radio
+                                                    i.product-page__material-radioIcon
+                                                    span Выбрано
+                                            .product-page__material-card-body
+                                                span.product-page__material-card-body-title Дерево
+                                                p.product-page__material-card-body-text Дерево твердых пород: бук, дуб, граб, ясень
+                                    label.product-page__material
+                                        input.card-input-element(type='radio' name='product')
+                                        .panel.panel-default.card-input.product-page__material-card
+                                            .product-page__material-card-img(style='background-image: url(assets/img/product-page-img-material-2.jpg)')
+                                                .product-page__material-radio
+                                                    i.product-page__material-radioIcon
+                                                    span Выбрано
+                                            .product-page__material-card-body
+                                                span.product-page__material-card-body-title ДСП
+                                                p.product-page__material-card-body-text ДСП толщиной 18 мм.
+                                                p.product-page__material-card-body-num - 20 000 грн.
+
+                                    label.product-page__material
+                                        input.card-input-element(type='radio' name='product')
+                                        .panel.panel-default.card-input.product-page__material-card
+                                            .product-page__material-card-img(style='background-image: url(assets/img/product-page-img-material-3.jpg)')
+                                                .product-page__material-radio
+                                                    i.product-page__material-radioIcon
+                                                    span Выбрано
+                                            .product-page__material-card-body
+                                                span.product-page__material-card-body-title Стекло
+                                                p.product-page__material-card-body-text Бронированное стекло, разных цветов
+                                                p.product-page__material-card-body-num + 20 000 грн.
                             .product-page__row
-                                .product-page__order
-                                    span.product-page__price 150 000 грн.
-                                    .product-page__order-block
-                                        button.btn.btn-dark Сделать заказ
-                                        div
-                                            span
-                                .product-page__guarantee
-                                    span.guarantee-icon
-                                    .product-page__guarantee-body
-                                        span.product-page__guarantee-text-1 3 года
-                                        p.product-page__guarantee-text-2 Гарантии
-                            .product-page__row
-                                span.product-page__row-subTitle.mb-3 Выберите материал
-                                label.product-page__material
-                                    input.card-input-element(type='radio' name='product' checked='checked')
-                                    .panel.panel-default.card-input.product-page__material-card
-                                        .product-page__material-card-img(style='background-image: url(assets/img/product-page-img-material-1.jpg)')
-                                            .product-page__material-radio
-                                                i.product-page__material-radioIcon
-                                                span Выбрано
-                                        .product-page__material-card-body
-                                            span.product-page__material-card-body-title Дерево
-                                            p.product-page__material-card-body-text Дерево твердых пород: бук, дуб, граб, ясень
+                                span.product-page__row-subTitle.mb-3 Комплектация
+                                ul
+                                    li
+                                        span Ступени.
+                                        | 5 на 1 метр высоты
+                                    li
+                                        span Поручень.
+                                        | Гнутое дерево. Цилиндрической формы.
+                                    li
+                                        span Ограждение.
+                                        | Металл с хромированным покрытием.
+                                p В целом, конечно, граница обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании своевременного выполнения сверхзадачи! Господа, перспективное планирование играет определяющее значение для поставленных обществом задач.
+                            .row.mb-5
+                                .col-6
+                                    .product-page__column
+                                        .product-page__column-img
+                                            i.interior-icon
+                                        .product-page__column-body
+                                            span Дизайн и визуализация
+                                            p Разработаем бесплатно проект под ваш интерьер. Вы сможете заранее представить как это будет выглядеть
+                                .col-6
+                                    .product-page__column
+                                        .product-page__column-img
+                                            i.feedback-icon
+                                        .product-page__column-body
+                                            span Бесплатно по всей Украине
+                                            ul.product-page__column-list.red-squares-list
+                                                li.product-page__column-item.red-squares-list__item
+                                                    p Выезд мастера и дизайнера
+                                                li.product-page__column-item.red-squares-list__item
+                                                    p Сборка и монтаж
+                                                li.product-page__column-item.red-squares-list__item
+                                                    p Доставка
+                            .row.information-container
+                                .col-12.information-container__block
+                                    div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eos expedita laboriosam molestias numquam pariatur? Cumque eaque eligendi expedita fugiat harum ipsam perferendis quis reiciendis ullam. Asperiores minima numquam quas.
+                                .col-12.information-container__block
+                                    div Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi doloremque doloribus dolorum eius et explicabo harum maiores minima obcaecati odio temporibus, veritatis voluptatem! Ducimus ex iusto neque quam quas!
+                                .col-12.information-container__block
+                                    div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores est incidunt quo tempore tenetur. Alias, aliquam architecto, cumque facilis, fugiat mollitia officiis provident quam sequi totam ut vero voluptatem voluptatibus!
+                                .col-12.information-container__block
+                                    div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur commodi cumque, eaque eveniet exercitationem expedita facere incidunt iusto labore magnam minima nostrum odio perferendis quae quaerat quisquam tempora? Labore.
+                                .col-12.information-container__block
+                                    div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto, cumque debitis delectus ducimus, earum enim maxime, minus mollitia quisquam saepe sequi sint soluta suscipit vel voluptatem voluptatibus voluptatum.
+                        .product-page-social
+                            a(href='#').product-page-social__item
+                                span.pinterest-icon-product
+                            a(href='#').product-page-social__item
+                                span.inst-icon-product
+                            a(href='#').product-page-social__item
+                                span.facebook-icon-product
+                            a(href='#').product-page-social__item
+                                span.twitter-icon-product
 
 
-                                label.product-page__material
-                                    input.card-input-element(type='radio' name='product')
-                                    .panel.panel-default.card-input.product-page__material-card
-                                        .product-page__material-card-img(style='background-image: url(assets/img/product-page-img-material-1.jpg)')
-                                            .product-page__material-radio
-                                                i.product-page__material-radioIcon
-                                                span Выбрано
-                                        .product-page__material-card-body
-                                            span.product-page__material-card-body-title ДСП
-                                            p.product-page__material-card-body-text ДСП толщиной 18 мм.
-                                            p.product-page__material-card-body-num - 20 000 грн.
 
-                                label.product-page__material
-                                    input.card-input-element(type='radio' name='product')
-                                    .panel.panel-default.card-input.product-page__material-card
-                                        .product-page__material-card-img(style='background-image: url(assets/img/product-page-img-material-1.jpg)')
-                                            .product-page__material-radio
-                                                i.product-page__material-radioIcon
-                                                span Выбрано
-                                        .product-page__material-card-body
-                                            span.product-page__material-card-body-title Стекло
-                                            p.product-page__material-card-body-text Бронированное стекло, разных цветов
-                                            p.product-page__material-card-body-num + 20 000 грн.
+
+
 
 block script
 

@@ -82,6 +82,13 @@ footer {
   margin-top: 57px;
 }
 
+.reduced-footer {
+  //.footer {
+  //  max-width: calc(50% + 8px);
+  //  margin-left: auto;
+  //}
+}
+
 @media (max-width: 1199.98px) {
   .footer__logo {
     margin-top: 80px;
@@ -127,3 +134,4 @@ footer {
     overflow: hidden;
   }
 }
+

@@ -16,5 +16,10 @@ html(lang='en')
         include ../includes/modules/header
         .content-wrapper
           block content
-        include ../includes/modules/footer
+
+        if footerMin
+          include ../includes/modules/footer-min
+        else
+          include ../includes/modules/footer
+
     block script
