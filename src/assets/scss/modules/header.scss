@@ -1,12 +1,22 @@
 .header {
   background: #ffffff;
   @include boxShadow(0, 1px, 5px, black, .15);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 100;
+  transition: .4s;
 
   .navbar-toggler {
     background: #F7F2EF;
     border: none;
+  }
+
+  &.out {
+    transition: 1s;
+    top: -100%;
   }
 }
 
@@ -30,6 +40,8 @@
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 0;
+    min-width: auto;
+    top: calc(100% - 2px);
   }
 
   .dropdown-menu__list {

@@ -67,6 +67,21 @@ $('.phone-mobil-container_bg, .phone-mobil-container button').click(function () 
     $('#header__nav').removeClass('phone-mobil-active');
 });
 
+let header = $('#header');
+let scrollPrev = 0;
+
+$(window).scroll(function() {
+
+    let scrolled = $(window).scrollTop();
+
+    if ( scrolled > 80 && scrolled > scrollPrev ) {
+        header.addClass('out');
+    } else {
+        header.removeClass('out');
+    }
+    scrollPrev = scrolled;
+});
+
 
 
 $('.catalog-slider__list').slick({

@@ -78,6 +78,7 @@ section, .section {
   display: flex;
   flex-direction: column;
   background: #F9F9F9;
+  padding-top: 78px;
 }
 
 .container {
@@ -291,6 +292,7 @@ button {
 
   .content-wrapper {
     overflow: hidden;
+    padding-top: 48px;
   }
 }
 
