@@ -25,6 +25,18 @@
     height: 80px;
     background: rgba(255, 87, 51, .8);
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+      content: '';
+      background: url("../../../../assets/img/product-image-arrow.svg") no-repeat center;
+      background-size: 100% auto;
+      width: 12px;
+      height: 24px;
+      display: block;
+    }
 
     &:hover {
       background: rgba(255, 87, 51, 1);
@@ -39,6 +51,10 @@
   .slick-prev {
     left: auto;
     right: 88px;
+
+    &:before {
+     transform: rotate(180deg);
+    }
   }
 
   .slick-next {

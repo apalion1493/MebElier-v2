@@ -1,0 +1,192 @@
+.information-container {
+  margin-left: -16px;
+  margin-right: -16px;
+  overflow: hidden;
+
+  .information-container__block {
+    border-bottom: 1px solid #BABABA;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: hidden;
+
+    &:first-of-type {
+      border-top: 1px solid #BABABA;
+    }
+  }
+}
+
+.information-container__NoCreak {
+  padding-top: 47px;
+  padding-bottom: 167px;
+  position: relative;
+
+  * {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    background: url(../../../../assets/img/information-container__NoCreak.png) no-repeat center;
+    background-size: cover;
+    width: 692px;
+    height: 445px;
+    bottom: 0;
+    right: -240px;
+  }
+}
+
+.information-container__NoCreak-title {
+  margin-bottom: 31px;
+}
+
+.information-container__NoCreak-text {
+  line-height: rem(24);
+  max-width: 60%;
+}
+
+.information-container__NoCreak-btn {
+  margin-top: 28px;
+}
+
+.information-container__title {
+  font-weight: bold;
+  font-size: rem(18);
+  line-height: rem(22);
+  color: $mainFontColor;
+  display: block;
+}
+
+.information-container__btn {
+  max-width: 141px;
+  width: 100%;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(14);
+  line-height: rem(17);
+}
+
+.information-container__triplex {
+  padding-top: 60px;
+  padding-bottom: 93px;
+}
+
+.information-container__triplex-img {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.information-container__blum {
+  padding-top: 51px;
+  padding-bottom: 56px;
+}
+
+.information-container__blum-img {
+  img {
+    width: 100%;
+  }
+
+  max-height: 172px;
+  margin-bottom: 19px;
+  overflow: hidden;
+}
+
+.information-container__blum-title {
+  margin-bottom: 37px;
+}
+
+.information-container__blum-text  {
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.information-container__blum-btn {
+  margin-top: 29px;
+}
+
+.information-container__handrails {
+  padding-top: 37px;
+  padding-bottom: 42px;
+  position: relative;
+
+  &:before {
+    content: '';
+    background: url("../../../../assets/img/.information-container__handrails.png") no-repeat left bottom;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: -200px;
+    width: 540px;
+    height: 100%;
+  }
+}
+
+.information-container__handrails-title {
+  margin-bottom: 11px;
+}
+
+.information-container__handrails-subTitle {
+  margin-bottom: 30px;
+}
+
+.information-container__handrails-item {
+
+  &:first-of-type {
+    p {
+      font-weight: bold;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    line-height: 24px;
+  }
+}
+
+.information-container__handrails-list {
+  margin-bottom: 20px;
+}
+
+.information-container__handrails-btn {
+  margin-top: 31px;
+}
+
+.information-container__backlight {
+  padding-top: 51px;
+  padding-bottom: 42px;
+}
+
+.information-container__backlight-text {
+  line-height: 24px;
+}
+
+.information-container__backlight-title {
+  margin-bottom: 30px;
+}
+
+.information-container__backlight-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.information-container__backlight-block-title {
+  font-weight: 800;
+  font-size: rem(12);
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $fonts-color-2;
+}
+
+.information-container__backlight-block-img {
+  min-height: 52px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}

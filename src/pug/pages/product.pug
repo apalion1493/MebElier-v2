@@ -7,7 +7,7 @@ block variables
     - var footerMin = true;
 
 block content
-    section
+    section.product-section
         .container
             .row
                 .col-6
@@ -31,10 +31,10 @@ block content
                                 li.breadcrumb-item
                                     a(href='#') С поворотом
                                 li.breadcrumb-item.active(aria-current='page') Дуб
-                        h2.h2 Деревянная лестница
+                        h2.h2.product-section__title Деревянная лестница
                         .product-page__left-column
                             .product-page__row.row
-                                .col-10.d-flex
+                                .col-xl-10.d-flex
                                     .product-page__order
                                         span.product-page__price 150 000 грн.
                                         .product-page__order-block
@@ -47,7 +47,7 @@ block content
                                             span.product-page__guarantee-text-1 3 года
                                             p.product-page__guarantee-text-2 Гарантии
                             .product-page__row.row
-                                .col-10
+                                .col-xl-10
                                     span.product-page__row-subTitle.mb-3 Выберите материал
                                     label.product-page__material
                                         input.card-input-element(type='radio' name='product' checked='checked')
@@ -82,20 +82,21 @@ block content
                                                 span.product-page__material-card-body-title Стекло
                                                 p.product-page__material-card-body-text Бронированное стекло, разных цветов
                                                 p.product-page__material-card-body-num + 20 000 грн.
-                            .product-page__row
-                                span.product-page__row-subTitle.mb-3 Комплектация
-                                ul
-                                    li
-                                        span Ступени.
-                                        | 5 на 1 метр высоты
-                                    li
-                                        span Поручень.
-                                        | Гнутое дерево. Цилиндрической формы.
-                                    li
-                                        span Ограждение.
-                                        | Металл с хромированным покрытием.
-                                p В целом, конечно, граница обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании своевременного выполнения сверхзадачи! Господа, перспективное планирование играет определяющее значение для поставленных обществом задач.
-                            .row.mb-5
+                            .product-page__row.row
+                                .col-xl-10
+                                    span.product-page__row-subTitle.mb-3 Комплектация
+                                    ul.product-page__parameters
+                                        li.product-page__parameters-item
+                                            span Ступени.
+                                            | 5 на 1 метр высоты
+                                        li.product-page__parameters-item
+                                            span Поручень.
+                                            | Гнутое дерево. Цилиндрической формы.
+                                        li.product-page__parameters-item
+                                            span Ограждение.
+                                            | Металл с хромированным покрытием.
+                                    p.product-page__description В целом, конечно, граница обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании своевременного выполнения сверхзадачи! Господа, перспективное планирование играет определяющее значение для поставленных обществом задач.
+                            .row.mb-5.mt-4.pt-3
                                 .col-6
                                     .product-page__column
                                         .product-page__column-img
@@ -118,15 +119,108 @@ block content
                                                     p Доставка
                             .row.information-container
                                 .col-12.information-container__block
-                                    div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eos expedita laboriosam molestias numquam pariatur? Cumque eaque eligendi expedita fugiat harum ipsam perferendis quis reiciendis ullam. Asperiores minima numquam quas.
+                                    .information-container__NoCreak
+                                        span.information-container__title.information-container__NoCreak-title Нет скрипов при эксплуатации
+                                        p.information-container__NoCreak-text Используем правильно высушенную древесину. Подгонку деталей выполняем на высокоточном оборудовании. Стыки во время сборки лестницы тщательно обрабатываем специальными составами.
+                                        a.btn.btn-outline-dark.information-container__btn.information-container__NoCreak-btn(href='#') Подробнее
+
                                 .col-12.information-container__block
-                                    div Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi doloremque doloribus dolorum eius et explicabo harum maiores minima obcaecati odio temporibus, veritatis voluptatem! Ducimus ex iusto neque quam quas!
+                                    .information-container__triplex
+                                        .information-container__triplex-body.row
+                                            .col-6
+                                                img.information-container__triplex-img(src='assets/img/information-container__triplex.png')
+                                            .col-6
+                                                span.information-container__title Триплекс — безопасно, надежно, стильно
+                                                p.information-container__triplex-text При повреждении не рассыпается на осколки. Можно изготовить в любом цвете, нанести художественную матировку, выполнить УФ-печать.
+                                                a.btn.btn-outline-dark.information-container__btn(href='#') Подробнее
+
                                 .col-12.information-container__block
-                                    div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores est incidunt quo tempore tenetur. Alias, aliquam architecto, cumque facilis, fugiat mollitia officiis provident quam sequi totam ut vero voluptatem voluptatibus!
+                                    .information-container__blum
+                                        .row
+                                            .col-12
+                                                span.information-container__title.information-container__blum-title Фурнитура Blum — безупречное австрийское качество
+                                            .col-xl-6.mb-4.mb-xl-0
+                                                .information-container__blum-block
+                                                    .information-container__blum-img
+                                                        img(src='assets/img/information-container__blum-1.jpg')
+                                                    .information-container__blum-content
+                                                        p.information-container__blum-text Петли Blum самые долговечные (до 200 000 циклов открываний-закрываний) и бесшумные (никаких раздражающих скрипов).
+                                            .col-xl-6
+                                                .information-container__blum-block
+                                                    .information-container__blum-img
+                                                        img(src='assets/img/information-container__blum-2.jpg')
+                                                    .information-container__blum-content
+                                                        p.information-container__blum-text Системы направляющих  выдерживают нагрузку до 60 кг (провалившиеся выдвижные ящики - это не про Blum)
+                                            .col-12
+                                                a.btn.btn-outline-dark.information-container__btn.information-container__blum-btn(href='#') Подробнее
+
+
                                 .col-12.information-container__block
-                                    div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur commodi cumque, eaque eveniet exercitationem expedita facere incidunt iusto labore magnam minima nostrum odio perferendis quae quaerat quisquam tempora? Labore.
+                                    .information-container__handrails
+                                        .row
+                                            .col-7
+                                                span.information-container__title.information-container__handrails-title Поручни для лестницы
+                                                p.information-container__handrails-subTitle Подбираем поручень под дизайн интерьера.
+                                                .row
+                                                    .col-6
+                                                        ul.information-container__handrails-list
+                                                            li.information-container__handrails-item
+                                                                p Богатый выбор форм
+                                                            li.information-container__handrails-item
+                                                                p круглая
+                                                            li.information-container__handrails-item
+                                                                p квадратная
+                                                            li.information-container__handrails-item
+                                                                p П-образная
+                                                            li.information-container__handrails-item
+                                                                p фигурная, изогнутая
+                                                    .col-6
+                                                        ul.information-container__handrails-list
+                                                            li.information-container__handrails-item
+                                                                p Материалов
+                                                            li.information-container__handrails-item
+                                                                p дерево
+                                                            li.information-container__handrails-item
+                                                                p ПВХ
+                                                            li.information-container__handrails-item
+                                                                p нержавеющая сталь
+                                                    .col-12
+                                                        p Возможна установка поручня на стеклянное <br> ограждение.
+                                                        a.btn.btn-outline-dark.information-container__btn.information-container__handrails-btn(href='#') Подробнее
+
+
                                 .col-12.information-container__block
-                                    div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto, cumque debitis delectus ducimus, earum enim maxime, minus mollitia quisquam saepe sequi sint soluta suscipit vel voluptatem voluptatibus voluptatum.
+                                    .information-container__backlight
+                                        .row
+                                            .col-xl-6
+                                                span.information-container__title.information-container__backlight-title Подсветка
+                                                p.information-container__backlight-text Светодиодные ленты высокого качества (не перегорят через неделю).
+                                                p.information-container__backlight-text Монтаж выполняют опытные специалисты (ваша страховка от короткого замыкания и пожара вследствие непрофессионального монтажа).
+                                                p.information-container__backlight-text Вы можете выбрать: способ включения (сенсорный/ручной), цвет (теплый/холодный), интенсивность освещения, место установки (любое без ограничений).
+
+                                            .col-xl-6
+                                                .row.mt-5
+                                                    .col-6
+                                                        .information-container__backlight-block
+                                                            .information-container__backlight-block-img
+                                                                img(src='assets/img/customization-colors.svg')
+                                                            span.information-container__backlight-block-title Настройка <br> цвета
+                                                    .col-6
+                                                        .information-container__backlight-block
+                                                            .information-container__backlight-block-img
+                                                                img(src='assets/img/motion-sensor.svg')
+                                                            span.information-container__backlight-block-title Датчики <br> движения
+                                                    .col-6
+                                                        .information-container__backlight-block
+                                                            .information-container__backlight-block-img
+                                                                img(src='assets/img/led-icon.svg')
+                                                            span.information-container__backlight-block-title настройка <br> яркости
+                                                    .col-6
+                                                        .information-container__backlight-block
+                                                            .information-container__backlight-block-img
+                                                                img(src='assets/img/diploma-iocn.svg')
+                                                            span.information-container__backlight-block-title качество и <br> долговечность
+
                         .product-page-social
                             a(href='#').product-page-social__item
                                 span.pinterest-icon-product
