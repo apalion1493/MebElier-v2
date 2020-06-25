@@ -3,13 +3,13 @@
 // export for others scripts to use
 import $ from 'jquery';
 import jQuery from 'jquery';
-import 'slick-carousel';
 window.jQuery = jQuery;
 window.$ = window.jQuery = $;
 
 import 'bootstrap/dist/js/bootstrap.min';
 import 'popper.js/dist/popper.min';
-// import 'slick-lightbox';
+import 'slick-carousel';
+import 'slick-lightbox';
 import './js/index';
 
 $('.catalog-filter__list select').change(function(){
@@ -132,11 +132,12 @@ $('.product-image').each(function() {
         swipe: false,
     });
 
-    // let sLightbox = $(this);
-    // sLightbox.slickLightbox({
-    //     src: 'assets/img',
-    //     itemSelector: '.team-image img'
-    // });
+    let sLightbox = $(this);
+    sLightbox.slickLightbox({
+        // src: element.src,
+        itemSelector: '.product-image__block span',
+        lazy: true,
+    });
 });
 
 // SCSS

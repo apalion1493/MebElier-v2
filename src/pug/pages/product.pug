@@ -10,17 +10,26 @@ block content
     section.product-section
         .container
             .row
-                .col-6
+                .col-md-6
                     .product-image.items
-                        .product-image__block
-                            img(src='assets/img/product-img.jpg')
-                        .product-image__block
-                            img(src='assets/img/product-img.jpg')
-                        .product-image__block
-                            img(src='assets/img/product-img.jpg')
-                        .product-image__block
-                            img(src='assets/img/product-img.jpg')
-                .col-6
+                        div
+                            span
+                            .product-image__block
+                                img(src='assets/img/product-img.jpg')
+                        div
+                            span
+                            .product-image__block
+                                img(src='assets/img/product-img.jpg')
+                        div
+                            span
+                            .product-image__block
+                                img(src='assets/img/product-img.jpg')
+                        div
+                            span
+                            .product-image__block
+                                img(src='assets/img/product-img.jpg')
+
+                .col-md-6
                     .product-page.product-page_wrapper
                         nav(aria-label='breadcrumb')
                             ol.breadcrumb
@@ -34,21 +43,22 @@ block content
                         h2.h2.product-section__title Деревянная лестница
                         .product-page__left-column
                             .product-page__row.row
-                                .col-xl-10.d-flex
-                                    .product-page__order
-                                        span.product-page__price 150 000 грн.
-                                        .product-page__order-block
-                                            button.btn.btn-dark.product-page__order-block-btn Сделать заказ
-                                            .product-page__order-favorites
-                                                .passion-iocn
-                                    .product-page__guarantee
-                                        span.guarantee-icon.badge-icon
-                                        .product-page__guarantee-body
-                                            span.product-page__guarantee-text-1 3 года
-                                            p.product-page__guarantee-text-2 Гарантии
+                                .col-xl-10
+                                    .product-page__wrapper
+                                        .product-page__order
+                                            span.product-page__price 150 000 грн.
+                                            .product-page__order-block
+                                                button.btn.btn-dark.product-page__order-block-btn Сделать заказ
+                                                .product-page__order-favorites
+                                                    .passion-iocn
+                                        .product-page__guarantee
+                                            span.guarantee-icon.badge-icon
+                                            .product-page__guarantee-body
+                                                span.product-page__guarantee-text-1 3 года
+                                                p.product-page__guarantee-text-2 Гарантии
                             .product-page__row.row
                                 .col-xl-10
-                                    span.product-page__row-subTitle.mb-3 Выберите материал
+                                    span.product-page__row-subTitle.mb-xl-3.mb-4 Выберите материал
                                     label.product-page__material
                                         input.card-input-element(type='radio' name='product' checked='checked')
                                         .panel.panel-default.card-input.product-page__material-card
@@ -96,15 +106,22 @@ block content
                                             span Ограждение.
                                             | Металл с хромированным покрытием.
                                     p.product-page__description В целом, конечно, граница обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании своевременного выполнения сверхзадачи! Господа, перспективное планирование играет определяющее значение для поставленных обществом задач.
+
+                            .product-page__guarantee.product-page__guarantee-mobil
+                                span.guarantee-icon.badge-icon
+                                .product-page__guarantee-body
+                                    span.product-page__guarantee-text-1 3 года
+                                    p.product-page__guarantee-text-2 Гарантии
+
                             .row.mb-5.mt-4.pt-3
-                                .col-6
+                                .col-xl-6.mb-xl-0.mb-4
                                     .product-page__column
                                         .product-page__column-img
                                             i.interior-icon
                                         .product-page__column-body
                                             span Дизайн и визуализация
                                             p Разработаем бесплатно проект под ваш интерьер. Вы сможете заранее представить как это будет выглядеть
-                                .col-6
+                                .col-xl-6
                                     .product-page__column
                                         .product-page__column-img
                                             i.feedback-icon
@@ -127,10 +144,10 @@ block content
                                 .col-12.information-container__block
                                     .information-container__triplex
                                         .information-container__triplex-body.row
-                                            .col-6
+                                            .col-xl-6.mb-xl-0.mb-4
                                                 img.information-container__triplex-img(src='assets/img/information-container__triplex.png')
-                                            .col-6
-                                                span.information-container__title Триплекс — безопасно, надежно, стильно
+                                            .col-xl-6
+                                                span.information-container__title.information-container__triplex-title Триплекс — безопасно, надежно, стильно
                                                 p.information-container__triplex-text При повреждении не рассыпается на осколки. Можно изготовить в любом цвете, нанести художественную матировку, выполнить УФ-печать.
                                                 a.btn.btn-outline-dark.information-container__btn(href='#') Подробнее
 
@@ -139,7 +156,7 @@ block content
                                         .row
                                             .col-12
                                                 span.information-container__title.information-container__blum-title Фурнитура Blum — безупречное австрийское качество
-                                            .col-xl-6.mb-4.mb-xl-0
+                                            .col-xl-6.mb-5.mb-xl-0
                                                 .information-container__blum-block
                                                     .information-container__blum-img
                                                         img(src='assets/img/information-container__blum-1.jpg')
@@ -158,11 +175,11 @@ block content
                                 .col-12.information-container__block
                                     .information-container__handrails
                                         .row
-                                            .col-7
+                                            .col-xl-7
                                                 span.information-container__title.information-container__handrails-title Поручни для лестницы
                                                 p.information-container__handrails-subTitle Подбираем поручень под дизайн интерьера.
                                                 .row
-                                                    .col-6
+                                                    .col-sm-6
                                                         ul.information-container__handrails-list
                                                             li.information-container__handrails-item
                                                                 p Богатый выбор форм
@@ -174,7 +191,7 @@ block content
                                                                 p П-образная
                                                             li.information-container__handrails-item
                                                                 p фигурная, изогнутая
-                                                    .col-6
+                                                    .col-sm-6
                                                         ul.information-container__handrails-list
                                                             li.information-container__handrails-item
                                                                 p Материалов
@@ -185,7 +202,7 @@ block content
                                                             li.information-container__handrails-item
                                                                 p нержавеющая сталь
                                                     .col-12
-                                                        p Возможна установка поручня на стеклянное <br> ограждение.
+                                                        p.information-container__handrails-text Возможна установка поручня на стеклянное <br> ограждение.
                                                         a.btn.btn-outline-dark.information-container__btn.information-container__handrails-btn(href='#') Подробнее
 
 

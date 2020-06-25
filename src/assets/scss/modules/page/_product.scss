@@ -14,6 +14,11 @@
   margin-top: 33px;
 }
 
+.product-page__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .product-page__row {
   display: flex;
   flex-direction: column;
@@ -244,6 +249,8 @@ li.product-page__column-item {
 .product-page__order {
   display: flex;
   flex-direction: column;
+  margin-right: auto;
+  margin-bottom: 16px;
 }
 
 .product-page__order-block {
@@ -261,6 +268,7 @@ li.product-page__column-item {
   justify-content: center;
   margin-left: 16px;
   cursor: pointer;
+  margin-right: 16px;
 }
 
 .product-page__order-block-btn {
@@ -270,7 +278,6 @@ li.product-page__column-item {
 }
 
 .product-page__guarantee {
-  margin-left: auto;
   background: #ffffff;
   border-bottom: 3px solid $secondary;
   min-width: 226px;
@@ -346,4 +353,131 @@ li.product-page__column-item {
 
 .product-page__description {
   margin-bottom: 0;
+}
+
+.product-page__guarantee-mobil {
+  display: none;
+  border-bottom: 0;
+}
+
+@media (max-width: 1600px) {
+  .product-section {
+    .container {
+      max-width: 100% !important;
+    }
+  }
+}
+
+
+@media (max-width: 1199.98px) {
+  .product-page__material-card-img {
+    min-width: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 767.97px) {
+  .product-section {
+    padding-top: 0;
+  }
+
+  .product-page-social {
+    display: none;
+  }
+
+  .product-page_wrapper {
+    margin-top: 17px;
+
+    & > nav {
+      display: none;
+    }
+  }
+
+  .product-section__title {
+    margin-top: 17px;
+    font-size: 18px;
+  }
+
+  .product-page__guarantee {
+    display: none;
+  }
+
+  .product-page__price {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+
+  .product-page__row:first-of-type:after {
+    display: none;
+  }
+
+  .product-page__row:first-of-type {
+    margin-top: 9px;
+    padding-top: 0;
+  }
+
+  .product-page__order {
+    margin-bottom: 0;
+  }
+
+  .product-page__row {
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+
+    &:before {
+      left: 8px;
+    }
+  }
+
+  .product-page__material {
+    height: auto;
+    margin-bottom: 9px;
+  }
+
+  .product-page__material-card-body {
+    padding-top: 10px;
+    padding-left: 13px;
+  }
+
+  .product-page__material-card-body-text {
+    margin-bottom: 6px;
+  }
+
+  .product-page__material-card-img span {
+    display: none;
+  }
+
+  .product-page__material-radio {
+    max-width: 30px !important;
+    justify-content: center;
+  }
+
+  .product-page__material-card-img {
+    min-width: 91px;
+    width: 91px;
+    height: auto;
+  }
+
+  .product-page__parameters-item {
+    margin-bottom: 9px;
+    display: flex;
+
+    span {
+      min-width: 100px;
+      display: block;
+      margin-right: 19px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .product-page__parameters {
+    margin-bottom: 24px;
+  }
+
+  .product-page__guarantee-mobil {
+    display: flex;
+  }
 }

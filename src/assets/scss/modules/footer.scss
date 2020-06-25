@@ -87,6 +87,18 @@ footer {
   //  max-width: calc(50% + 8px);
   //  margin-left: auto;
   //}
+
+  @media (max-width: 1600px) {
+    .footer .container {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    .footer__production {
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 1199.98px) {
