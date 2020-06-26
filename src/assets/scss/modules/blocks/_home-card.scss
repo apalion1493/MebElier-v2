@@ -1,0 +1,37 @@
+.home-card {
+  border: none;
+
+  .card-body {
+    padding: 23px 0 0 0;
+  }
+
+  .card-title {
+    font-weight: bold;
+    font-size: rem(32);
+    line-height: rem(39);
+    color: $mainFontColor;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .card-text {
+    font-size: rem(16);
+    line-height: rem(20);
+    color: $fonts-color-2;
+    margin-bottom: 0;
+  }
+
+  .card-img-block {
+    max-height: 589px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: auto;
+      height: 100%;
+    }
+  }
+}

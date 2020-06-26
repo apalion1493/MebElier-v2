@@ -38,6 +38,10 @@ h1, .h1 {
   text-transform: uppercase;
 }
 
+h2, .h2 {
+  font-size: rem(36);
+}
+
 a { text-decoration: none; }
 
 p {
@@ -372,6 +376,7 @@ button {
 @import "modules/page/catalog";
 @import "modules/page/portfolio";
 @import "modules/page/product";
+@import "modules/page/home";
 
 @import "modules/footer";
 @import "modules/header";
@@ -386,3 +391,4 @@ button {
 @import "modules/blocks/category-block";
 @import "modules/blocks/product-image";
 @import "modules/blocks/information-container";
+@import "modules/blocks/home-card";

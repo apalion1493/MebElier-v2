@@ -53,3 +53,11 @@ mixin portfolioCard(bgImage, titleText, regionText, expirationDate, dataText)
               td Дата:
               td=dataText
         a(href='#').btn.btn-outline-light.portfolioCard__btn подробнее
+
+mixin customProducts(title, text, altImage, urlImage, wrapperClass)
+  .card(class=wrapperClass)
+    .card-img-block
+      img.card-img-top(src='assets/img/'+urlImage+'' alt=altImage)
+    .card-body
+      h5.card-title=title
+      p.card-text=text
