@@ -134,8 +134,8 @@ $('.product-image').each(function() {
 
     let sLightbox = $(this);
     sLightbox.slickLightbox({
-        // src: element.src,
-        itemSelector: '.product-image__block span',
+        src: 'data-src',
+        itemSelector: '.product-image__wrapper span',
         lazy: true,
     });
 });
