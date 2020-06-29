@@ -3,14 +3,37 @@ extends ../layout/main
 block variables
     - var title = 'Home';
     - var description = 'Home';
-    - var pageClass = 'index-page';
+    - var pageClass = 'index-page index-page__home';
 
 block content
+    section.home-section-firstSlide
+        .home-section-firstSlide__slider
+            .home-section-firstSlide__slider-item(style='background-image: url(/assets/img/home-first-bg.jpg)')
+            .home-section-firstSlide__slider-item(style='background-image: url(/assets/img/home-first-bg.jpg)')
+            .home-section-firstSlide__slider-item(style='background-image: url(/assets/img/home-first-bg.jpg)')
+            .home-section-firstSlide__slider-item(style='background-image: url(/assets/img/home-first-bg.jpg)')
+
+        .container.home-section-firstSlide__container
+            .row
+                .col-7
+                    .home-section-firstSlide__content
+                        h1.h1.home-section-firstSlide__title Изделия из дерева
+                        span.home-section-firstSlide__subTitle Делаем на заказ мебель, лестницы и двери.
+                        .home-section-firstSlide__wrapper
+                            .home-section-firstSlide__block
+                                i.home-section-firstSlide__block-icon.bookshelves-red-icon
+                                p Все товары делаются назаказ. Все уникально и под вас
+                            .home-section-firstSlide__block
+                                i.home-section-firstSlide__block-icon.badge-red-icon
+                                p Гарантия на всю продукцию 3 года
+
+
+
     section.home-section-customProducts
         .container
             .row
                 .col-12
-                    h2.h2.text-center Изделия на заказ
+                    h2.h2.home-section-customProducts__title Изделия на заказ
                 .col-4
                     a.home-section-customProducts__link(href='#')
                         +customProducts('Мебель', 'Изготавливаем на заказ красивую и функциональную мебель из дерева, МДФ, ДСП по индивидуальным проектам под бюджет клиента. Как для вашей квартиры или дома (в прихожую, гостиную, спальню, детскую, кухню, ванную), так и для офиса, магазина, шоу-рума и т.д.\n', 'img', 'home-card-1.jpg', 'home-card')
@@ -28,13 +51,13 @@ block content
             .row
                 .col-12
                     h2.h2.text-center.home-section-quality__title Мебельер — надежность и <br> качество в каждой детали!
-                .col-3
+                .col-xl-3.col-lg-6
                     +customProducts('Никаких раздражающих скрипов', 'Используем правильно высушенную древесину. Подгонку деталей выполняем на высокоточном оборудовании.', 'no-squeaks', 'home-section-quality__card-img-1.png', 'home-section-quality__card')
-                .col-3
+                .col-xl-3.col-lg-6
                     +customProducts('Триплекс — безопасно, надежно, стильно', 'При повреждении не рассыпается на осколки. Можно изготовить в любом цвете, нанести художественную матировку, выполнить УФ-печать.', 'no-squeaks', 'home-section-quality__card-img-2.png', 'home-section-quality__card')
-                .col-3
+                .col-xl-3.col-lg-6
                     +customProducts('Фурнитура Blum — безупречное австрийское качество', 'Петли Blum самые долговечные (до 200 000 циклов открываний-закрываний) и бесшумные (никаких раздражающих скрипов)', 'no-squeaks', 'home-section-quality__card-img-3.png', 'home-section-quality__card')
-                .col-3
+                .col-xl-3.col-lg-6
                     +customProducts('Подсветка', 'Монтаж выполняют опытные специалисты (ваша страховка от короткого замыкания и пожара вследствие непрофессионального монтажа).', 'no-squeaks', 'home-section-quality__card-img-4.png', 'home-section-quality__card')
 
     section.home-section-popularModels
@@ -43,7 +66,7 @@ block content
                 .col-12
                     span.h3.home-section-popularModels__title популярные модели
 
-                    ul#pills-tab.nav.nav-pills.mb-3.home-section-popularModels__tab(role='tablist')
+                    ul#pills-tab.nav.nav-pills.home-section-popularModels__tab(role='tablist')
                         li.nav-item(role='presentation')
                             a#pills-home-tab.nav-link.active(data-toggle='pill' href='#pills-home' role='tab' aria-controls='pills-home' aria-selected='true') Лестницы
                         li.nav-item(role='presentation')
@@ -61,60 +84,86 @@ block content
                                 +productCard('card-product card-product_top-left', 'catalog-6.png', 'Винтовая дизайнерская', '79 990 грн.')
                                 +productCard('card-product card-product_top-left', 'catalog-8.png', 'Винтовая дизайнерская', '79 990 грн.')
 
-                            a.btn.btn-dark(href='#') Перейти в каталог
-                        #pills-profile.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab') ...
-                        #pills-contact.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab') ...
+                            a.btn.btn-dark.home-section-popularModels__btn(href='#') Перейти в каталог
+
+                        #pills-profile.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab')
+                            .home-section-popularModels__catalog
+                                +productCard('card-product card-product_bottom-left active', 'catalog-1.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                +productCard('card-product card-product_top-left', 'catalog-2.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                                +productCard('card-product card-product_top-left', 'catalog-3.png', 'Дизайнерская лестница', '149 990 грн.')
+                                +productCard('card-product card-product_top-left', 'catalog-7.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                +productCard('card-product card-product_top-left', 'catalog-5.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                +productCard('card-product card-product_top-left', 'catalog-6.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                +productCard('card-product card-product_top-left', 'catalog-8.png', 'Винтовая дизайнерская', '79 990 грн.')
+
+                            a.btn.btn-dark.home-section-popularModels__btn(href='#') Перейти в каталог
+
+                        #pills-contact.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab')
+                            .home-section-popularModels__catalog
+                                +productCard('card-product card-product_bottom-left active', 'catalog-1.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                +productCard('card-product card-product_top-left', 'catalog-2.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                                +productCard('card-product card-product_top-left', 'catalog-3.png', 'Дизайнерская лестница', '149 990 грн.')
+                                +productCard('card-product card-product_top-left', 'catalog-7.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                +productCard('card-product card-product_top-left', 'catalog-5.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                +productCard('card-product card-product_top-left', 'catalog-6.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                +productCard('card-product card-product_top-left', 'catalog-8.png', 'Винтовая дизайнерская', '79 990 грн.')
+
+                            a.btn.btn-dark.home-section-popularModels__btn(href='#') Перейти в каталог
 
     section.home-section-showRoom
         .container
             .row
-                .col-8
+                .col-xl-8
                     .row
                         .col-6.mb-3
                             img.w-100(src='assets/img/home-section-showRoom-01.jpg')
                         .col-6.mb-3
                             img.w-100(src='assets/img/home-section-showRoom-02.jpg')
-                        .col-6.mb-3
+                        .col-md-6.mb-3
                             .row
                                 .col-6
                                     img.w-100(src='assets/img/home-section-showRoom-03.jpg')
                                 .col-6
                                     img.w-100(src='assets/img/home-section-showRoom-04.jpg')
-                        .col-6.mb-3
+                        .col-md-6.mb-3
                             .row
                                 .col-6
                                     img.w-100(src='assets/img/home-section-showRoom-05.jpg')
                                 .col-6
+                                    a.home-section-showRoom__map(href='#')
+                                        i.marker-icon
+                                        span Посмотреть на карте
 
-                .col-4
-                    div
-                        span.h4 Наш SHOW ROOM
-                        p Мы предлагаем как изготовление отдельных изделий из дерева и других мебельных материалов, так и комплексные интерьерные решения “под ключ” — мебель, лестница, двери, стеновые панели, плинтуса, потолочные карнизы, реечные потолки в едином стиле.
-                        p Наш шоу-рум — наглядный пример реализации интерьерного решения. Это квартира, в которой условная гостиная, санузел, кухня, стеновые панели, реечный потолок, шкаф хранения и прихожая выполнены в едином стиле.
-                        p Напротив шоу-рума (через коридор) расположен наш магазин с образцами дверей из натурального дерева.
-                        p На нашем сайте представлена лишь малая часть того, что мы можем изготовить на заказ. Приходите к нам, за чашечкой кофе расскажите о своих идеях и пожеланиях, и узнайте наше профессиональное видение их реализации.
-                        div
-                            span Адрес
-                            address Одесса, Люстдорфская дорога, 1
-                            div
-                                p ПП - ПТ:
+                .col-xl-4
+                    .home-section-showRoom__wrapper
+                        span.h3.home-section-showRoom__title Наш SHOW ROOM
+                        p.home-section-showRoom__text Мы предлагаем как изготовление отдельных изделий из дерева и других мебельных материалов, так и комплексные интерьерные решения “под ключ” — мебель, лестница, двери, стеновые панели, плинтуса, потолочные карнизы, реечные потолки в едином стиле.
+                        p.home-section-showRoom__text Наш шоу-рум — наглядный пример реализации интерьерного решения. Это квартира, в которой условная гостиная, санузел, кухня, стеновые панели, реечный потолок, шкаф хранения и прихожая выполнены в едином стиле.
+                        p.home-section-showRoom__text Напротив шоу-рума (через коридор) расположен наш магазин с образцами дверей из натурального дерева.
+                        p.home-section-showRoom__text На нашем сайте представлена лишь малая часть того, что мы можем изготовить на заказ. Приходите к нам, за чашечкой кофе расскажите о своих идеях и пожеланиях, и узнайте наше профессиональное видение их реализации.
+                        .home-section-showRoom__wrapper-footer
+                            span.home-section-showRoom__wrapper-footer-title Адрес
+                            address.home-section-showRoom__text Одесса, Люстдорфская дорога, 1
+                            .home-section-showRoom__block
+                                p.home-section-showRoom__text ПП - ПТ:
                                     span 10:00 — 19:00,
-                                p СБ, ВС:
+                                p.home-section-showRoom__text СБ, ВС:
                                     span 10:00 — 17:00
 
     section.home-section-noRestrictions
         .container
             .row
-                .col-6
-                    div
-                        div
-                            span.h3 Для нас нет ограничений
-                            p Для нас нет ограничений — изготовим изделие из дерева и других мебельных материалов любой сложности.
-                            p Время — деньги. Не тратьте драгоценное время на утомительные многочасовые поиски готовой мебели, которая бы гармонично вписалась в ваш интерьер. Лучше за разумные деньги закажите отдельное изделие из дерева или интерьерное решение на Ваш вкус и по требуемым размерам — именно то, что Вам надо!
+                .col-lg-6
+                    div.home-section-noRestrictions__content
+                        span.h3.home-section-noRestrictions__title Для нас нет ограничений
+                        .home-section-noRestrictions__content-body
+                            p.home-section-noRestrictions__text Для нас нет ограничений — изготовим изделие из дерева и других мебельных материалов любой сложности.
+                            p.home-section-noRestrictions__text Время — деньги. Не тратьте драгоценное время на утомительные многочасовые поиски готовой мебели, которая бы гармонично вписалась в ваш интерьер. Лучше за разумные деньги закажите отдельное изделие из дерева или интерьерное решение на Ваш вкус и по требуемым размерам — именно то, что Вам надо!
+                            a.btn.btn-outline-dark.home-section-noRestrictions__content-btn(href='#') Опишите свое пожелание
+                .col-lg-6
+                    .home-section-noRestrictions__img
+                        img(src='/assets/img/home-card-1.jpg')
 
-                            a.btn.btn-outline-dark(href='#') Опишите свое пожелание
-                .col-6
-                    img
 
 
 block script

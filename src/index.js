@@ -34,14 +34,6 @@ $('.form-search__bg-close').click(function () {
     $('.header__nav').removeClass('search-open-mobil');
 });
 
-// $('.form-search-mobil__block button').click(function () {
-//     $('.header__nav').removeClass('search-open-mobil');
-// });
-
-$('.phone-icon-mob').click(function () {
-
-});
-
 $('.navbar-toggler').click(function () {
     $('html').toggleClass('overflow-hidden')
 });
@@ -79,6 +71,13 @@ $(window).scroll(function() {
     } else {
         header.removeClass('out');
     }
+
+    if ( scrolled > 90) {
+        header.addClass('header__home-page');
+    } else {
+        header.removeClass('header__home-page');
+    }
+
     scrollPrev = scrolled;
 });
 
@@ -138,6 +137,21 @@ $('.product-image').each(function() {
         itemSelector: '.product-image__wrapper span',
         lazy: true,
     });
+});
+
+$('.home-section-firstSlide__slider').slick({
+    infinite: false,
+    vertical: true,
+    verticalSwiping: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    swipe: false,
+    autoplay: true,
+    autoplaySpeed: 15000,
+    arrows: false,
+    fade: true,
+    cssEase: 'linear',
+    speed: 500,
 });
 
 // SCSS

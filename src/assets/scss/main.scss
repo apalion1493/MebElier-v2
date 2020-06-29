@@ -262,6 +262,30 @@ section, .section {
   display: block;
 }
 
+.marker-icon {
+  background: url("../../assets/img/marker-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 47px;
+  height: 47px;
+  display: block;
+}
+
+.bookshelves-red-icon {
+  background: url("../../assets/img/bookshelves-red-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 31px;
+  height: 44px;
+  display: block;
+}
+
+.badge-red-icon {
+  background: url("../../assets/img/badge-red-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 47px;
+  height: 47px;
+  display: block;
+}
+
 .breadcrumb {
   background: initial;
   padding: 0;
