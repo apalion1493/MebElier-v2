@@ -11,8 +11,8 @@ html(lang='en')
     block head
 
   body(class=pageClass)
-    .wrapper
-      #app.app
+    #wrapper.wrapper
+      #app.app(class=mainClass)
         include ../includes/modules/header
         .content-wrapper
           block content

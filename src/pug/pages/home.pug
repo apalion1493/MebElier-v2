@@ -3,10 +3,12 @@ extends ../layout/main
 block variables
     - var title = 'Home';
     - var description = 'Home';
-    - var pageClass = 'index-page index-page__home';
+    - var pageClass = 'index-page';
+    - var mainClass = 'index-page__home'
 
 block content
     section.home-section-firstSlide
+        span.pagingInfo
         .home-section-firstSlide__slider
             .home-section-firstSlide__slider-item(style='background-image: url(/assets/img/home-first-bg.jpg)')
             .home-section-firstSlide__slider-item(style='background-image: url(/assets/img/home-first-bg.jpg)')
@@ -15,7 +17,7 @@ block content
 
         .container.home-section-firstSlide__container
             .row
-                .col-7
+                .col-sm-7
                     .home-section-firstSlide__content
                         h1.h1.home-section-firstSlide__title Изделия из дерева
                         span.home-section-firstSlide__subTitle Делаем на заказ мебель, лестницы и двери.
@@ -34,15 +36,15 @@ block content
             .row
                 .col-12
                     h2.h2.home-section-customProducts__title Изделия на заказ
-                .col-4
+                .col-lg-4
                     a.home-section-customProducts__link(href='#')
                         +customProducts('Мебель', 'Изготавливаем на заказ красивую и функциональную мебель из дерева, МДФ, ДСП по индивидуальным проектам под бюджет клиента. Как для вашей квартиры или дома (в прихожую, гостиную, спальню, детскую, кухню, ванную), так и для офиса, магазина, шоу-рума и т.д.\n', 'img', 'home-card-1.jpg', 'home-card')
-                .col-4
+                .col-lg-4
                     a.home-section-customProducts__link(href='#')
                         +customProducts('Лестницы', 'Любая конфигурация: прямые, винтовые, с поворотом и т.д. \n' +
                         'Широкий выбор типов крепления: на косоурах, на тетивах, на больцах и др. \n' +
                         'Оригинальные комбинации: дерево со стеклом, металл со стеклом и др. \n', 'img', 'home-card-2.jpg', 'home-card')
-                .col-4
+                .col-lg-4
                     a.home-section-customProducts__link(href='#')
                         +customProducts('Двери', 'Входные и межкомнатные двери из натурального массива в любом стиле: от классики до модерна. Решения любого у ровня сложности: скрытые, раздвижные, двустворчатые, с витражными стеклами, с резьбой или росписью и т.д. ', 'img', 'home-card-3.jpg', 'home-card')
 

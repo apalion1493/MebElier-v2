@@ -35,3 +35,49 @@
     }
   }
 }
+
+@media (max-width: 991.981px) {
+
+  .home-card {
+    margin-bottom: 40px;
+
+    .card-body {
+      padding-top: 15px;
+    }
+
+    .card-text {
+      font-size: 14px;
+    }
+
+    .card-img-block {
+      overflow: hidden;
+      position: relative;
+      height: 340px;
+
+      img {
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.982px) {
+  .home-card .card-title {
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 8px;
+  }
+
+  .home-card .card-img-block {
+    height: auto;
+
+    img {
+      position: relative;
+      height: 100%;
+      width: auto;
+    }
+  }
+}

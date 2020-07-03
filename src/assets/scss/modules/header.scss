@@ -454,6 +454,10 @@
 }
 
 @media (max-width: 1199.98px) {
+  .header__nav .navbar-brand {
+    padding-bottom: 0;
+  }
+
   .header__nav {
     min-height: 80px;
 
@@ -830,61 +834,90 @@
 //////////////////// HOME PAGE
 
 .index-page__home {
-  .header:not(.header__home-page) {
-    background: initial;
-    box-shadow: none;
-
-
-    .header__nav .navbar-brand,
-    .navbar-light .navbar-nav .nav-link,
-    .header__nav-phone,
-    .dropdown.header__nav-phone-number,
-    .header__nav-phone .dropdown-toggle,
-    .form-search__input {
-      color: #ffffff;
-    }
-
-    .dropdown-toggle:after {
-      background: url("../../../assets/img/check-menu-icon__white.svg") no-repeat center;
-      width: 10px;
-      height: 5px;
-    }
-
-    .form-search__input {
-      background: initial;
-
-      &::-webkit-input-placeholder {
-        color: #ffffff;
-      }
-
-      &:-moz-placeholder {
-        color: #ffffff;
-      }
-
-      &::-moz-placeholder {
-        color: #ffffff;
-      }
-
-      &:-ms-input-placeholder {
-        color: #ffffff;
-      }
-    }
-
-    .form-search__btn {
-      background: url("../../../assets/img/loupe__white.svg") no-repeat center;
-    }
-
-    .header__favorites {
-      background: url("../../../assets/img/passion__white.svg") no-repeat center;
-    }
-
-    .header__shopCard {
-      background: url("../../../assets/img/Union__white.svg") no-repeat center;
-    }
-  }
-
   .content-wrapper {
     padding-top: 0;
   }
+}
 
+#wrapper:not(.menu-open) {
+  .index-page__home {
+    background: red;
+
+    .header:not(.header__home-page) {
+      background: initial;
+      box-shadow: none;
+
+
+      .header__nav .navbar-brand,
+      .navbar-light .navbar-nav .nav-link,
+      .header__nav-phone,
+      .dropdown.header__nav-phone-number,
+      .header__nav-phone .dropdown-toggle,
+      .form-search__input {
+        color: #ffffff;
+      }
+
+      .dropdown-toggle:after {
+        background: url("../../../assets/img/check-menu-icon__white.svg") no-repeat center;
+        width: 10px;
+        height: 5px;
+      }
+
+      .form-search__input {
+        background: initial;
+
+        &::-webkit-input-placeholder {
+          color: #ffffff;
+        }
+
+        &:-moz-placeholder {
+          color: #ffffff;
+        }
+
+        &::-moz-placeholder {
+          color: #ffffff;
+        }
+
+        &:-ms-input-placeholder {
+          color: #ffffff;
+        }
+      }
+
+      .form-search__btn {
+        background: url("../../../assets/img/loupe__white.svg") no-repeat center;
+        background-size: 100% auto;
+      }
+
+      .header__favorites {
+        background: url("../../../assets/img/passion__white.svg") no-repeat center;
+        background-size: 100% auto;
+      }
+
+      .header__shopCard {
+        background: url("../../../assets/img/Union__white.svg") no-repeat center;
+        background-size: 100% auto;
+      }
+
+      .phone-icon-mob {
+        background: url("../../../assets/img/phone-icon__white.svg") no-repeat center;
+        background-size: 100% auto;
+      }
+
+      .navbar-toggler {
+        background: initial;
+      }
+
+      .header__nav .navbar-toggler-icon {
+        background: #ffffff;
+
+        &:before, &:after {
+          background: #ffffff;
+        }
+      }
+
+      .header__nav .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+        background: initial;
+      }
+    }
+  }
 }
