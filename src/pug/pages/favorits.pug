@@ -1,0 +1,77 @@
+extends ../layout/main
+
+block variables
+    - var title = 'favorits';
+    - var description = 'favorits';
+    - var pageClass = 'index-page';
+
+block content
+    section.favorits-section
+        .container-fluid
+            .row
+                .col-12
+                    h1.h1.favorits-section__title Избранное
+                    .favorits-section__wrapper
+                        #list-tab.list-group.favorits-section__tab(role='tablist')
+                            a#list-home-list.list-group-item.list-group-item-action.active(data-toggle='list' href='#list-home' role='tab' aria-controls='home') Мебель
+                            a#list-profile-list.list-group-item.list-group-item-action(data-toggle='list' href='#list-profile' role='tab' aria-controls='profile') Лестницы
+                            a#list-messages-list.list-group-item.list-group-item-action(data-toggle='list' href='#list-messages' role='tab' aria-controls='messages') Двери
+                .col-12
+                    #nav-tabContent.tab-content.favorits-section__tabContent
+                        #list-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='list-home-list')
+                            .container
+                                .row
+                                    .col-12
+                                        .favorits-catalog
+                                            +productCard('card-product card-product_bottom-left active', 'catalog-1.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                            +productCard('card-product card-product_top-left', 'catalog-4.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                                            +productCard('card-product card-product_bottom-left', 'catalog-7.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                            +productCard('card-product card-product_top-left', 'catalog-2.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                                            +productCard('card-product card-product_bottom-left', 'catalog-8.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                            +productCard('card-product card-product_top-left', 'catalog-2.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                                            +productCard('card-product card-product_bottom-left', 'catalog-5.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                            +productCard('card-product card-product_top-left', 'catalog-8.png', 'Со стеклянными ограждениями', '220 990 грн.')
+
+                                    .col-12
+                                        a(href='#').btn.btn-dark.mx-auto.portfolio-list__btn.mb-5 Показать еще
+                        #list-profile.tab-pane.fade(role='tabpanel' aria-labelledby='list-profile-list')
+                            .container
+                                .row
+                                    .col-12
+                                        .favorits-catalog
+                                            +productCard('card-product card-product_bottom-left active', 'catalog-1.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                            +productCard('card-product card-product_top-left', 'catalog-4.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                                            +productCard('card-product card-product_bottom-left', 'catalog-7.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                            +productCard('card-product card-product_top-left', 'catalog-2.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                                            +productCard('card-product card-product_bottom-left', 'catalog-8.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                            +productCard('card-product card-product_top-left', 'catalog-2.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                                            +productCard('card-product card-product_bottom-left', 'catalog-5.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                            +productCard('card-product card-product_top-left', 'catalog-8.png', 'Со стеклянными ограждениями', '220 990 грн.')
+
+                                    .col-12
+                                        a(href='#').btn.btn-dark.mx-auto.portfolio-list__btn.mb-5 Показать еще
+                        #list-messages.tab-pane.fade(role='tabpanel' aria-labelledby='list-messages-list')
+                            .container
+                                .row
+                                    .col-12
+                                        .favorits-catalog
+                                            +productCard('card-product card-product_bottom-left active', 'catalog-1.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                            +productCard('card-product card-product_top-left', 'catalog-4.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                                            +productCard('card-product card-product_bottom-left', 'catalog-7.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                            +productCard('card-product card-product_top-left', 'catalog-2.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                                            +productCard('card-product card-product_bottom-left', 'catalog-8.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                            +productCard('card-product card-product_top-left', 'catalog-2.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                                            +productCard('card-product card-product_bottom-left', 'catalog-5.png', 'Винтовая дизайнерская', '79 990 грн.')
+                                            +productCard('card-product card-product_top-left', 'catalog-8.png', 'Со стеклянными ограждениями', '220 990 грн.')
+
+                                    .col-12
+                                        a(href='#').btn.btn-dark.mx-auto.portfolio-list__btn.mb-5 Показать еще
+
+
+
+block script
+
+
+block head
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css' rel='stylesheet')
