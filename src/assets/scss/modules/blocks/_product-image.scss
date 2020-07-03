@@ -87,6 +87,7 @@
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
+  min-width: 100%;
 
   &:active {
     cursor: grabbing;
@@ -97,6 +98,9 @@
     height: 100%;
     object-fit: cover;
     max-width: initial;
+    //position: absolute;
+    //min-width: 100%;
+    //bottom: 0;
   }
 }
 

@@ -1,0 +1,107 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Product';
+    - var description = 'Product';
+    - var pageClass = 'index-page reduced-footer';
+    - var footerMin = true;
+
+block content
+    section.product-section
+        .container
+            .row
+                .col-md-6
+                    .product-image.items
+                        .product-image__wrapper
+                            span(data-src='assets/img/product-img-2.jpg')
+                            .product-image__block
+                                img(src='assets/img/product-img-2.jpg' )
+                        .product-image__wrapper
+                            span(data-src='assets/img/product-img-2.jpg')
+                            .product-image__block
+                                img(src='assets/img/product-img-2.jpg')
+                        .product-image__wrapper
+                            span(data-src='assets/img/product-img-2.jpg')
+                            .product-image__block
+                                img(src='assets/img/product-img-2.jpg')
+                        .product-image__wrapper
+                            span(data-src='assets/img/product-img-2.jpg')
+                            .product-image__block
+                                img(src='assets/img/product-img-2.jpg')
+
+                .col-md-6
+                    .product-page.product-page_wrapper
+                        nav(aria-label='breadcrumb')
+                            ol.breadcrumb
+                                li.breadcrumb-item
+                                    a(href='#') Главная
+                                li.breadcrumb-item
+                                    a(href='#') Портфолио
+                                li.breadcrumb-item.active(aria-current='page') Фасад камина
+                        h2.h2.product-section__title Фасад камина
+                        .product-page__left-column
+                            .product-page__row.row
+                                .col-lg-10
+                                    ul.product-page__list
+                                        li.product-page__list-li
+                                            span Регион:
+                                            p Одесса
+                                        li.product-page__list-li
+                                            span Срок производства:
+                                            p 25 дней
+                                        li.product-page__list-li
+                                            span Дата:
+                                            p 10 мая 2021
+                                    p.product-page__description.mb-5.pb-2 В целом, конечно, граница обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании своевременного выполнения сверхзадачи! Господа, перспективное планирование играет определяющее значение для поставленных обществом задач.
+                                    a.btn.btn-dark.product-page__button(href='#') Заказать подобный проект
+
+                                    .product-page__videoBlock
+                                        span.product-page__videoBlock-title Видео производства:
+                                        .product-page__videoBlock-wrapper
+                                            iframe(src='https://www.youtube.com/embed/e51bI9GovXY?start=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                                .col-lg-2
+                                    .product-page-social
+                                        a(href='#').product-page-social__item
+                                            span.pinterest-icon-product
+                                        a(href='#').product-page-social__item
+                                            span.inst-icon-product
+                                        a(href='#').product-page-social__item
+                                            span.facebook-icon-product
+                                        a(href='#').product-page-social__item
+                                            span.twitter-icon-product
+                            .row.mb-5.mt-4.pt-3
+                                .col-xl-6.mb-xl-0.mb-4
+                                    .product-page__column
+                                        .product-page__column-img
+                                            i.interior-icon
+                                        .product-page__column-body
+                                            span Дизайн и визуализация
+                                            p Разработаем бесплатно проект под ваш интерьер. Вы сможете заранее представить как это будет выглядеть
+                                .col-xl-6
+                                    .product-page__column
+                                        .product-page__column-img
+                                            i.feedback-icon
+                                        .product-page__column-body
+                                            span Бесплатно по всей Украине
+                                            ul.product-page__column-list.red-squares-list
+                                                li.product-page__column-item.red-squares-list__item
+                                                    p Выезд мастера и дизайнера
+                                                li.product-page__column-item.red-squares-list__item
+                                                    p Сборка и монтаж
+                                                li.product-page__column-item.red-squares-list__item
+                                                    p Доставка
+
+
+
+
+
+
+
+
+
+block script
+
+
+block head
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css' rel='stylesheet')
