@@ -39,7 +39,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: rem(36);
+  font-size: rem(32);
 }
 
 a { text-decoration: none; }
@@ -375,7 +375,7 @@ button {
   }
 
   h2, .h2 {
-
+    font-size: rem(22);
   }
 
   h4, .h4 {
@@ -428,3 +428,4 @@ button {
 @import "modules/blocks/product-image";
 @import "modules/blocks/information-container";
 @import "modules/blocks/home-card";
+@import "modules/blocks/advantagesAndDisadvantages";

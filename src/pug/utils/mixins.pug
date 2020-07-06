@@ -61,3 +61,11 @@ mixin customProducts(title, text, altImage, urlImage, wrapperClass)
     .card-body
       h5.card-title=title
       p.card-text=text
+
+mixin stepMaking(wrapperClass, urlImage, altImage, text, num)
+  .card(class=wrapperClass)
+    .card-img-block
+      span.card__num=num
+      img.card-img-top(src='assets/img/' + urlImage + '' alt=altImage)
+    .card-body
+      p.card-text=text

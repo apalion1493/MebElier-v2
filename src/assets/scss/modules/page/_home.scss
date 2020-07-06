@@ -469,6 +469,7 @@
 
   img {
     object-fit: cover;
+    width: 100%;
   }
 }
 
@@ -489,6 +490,16 @@
   text-transform: uppercase;
   display: block;
   margin-bottom: 33px;
+}
+
+.home-section-noRestrictions__content-subtitle {
+  font-weight: 800;
+  font-size: rem(18);
+  line-height: rem(22);
+  text-transform: uppercase;
+  color: $fonts-color-2;
+  display: block;
+  margin-bottom: 29px;
 }
 
 .home-section-noRestrictions__content-btn {
@@ -545,6 +556,25 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.advantagesAndDisadvantages {
+  padding-bottom: 60px;
+}
+
+.advantagesAndDisadvantages__title {
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: $mainFontColor;
+  display: block;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 1600px) {
+  .home-section-noRestrictions__img {
+    margin-right: 0;
   }
 }
 

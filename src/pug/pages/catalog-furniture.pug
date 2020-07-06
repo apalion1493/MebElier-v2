@@ -1,0 +1,196 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Catalog-furniture';
+    - var description = 'Catalog-furniture';
+    - var pageClass = 'index-page';
+
+block content
+    section.catalog-first-section
+        .container
+            .row
+                .col-xl-5.bg-white-color
+                    nav(aria-label='breadcrumb')
+                        ol.breadcrumb
+                            li.breadcrumb-item
+                                a(href='#') Главная
+                            li.breadcrumb-item.active(aria-current='page') Мебель
+                    h1.h1 Мебель на заказ
+                    .red-squares-list__wrapper
+                        p Фабрика «Мебельер» изготавливает мебель на заказ “под ключ”, начиная от выезда замерщика и заканчивая сборкой изделия. Создаём мебель из натурального массива дерева, МДФ, ДСП и других мебельных материалов в стилях Лофт, Классика, Прованс, Модерн и др.
+                        ul.red-squares-list
+                            li.red-squares-list__item
+                                span Собственное производство
+                                p Мебель изготавливается на новейших автоматизированных производственных линиях опытными специалистами. Цены от производителя без накруток посредников. Гарантия 3 года.
+                            li.red-squares-list__item
+                                span Мебель на любой вкус и бюджет
+                                p Цены расчитаны под стандартный проект, ваши требования могут отличатся, мы бесплатно сделаем расчет.
+                            li.red-squares-list__item
+                                span РБесплатный сервис
+                                p Замер, визуализация проекта, доставка и сборка бесплатно!
+                            li.red-squares-list__item
+                                span Работаем по всей Украине
+                                p Фабрика находится в городе Бердичев (Житомирская область). Доставим мебель бесплатно в любую точку Украины.
+                .col-xl-7
+                    .catalog-slider
+                        h4.catalog-slider__title Виды Мебели
+                        .catalog-slider__list
+                            +type-stair('type-stair-1.jpg', 'Кухни', 'Создадим интерьер кухни специально под Вас, чтобы Вы готовили и наслаждались вкусной пищей в идеальной обстановке.')
+                            +type-stair('type-stair-2.jpg', 'Гостиные', 'Изготовим гостиную мебель, которая будет восхищать друзей и способствовать веселому общению.')
+                            +type-stair('type-stair-3.jpg', 'Спальни', 'Делаем на заказ мебель для спальни, благодаря которой сон будет по-настоящему комфортным.')
+                            +type-stair('type-stair-4.jpg', 'Прихожие', 'Наши прихожие создают отличное первое впечатление о доме и демонстрируют хороший вкус хозяев.')
+
+    section.catalog-second-section
+        .container.catalog-filter
+            .row
+                .col-xl-5
+                    span.h2.catalog-filter__title Каталог моделей
+                .col-xl-7
+                    .catalog-filter__list
+                        .catalog-filter__item
+                            .form-group
+                                label(for='inputStateTypeFirst') Тип лестниц:
+                                select#inputStateTypeFirst.form-control
+                                    option(selected='selected') Все типы
+                                    option a
+                                    option as
+                                    option gdfgmsjdfhgjsdfhgjs
+                                    option dfasdf
+                        .catalog-filter__item
+                            .form-group
+                                label(for='inputStateTypeSecond') Ограждение:
+                                select#inputStateTypeSecond.form-control
+                                    option(selected='selected') Любое
+                                    option a
+                                    option as
+                                    option gdfgmsjdfhgjsdfhgjs
+                                    option dfasdf
+                        .catalog-filter__item
+                            .form-group
+                                label(for='inputStateTypeThird') Материал ступений:
+                                select#inputStateTypeThird.form-control
+                                    option(selected='selected') Любое
+                                    option a
+                                    option as
+                                    option gdfgmsjdfhgjsdfhgjs
+                                    option dfasdf
+        .container.catalog-container
+            .row
+                .col-12
+                    .catalog-second-section__wrapper
+                        +productCard('card-product card-product_bottom-left active', 'catalog-mebel-1.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-mebel-2.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-mebel-3.png', 'Дизайнерская лестница', '149 990 грн.')
+                        +productCard('card-product card-product_top-left dark-background', 'catalog-mebel-4.png', 'Дизайнерская кухня', '149 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-mebel-5.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-mebel-6.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        .backlight-block
+                            .backlight-block__content
+                                span.backlight-block__content-title Подсветка
+                                p.backlight-block__content-text Светодиодные ленты высокого качества (не перегорят через неделю).
+                                p.backlight-block__content-text Монтаж выполняют опытные специалисты (ваша страховка от короткого замыкания и пожара вследствие непрофессионального монтажа).
+                                a(href='#' class='btn btn-outline-light backlight-block__content-btn') Подробнее
+                        +productCard('card-product card-product_top-left', 'catalog-mebel-7.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-mebel-8.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        +productCard('card-product card-product_top-left', 'catalog-mebel-9.png', 'Современная деревянная лестница', '79 990 грн.')
+                        +productCard('card-product card-product_top-left dark-background', 'catalog-mebel-10.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                        +productCard('card-product card-product_bottom-left dark-background', 'catalog-mebel-11.png', 'Дизайнерская лестница', '149 990 грн.')
+
+                    button.btn.btn-dark.catalog-container__btn Загрузить еще 12 товаров
+
+    section.advantagesAndDisadvantages
+        .container
+            .row
+                .col-12
+                    h2.h2.advantagesAndDisadvantages__title Из чего делаем мебель на заказ?
+                .col-xl-4.col-lg-6.mb-xl-0.mb-5
+                    .advantagesAndDisadvantagesBlock
+                        .advantagesAndDisadvantagesBlock__img(style='background-image: url(../../assets/img/advantagesAndDisadvantagesBlock-img-1.png)')
+                        .advantagesAndDisadvantagesBlock__content
+                            span.advantagesAndDisadvantagesBlock__content-title ДЕРЕВО
+                            span.advantagesAndDisadvantagesBlock__content-subtitle Респектабельно. Экологично. Прочно.
+                            span.advantagesAndDisadvantagesBlock__content-caption Преимущества:
+
+                            - var values = ['респектабельный внешний вид;', 'богатый выбор текстур;', 'ремонтопригодность (механические повреждения устраняются проще и дешевле, чем на ДСП или МДФ)', 'долгий срок службы.'];
+                            ul.advantagesAndDisadvantagesBlock__list.advantagesAndDisadvantagesBlock__list-plus.mb-4.pb-2
+                                each val in values
+                                    li.advantagesAndDisadvantagesBlock__item= val
+
+                            span.advantagesAndDisadvantagesBlock__content-caption Недостатки:
+
+                            - var values = ['высокая цена.'];
+                            ul.advantagesAndDisadvantagesBlock__list.advantagesAndDisadvantagesBlock__list-minus
+                                each val in values
+                                    li.advantagesAndDisadvantagesBlock__item= val
+                .col-xl-4.col-lg-6.mb-xl-0.mb-5
+                    .advantagesAndDisadvantagesBlock
+                        .advantagesAndDisadvantagesBlock__img(style='background-image: url(../../assets/img/advantagesAndDisadvantagesBlock-img-2.png)')
+                        .advantagesAndDisadvantagesBlock__content
+                            span.advantagesAndDisadvantagesBlock__content-title МДФ
+                            span.advantagesAndDisadvantagesBlock__content-subtitle Стильно. Надежно. Доступно.
+                            span.advantagesAndDisadvantagesBlock__content-caption Преимущества:
+
+                            - var values = ['экологически чистый;', 'любые формы;', 'широкая цветовая палитра;', 'отличная декоративность (рельефные объемы и рисунки);', 'устойчив к влаге (превосходит даже натуральное дерево);', 'высокая устойчивость к сколам и механическим воздействиям;', 'дешевле, чем натуральное дерево.'];
+                            ul.advantagesAndDisadvantagesBlock__list.advantagesAndDisadvantagesBlock__list-plus.mb-4.pb-2
+                                each val in values
+                                    li.advantagesAndDisadvantagesBlock__item= val
+
+                            span.advantagesAndDisadvantagesBlock__content-caption Недостатки:
+
+                            - var values = ['только имитирует дерево, но не передает природное тепло;', 'легко царапается в отличие от массива;', 'дороже, чем ДСП.'];
+                            ul.advantagesAndDisadvantagesBlock__list.advantagesAndDisadvantagesBlock__list-minus
+                                each val in values
+                                    li.advantagesAndDisadvantagesBlock__item= val
+                .col-xl-4.col-lg-6.mb-xl-0.mb-5
+                    .advantagesAndDisadvantagesBlock
+                        .advantagesAndDisadvantagesBlock__img(style='background-image: url(../../assets/img/advantagesAndDisadvantagesBlock-img-3.png)')
+                        .advantagesAndDisadvantagesBlock__content
+                            span.advantagesAndDisadvantagesBlock__content-title ДСП
+                            span.advantagesAndDisadvantagesBlock__content-subtitle Недорого. Привлекательно. Достойно.
+                            span.advantagesAndDisadvantagesBlock__description Используем только ДСП класса Е1, безопасный для здоровья.
+                            span.advantagesAndDisadvantagesBlock__content-caption Преимущества:
+
+                            - var values = ['низкая цена;', 'многообразие цветов;', 'хорошая прочность.'];
+                            ul.advantagesAndDisadvantagesBlock__list.advantagesAndDisadvantagesBlock__list-plus.mb-4.pb-2
+                                each val in values
+                                    li.advantagesAndDisadvantagesBlock__item= val
+
+                            span.advantagesAndDisadvantagesBlock__content-caption Недостатки:
+
+                            - var values = ['только прямые, строго геометрические формы;', 'менее прочный, чем МДФ.'];
+                            ul.advantagesAndDisadvantagesBlock__list.advantagesAndDisadvantagesBlock__list-minus
+                                each val in values
+                                    li.advantagesAndDisadvantagesBlock__item= val
+    section.stepMaking-section
+        .container
+            .row
+                .col-12
+                    span.h2.stepMaking-section__title Этапы изготовления мебели на заказ
+                .col-xl-4.col-md-6.d-flex.justify-content-xl-start.mb-xl-0.mb-5
+                    +stepMaking('stepMaking-card', 'stepMaking-img-1.png', 'title', 'Специалист по договоренности приезжает к вам в удобное время для проведения замеров. В тесном обсуждении с вами подбирает оптимальное решение и разрабатывает эскиз изделия, продумывая каждую деталь с учетом особенностей интерьера и ваших пожеланий.', '1')
+                .col-xl-4.col-md-6.d-flex.justify-content-xl-center.mb-xl-0.mb-5
+                    +stepMaking('stepMaking-card', 'stepMaking-img-2.png', 'title', 'Подготавливаем визуализацию проекта. Обсуждаем, вносим корректировки (при необходимости). Согласовываем проект. Просчитываем стоимость изготовления мебели. Оформляем договор. ', '2')
+                .col-xl-4.col-md-6.d-flex.justify-content-xl-center.mb-xl-0.mb-5
+                    +stepMaking('stepMaking-card', 'stepMaking-img-3.png', 'title', 'Изготавливаем мебель. Бережно доставляем. Собираем в течение дня.', '3')
+    section.home-section-noRestrictions
+        .container
+            .row
+                .col-lg-6
+                    .home-section-noRestrictions__content
+                        span.h3.home-section-noRestrictions__title Уникальные интерьерные решения
+                        .home-section-noRestrictions__content-body
+                            span.home-section-noRestrictions__content-subtitle Изготовим все, что нужно.
+                            p.home-section-noRestrictions__text Нужно обустроить квартиру или дом с нуля? Хотите полностью изменить интерьер своего жилья? Надоела обстановка в отдельной комнате?
+                            p.home-section-noRestrictions__text Предложим полный комплект мебели (шкафы, кровати, тумбы и т.д.) с учетом планировки и выбранного дизайна. Вы получите персональный интерьер, в котором найдётся место для всего, что вам нужно и нравится.
+                            a.btn.btn-outline-dark.home-section-noRestrictions__content-btn(href='#') Опишите свое пожелание
+                .col-lg-6
+                    .home-section-noRestrictions__img
+                        img(src='/assets/img/Kitchen-imh-1.jpg')
+
+
+block script
+
+
+block head
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css' rel='stylesheet')
