@@ -1,9 +1,14 @@
 ## Pages
 https://apalion1493.github.io/MebElier-v2/dist/catalog.html
+
 https://apalion1493.github.io/MebElier-v2/dist/favorits.html
+
 https://apalion1493.github.io/MebElier-v2/dist/home.html
+
 https://apalion1493.github.io/MebElier-v2/dist/portfolio.html
+
 https://apalion1493.github.io/MebElier-v2/dist/Product-Inset.html
+
 https://apalion1493.github.io/MebElier-v2/dist/product.html
 
 ## Build Setup:
