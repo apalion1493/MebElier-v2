@@ -107,3 +107,9 @@
   display: block;
   margin-bottom: 25px;
 }
+
+@media (max-width: 575.98px) {
+  .advantagesAndDisadvantagesBlock__img {
+    display: none;
+  }
+}

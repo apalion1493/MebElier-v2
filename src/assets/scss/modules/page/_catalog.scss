@@ -2,6 +2,14 @@
   padding-bottom: 32px;
 }
 
+.catalog-first-section__text {
+  font-size: rem(14);
+  line-height: rem(20);
+  color: $fonts-color-2;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
 .catalog-second-section__wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -213,6 +213,22 @@
   margin-right: 6px;
 }
 
+.header__counter {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: $secondary;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $fonts-color-7;
+  top: -12px;
+  right: -15px;
+  font-size: 0.75rem;
+  line-height: 15px;
+}
+
 .header__favorites {
   width: 20px;
   height: 20px;
@@ -224,6 +240,7 @@
   box-shadow: none;
   border: none;
   padding: 0;
+  position: relative;
 
   &:focus,
   &:hover,
@@ -247,22 +264,6 @@
   box-shadow: none;
   border: none;
   outline: none;
-}
-
-.header__shopCard-counter {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: $secondary;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $fonts-color-7;
-  top: -12px;
-  right: -15px;
-  font-size: 0.75rem;
-  line-height: 15px;
 }
 
 .navbar.search-open {
@@ -713,20 +714,6 @@
 }
 
 @media (max-width: 767.95px) {
-  .phone-icon-mob {
-    display: block;
-    margin-left: auto;
-    background: url("../../../assets/img/phone-icon.svg") no-repeat center;
-    background-size: 100% auto;
-    width: 15px;
-    height: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .header__nav-phone {
-    display: none;
-  }
 
   .header__favorites {
     width: 16px;
@@ -744,7 +731,7 @@
     margin-left: 21px;
   }
 
-  .header__shopCard-counter {
+  .header__counter {
     width: 16px;
     height: 16px;
     font-size: 10px;
@@ -818,6 +805,25 @@
     top: 48px;
   }
 }
+
+@media (max-width: 625px) {
+  .phone-icon-mob {
+    display: block;
+    margin-left: auto;
+    background: url("../../../assets/img/phone-icon.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 15px;
+    height: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header__nav-phone {
+    display: none;
+  }
+}
+
+
 
 @media (max-width: 345px)  {
   .form-search {

@@ -11,7 +11,7 @@ header.header#header
               li.nav-item
                 a#navbarDropdown1.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   | Мебель
-                .dropdown-menu(aria-labelledby='navbarDropdown1')
+                .dropdown-menu.noclose(aria-labelledby='navbarDropdown1')
                   .row
                     .col-lg-8.d-flex.flex-column
                       div.dropdown-menu__list
@@ -51,17 +51,17 @@ header.header#header
               li.nav-item.active
                 a#navbarDropdown2.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   | Лестницы
-                .dropdown-menu(aria-labelledby='navbarDropdown2')
+                .dropdown-menu.noclose(aria-labelledby='navbarDropdown2')
                   a.dropdown-item(href='#') ЛЕСТНИЦЫ
               li.nav-item
                 a#navbarDropdown3.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   | Межкомнатные двери
-                .dropdown-menu(aria-labelledby='navbarDropdown3')
+                .dropdown-menu.noclose(aria-labelledby='navbarDropdown3')
                   a.dropdown-item(href='#') ДВЕРИ
               li.nav-item
                 a#navbarDropdown4.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   | Другое
-                .dropdown-menu(aria-labelledby='navbarDropdown4')
+                .dropdown-menu.noclose(aria-labelledby='navbarDropdown4')
                   .content-block
                     a.dropdown-item(href='#') О нас
                     a.dropdown-item(href='#') Портфолио
@@ -157,9 +157,11 @@ header.header#header
           form.form-inline.my-2.my-lg-0.form-search.order-4
             button.btn.btn-outline-success.my-2.my-sm-0.form-search__btn(type='submit')
             input.form-control.form-search__input(type='search', placeholder='Поиск ...', aria-label='Search')
+            input.form-search__close(type='reset' value='')
           a(href='#').header__favorites.order-5
+            //span.header__counter.header__favorites-counter 1
           a(href='#').header__shopCard.order-6
-            span.header__shopCard-counter 1
+            span.header__counter.header__shopCard-counter 1
           #form-search-mobil.form-search-mobil
             .form-search-mobil__block
               input(type='search' placeholder='Поиск по сайту')

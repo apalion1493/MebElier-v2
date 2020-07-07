@@ -3,6 +3,9 @@
   align-items: center;
   margin-left: 46px;
   flex-wrap: nowrap;
+  position: relative;
+  transition: 0.4s;
+  width: 117px;
 }
 
 .form-search__btn {
@@ -30,6 +33,7 @@
   padding-left: 0;
   margin-left: 14px;
   transition: 0.2s;
+  border-radius: 0;
 
   &:focus {
     box-shadow: none;
@@ -41,10 +45,35 @@
   &:-ms-input-placeholder      {color:$mainFontColor; font-size: 0.875rem}
 }
 
+.form-search__close {
+  position: absolute;
+  right: 0;
+  display: none;
+  background: initial;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  width: 11px;
+  height: 11px;
+  background: url(../../../../assets/img/input-close.svg) no-repeat 50%;
+  background-size: 100% auto;
+}
+
 .navbar.search-open {
   .form-search__input {
-    max-width: 400px;
+    max-width: 600px;
+    width: 100%;
     transition: 0.2s;
+  }
+
+  .form-search {
+    width: 500px;
+    border-bottom: 1px solid $secondary;
+    transition: 0.4s;
+  }
+
+  .form-search__close {
+    display: block;
   }
 }
 
@@ -104,7 +133,21 @@
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
+  .navbar.search-open {
+    .form-search__input {
+      max-width: 600px;
+      width: 100%;
+      transition: 0.2s;
+    }
+
+    .form-search {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 991.981px) {
   .form-inline .form-control.form-search__input {
     width: 0;
   }
