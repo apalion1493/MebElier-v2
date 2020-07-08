@@ -333,6 +333,14 @@
   }
 }
 
+.catalog-slider__door {
+  margin-right: 0;
+
+  &:before {
+    display: none;
+  }
+}
+
 .catalog-filter__list {
   overflow: hidden;
   display: flex;
@@ -393,6 +401,37 @@
     font-size: rem(20);
     line-height: rem(23);
     color: $fonts-color-2;
+  }
+}
+
+.content-info-section {
+  background: #FFFFFF;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.catalog-first-section__description {
+  max-width: 663px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  display: block;
+}
+
+.catalog-first-section__internal {
+  background: #FFFFFF;
+}
+
+.inner-page-slider {
+  margin-bottom: 70px;
+
+  .catalog-slider__item {
+    max-width: calc(347px + 16px);
+    //max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex !important;
   }
 }
 

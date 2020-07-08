@@ -346,6 +346,19 @@ button {
   }
 }
 
+.left-line {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -59px;
+    top: 8px;
+    width: 39px;
+    border-top: 3px solid #5D4F44;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .bg-white-color {
     &:before {
@@ -429,3 +442,5 @@ button {
 @import "modules/blocks/information-container";
 @import "modules/blocks/home-card";
 @import "modules/blocks/advantagesAndDisadvantages";
+@import "modules/blocks/elementView";
+@import "modules/blocks/content-info-block";

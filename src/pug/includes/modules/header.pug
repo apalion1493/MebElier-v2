@@ -55,13 +55,18 @@ header.header#header
                   a.dropdown-item(href='#') ЛЕСТНИЦЫ
               li.nav-item
                 a#navbarDropdown3.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  | Межкомнатные двери
+                  | Двери
                 .dropdown-menu.noclose(aria-labelledby='navbarDropdown3')
                   a.dropdown-item(href='#') ДВЕРИ
               li.nav-item
                 a#navbarDropdown4.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  | Другое
+                  | Интерьерные решения
                 .dropdown-menu.noclose(aria-labelledby='navbarDropdown4')
+                  a.dropdown-item(href='#') Интерьерные решения
+              li.nav-item
+                a#navbarDropdown5.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                  | Другое
+                .dropdown-menu.noclose(aria-labelledby='navbarDropdown5')
                   .content-block
                     a.dropdown-item(href='#') О нас
                     a.dropdown-item(href='#') Портфолио
@@ -119,7 +124,7 @@ header.header#header
                   #headingThree.card-header
                     h5.mb-0
                       button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
-                        | Межкомнатные двери
+                        | Двери
                   #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
                     .card-body
                       ul
@@ -139,28 +144,37 @@ header.header#header
                 a.menu-list-mob__link(href='#') Портфолио
                 a.menu-list-mob__link(href='#') О нас
                 a.menu-list-mob__link(href='#') Контакты
-          .dropdown.header__nav-phone.order-3
+          .language-list.dropdown.order-3
+            button#myselectlanguage.btn.btn-default.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true' data-value='Ru') Ru
+            ul.dropdown-menu(aria-labelledby='myselectlanguage')
+              li
+                a(href='#' data-value='Ru') Ru
+              li
+                a(href='#' data-value='En') En
+
+
+          .dropdown.header__nav-phone.order-4
             button#myselectPhone.btn.btn-default.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true' data-value='+38 (067) 620 01 15') <i class='kyivstar-icon header__nav-phone-icon'></i> Киiвстар
 
             ul.dropdown-menu(aria-labelledby='myselectPhone')
               li
                 a(href='#' data-value='+38 (067) 620 01 15') <i class='kyivstar-icon header__nav-phone-icon'></i> Киiвстар
               li
-                a(href='#' data-value='+38 (050) 620 01 15') <i class='vodafone-icon header__nav-phone-icon'></i> Водафон
+                a(href='#' data-value='+38 (050) 620 01 15') <i class='vodafone-icon header__nav-phone-icon'></i> Vodafone
               li
-                a(href='#' data-value='+38 (093) 620 01 15') <i class='turkcell-icon header__nav-phone-icon'></i> Лайфселл
+                a(href='#' data-value='+38 (093) 620 01 15') <i class='turkcell-icon header__nav-phone-icon'></i> Lifecell
             #myTextPhone
-              a.dropdown.header__nav-phone-number(href='#') +38 (067) 620 01 15
+              a.dropdown.header__nav-phone-number(href='tel:+380676200115') +38 (067) 620 01 15
 
 
-          span.phone-icon-mob.order-3
-          form.form-inline.my-2.my-lg-0.form-search.order-4
+          span.phone-icon-mob.order-4
+          form.form-inline.my-2.my-lg-0.form-search.order-5
             button.btn.btn-outline-success.my-2.my-sm-0.form-search__btn(type='submit')
             input.form-control.form-search__input(type='search', placeholder='Поиск ...', aria-label='Search')
             input.form-search__close(type='reset' value='')
-          a(href='#').header__favorites.order-5
+          a(href='#').header__favorites.order-6
             //span.header__counter.header__favorites-counter 1
-          a(href='#').header__shopCard.order-6
+          a(href='#').header__shopCard.order-7
             span.header__counter.header__shopCard-counter 1
           #form-search-mobil.form-search-mobil
             .form-search-mobil__block
@@ -168,8 +182,8 @@ header.header#header
               button
             .form-search__bg-close
           #phone-mobil-container.phone-mobil-container
-            a(href='#') <p><i class="kyivstar-icon"></i> Киiвстар</p> <span>+38 067 620 01 15</span>
-            a(href='#') <p><i class="vodafone-icon"></i> Водафон</p> <span>+38 050 620 01 15</span>
-            a(href='#') <p><i class="turkcell-icon"></i> Лайфселл</p> <span>+38 093 620 01 15</span>
+            a(href='tel:+380676200115') <p><i class="kyivstar-icon"></i> Киiвстар</p> <span>+38 067 620 01 15</span>
+            a(href='tel:+380506200115') <p><i class="vodafone-icon"></i> Vodafone</p> <span>+38 050 620 01 15</span>
+            a(href='tel:+380936200115') <p><i class="turkcell-icon"></i> Lifecell</p> <span>+38 093 620 01 15</span>
             button
           .phone-mobil-container_bg

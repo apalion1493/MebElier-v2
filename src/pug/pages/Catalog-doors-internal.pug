@@ -1,0 +1,91 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Catalog';
+    - var description = 'Catalog';
+    - var pageClass = 'index-page';
+
+block content
+    section.catalog-first-section.catalog-first-section__internal.pb-3
+        .container
+            .row
+                .col-xl-5.bg-white-color.bg-white-color__mobil
+                    nav(aria-label='breadcrumb')
+                        ol.breadcrumb
+                            li.breadcrumb-item
+                                a(href='#') Главная
+                            li.breadcrumb-item.active(aria-current='page') Двери
+                    h1.h1.mb-0 Двери на заказ
+                .col-xl-7
+                    p.catalog-first-section__description Фабрика «Мебельер» изготавливает двери на заказ из тщательно отобранной древесины Закарпатских лесов, прошедшей естественную и камерную сушку. У нас можно заказать входные и межкомнатные двери из массива дуба, ясеня, ольхи.
+
+    section.catalog-second-section.pt-2
+        .container.catalog-filter
+            .row
+                .col-12
+                    .catalog-filter__list
+                        .catalog-filter__item
+                            .form-group
+                                label(for='inputStateTypeFirst') Тип лестниц:
+                                select#inputStateTypeFirst.form-control
+                                    option(selected='selected') Все типы
+                                    option a
+                                    option as
+                                    option gdfgmsjdfhgjsdfhgjs
+                                    option dfasdf
+                        .catalog-filter__item
+                            .form-group
+                                label(for='inputStateTypeSecond') Ограждение:
+                                select#inputStateTypeSecond.form-control
+                                    option(selected='selected') Любое
+                                    option a
+                                    option as
+                                    option gdfgmsjdfhgjsdfhgjs
+                                    option dfasdf
+                        .catalog-filter__item
+                            .form-group
+                                label(for='inputStateTypeThird') Материал ступений:
+                                select#inputStateTypeThird.form-control
+                                    option(selected='selected') Любое
+                                    option a
+                                    option as
+                                    option gdfgmsjdfhgjsdfhgjs
+                                    option dfasdf
+        .container.catalog-container
+            .row
+                .col-12
+                    .catalog-second-section__wrapper
+                        +productCard('card-product card-product_bottom-left active', 'door-img-1.png', 'Деревянная дверь', '79 990 грн.')
+                        +productCard('card-product card-product_top-left', 'door-img-2.png', 'Деревянная дверь', '220 990 грн.')
+                        +productCard('card-product card-product_top-left dark-background', 'door-img-3.png', 'Входная деревянная дверь', '149 990 грн.')
+                        +productCard('card-product card-product_top-left dark-background', 'door-img-4.png', 'Дизайнерская кухня', '149 990 грн.')
+                        +productCard('card-product card-product_top-left', 'door-img-5.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        +productCard('card-product card-product_top-left', 'door-img-6.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        +catalogInfo('shadow-white' ,'url("assets/img/door-bg.png")', 'Итальянские краски, лаки, фурнитура', 'Для отделки дверей используем только сертифицированные краски и лаки итальянских производителей. Любой цвет по RAL.', 'Двери оборудуются надежной фурнитурой AGB и петлями OTLAV.')
+                        +productCard('card-product card-product_top-left', 'door-img-7.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        +productCard('card-product card-product_top-left', 'door-img-8.png', 'Винтовая дизайнерская', '79 990 грн.')
+                        +productCard('card-product card-product_top-left dark-background', 'door-img-9.png', 'Современная деревянная лестница', '79 990 грн.')
+                        +productCard('card-product card-product_top-left dark-background', 'door-img-10.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                        +productCard('card-product card-product_bottom-left ', 'door-img-11.png', 'Дизайнерская лестница', '149 990 грн.')
+
+                    button.btn.btn-dark.catalog-container__btn Загрузить еще 12 товаров
+        .container
+            .row
+                .col-12
+                    .catalog-slider__table.row
+                        .col-lg-6.mb-3
+                            +elementView('elementView-img-1.jpg', 'Функциональность', 'Входные', 'Межкомнатные')
+                        .col-lg-6.mb-3
+                            +elementView('elementView-img-2.jpg', 'Тип открывания', 'Распашные', 'Раздвижные', 'Откатные')
+                        .col-lg-6.mb-3
+                            +elementView('elementView-img-3.jpg', 'Тип заполнения', 'Глухие', 'С остеклением')
+                        .col-lg-6.mb-3
+                            +elementView('elementView-img-4.jpg', 'Число полотен', 'Одностворчатые', 'Двустворчатые', 'Трехстворчатые', 'Четырехстворчатые')
+
+
+block script
+
+
+block head
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css' rel='stylesheet')

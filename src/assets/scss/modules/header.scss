@@ -209,6 +209,51 @@
   }
 }
 
+.language-list {
+  button {
+    width: 46px;
+    height: 46px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    font-size: rem(14);
+    line-height: rem(17);
+    color: #201F1D;
+    padding: 0;
+
+    &:after {
+      position: relative;
+      z-index: 1001;
+    }
+
+    &:hover,
+    &:active {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  .dropdown-menu {
+    width: 46px;
+    border-radius: 22px;
+    top: -2px;
+    border: 1px solid #D9D9D9;
+    box-shadow: none;
+    outline: none;
+    
+    li {
+      margin-bottom: 14px;
+      padding-left: 6px;
+      padding-top: 2px;
+
+      a {
+        font-size: rem(14);
+        line-height: rem(17);
+        color: #201F1D;
+      }
+    }
+  }
+}
+
 .header__nav-phone-icon {
   margin-right: 6px;
 }

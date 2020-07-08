@@ -6,42 +6,23 @@ block variables
     - var pageClass = 'index-page';
 
 block content
-    section.catalog-first-section
+    section.catalog-first-section.catalog-first-section__internal.pb-3
         .container
             .row
-                .col-xl-5.bg-white-color
+                .col-xl-5.bg-white-color.bg-white-color__mobil
                     nav(aria-label='breadcrumb')
                         ol.breadcrumb
                             li.breadcrumb-item
                                 a(href='#') Главная
                             li.breadcrumb-item.active(aria-current='page') Лестницы
-                    h1.h1 Лестницы на <br> заказ
-                    .red-squares-list__wrapper
-                        ul.red-squares-list
-                            li.red-squares-list__item
-                                span Цены индивидуальные
-                                p Цены расчитаны под стандартный проект, ваши требования могут отличатся, мы бесплатно сделаем расчет.
-                            li.red-squares-list__item
-                                span Любой проект за 60 дней
-                                p 60 дней крайний срок, делаем и быстрее
-                            li.red-squares-list__item
-                                span Работаем по всей Украине
-                                p Мы делаем заказ для любого региона, и да, доставим бесплатно, хоть в Харьков хоть в Черновцы.
+                    h1.h1.mb-0 Винтовые Лестницы на заказ
                 .col-xl-7
-                    .catalog-slider
-                        h4.catalog-slider__title Виды лестниц
-                        .catalog-slider__list
-                            +type-stair('type-stair-1.jpg', 'Винтовые', 'Это лестницы которые поворачивают')
-                            +type-stair('type-stair-2.jpg', 'Поворотные', 'Это лестницы которые поворачивают')
-                            +type-stair('type-stair-3.jpg', 'Прямые', 'Это лестницы которые поворачивают')
-                            +type-stair('type-stair-4.jpg', 'Металлические', 'Это лестницы которые поворачивают')
+                    p.catalog-first-section__description В целом, конечно, граница обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании своевременного выполнения сверхзадачи! Господа, перспективное планирование играет определяющее значение для поставленных обществом задач.
 
-    section.catalog-second-section
+    section.catalog-second-section.pt-2
         .container.catalog-filter
             .row
-                .col-xl-5
-                    span.h2.catalog-filter__title Каталог моделей
-                .col-xl-7
+                .col-12
                     .catalog-filter__list
                         .catalog-filter__item
                             .form-group
@@ -88,6 +69,17 @@ block content
                         +productCard('card-product card-product_bottom-left', 'catalog-11.png', 'Дизайнерская лестница', '149 990 грн.')
 
                     button.btn.btn-dark.catalog-container__btn Загрузить еще 12 товаров
+        .container
+            .row
+                .col-12
+                    .inner-page-slider
+                        +type-stair('type-stair-1.jpg', 'Винтовые', 'Это лестницы которые поворачивают')
+                        +type-stair('type-stair-2.jpg', 'Поворотные', 'Это лестницы которые поворачивают')
+                        +type-stair('type-stair-3.jpg', 'Прямые', 'Это лестницы которые поворачивают')
+                        //+type-stair('type-stair-3.jpg', 'Прямые', 'Это лестницы которые поворачивают')
+                        //+type-stair('type-stair-3.jpg', 'Прямые', 'Это лестницы которые поворачивают')
+
+
 
         .container
             .row

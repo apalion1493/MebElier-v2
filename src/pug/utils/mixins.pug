@@ -69,3 +69,22 @@ mixin stepMaking(wrapperClass, urlImage, altImage, text, num)
       img.card-img-top(src='assets/img/' + urlImage + '' alt=altImage)
     .card-body
       p.card-text=text
+
+
+mixin catalogInfo(dopClass, bgImage, title, text1, text2)
+  .backlight-block(style="background-image:"+bgImage+";" class=dopClass)
+    .backlight-block__content
+      span.backlight-block__content-title=title
+      p.backlight-block__content-text=text1
+      p.backlight-block__content-text=text2
+      a(href='#' class='btn btn-outline-light backlight-block__content-btn') Подробнее
+
+mixin elementView(image, title, ...items)
+  .elementView
+    .elementView__imgBlock
+      img(src='assets/img/' + image + '' alt='')
+    .elementView__content
+      span.elementView__title=title
+      ul.elementView__list.red-squares-list
+        each item in items
+          li.elementView__item.red-squares-list__item= item

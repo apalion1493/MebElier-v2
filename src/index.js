@@ -171,6 +171,45 @@ function slickNum() {
         ]
     });
 
+    $('.inner-page-slider').slick({
+        centerMode: true,
+        slidesToShow: 3,
+        infinite: true,
+        arrow: true,
+        lazyLoad: 'progressive',
+        dots: false,
+        adaptiveHeight: false,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    variableWidth: false,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 767.98,
+                settings: {
+                    variableWidth: false,
+                    slidesToScroll: 1,
+                    slidesToShow: 2,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 575.98,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: true,
+                    infinite: true,
+                }
+            }
+        ]
+    })
+
     $('.product-image').each(function() {
         let slider = $(this);
         slider.slick({

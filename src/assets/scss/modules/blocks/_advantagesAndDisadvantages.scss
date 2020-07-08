@@ -113,3 +113,17 @@
     display: none;
   }
 }
+
+@media (max-width: 767.98px) {
+  .advantagesAndDisadvantagesBlock__content-title {
+    font-size: 20px;
+  }
+
+  .advantagesAndDisadvantages__title {
+    margin-bottom: 35px;
+  }
+
+  .advantagesAndDisadvantages {
+    padding-bottom: 30px;
+  }
+}

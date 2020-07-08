@@ -1,0 +1,129 @@
+.content-info-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-info-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 616px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 8px 20px 8px;
+  height: 397px;
+}
+
+.content-info-block__title {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #201F1D;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.content-info-block__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: $fonts-color-2;
+  margin-bottom: 43px;
+}
+
+.content-info-block__subTitle {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: $fonts-color-2;
+  margin-bottom: 17px;
+}
+
+.content-info-block__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+}
+
+.content-info-block__imgBlock {
+  img {
+    height: 397px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.content-info-block__imgBlock-mr {
+  margin-right: -8px;
+}
+
+.content-info-block__imgBlock-ml {
+  margin-left: -8px;
+}
+
+.content-info-block__arrow {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 60px;
+  }
+}
+
+.content-info-block__arrow-bottom {
+  &:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 30px 0 30px;
+    border-color: #ffffff transparent transparent transparent;
+    top: -1px;
+  }
+}
+
+.content-info-block__arrow-top {
+  &:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 40px 30px;
+    border-color: transparent transparent #ffffff transparent;
+    bottom: -1px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .content-info-block__imgBlock-mr {
+    margin-right: 0;
+  }
+
+  .content-info-block__imgBlock-ml {
+    margin-left: 0;
+  }
+
+  .content-info-block__wrapper {
+    height: auto;
+  }
+
+  .content-info-block__arrow-top:before {
+    top: -1px;
+    bottom: auto;
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 767.981px) {
+  .content-info-block__imgBlock img {
+    height: 300px;
+  }
+
+  .content-info-block__title {
+    font-size: 22px;
+  }
+
+  .content-info-block__subTitle {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
