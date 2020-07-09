@@ -61,7 +61,7 @@ block content
                         +productCard('card-product card-product_top-left dark-background', 'catalog-mebel-4.png', 'Дизайнерская кухня', '149 990 грн.')
                         +productCard('card-product card-product_top-left', 'catalog-mebel-5.png', 'Винтовая дизайнерская', '79 990 грн.')
                         +productCard('card-product card-product_top-left', 'catalog-mebel-6.png', 'Винтовая дизайнерская', '79 990 грн.')
-                        +catalogInfo('shadow-black' ,'url("assets/img/mebel-info-img.jpg")', 'Подсветка', 'Светодиодные ленты высокого качества (не перегорят через неделю).', 'Монтаж выполняют опытные специалисты (ваша страховка от короткого замыкания и пожара вследствие непрофессионального монтажа).')
+                        +catalogInfo('shadow-black', 'true' ,'url("assets/img/mebel-info-img.jpg")', 'Подсветка', 'Светодиодные ленты высокого качества (не перегорят через неделю).', 'Монтаж выполняют опытные специалисты (ваша страховка от короткого замыкания и пожара вследствие непрофессионального монтажа).')
                         +productCard('card-product card-product_top-left', 'catalog-mebel-7.png', 'Винтовая дизайнерская', '79 990 грн.')
                         +productCard('card-product card-product_top-left', 'catalog-mebel-8.png', 'Винтовая дизайнерская', '79 990 грн.')
                         +productCard('card-product card-product_top-left', 'catalog-mebel-9.png', 'Современная деревянная лестница', '79 990 грн.')
@@ -69,15 +69,22 @@ block content
                         +productCard('card-product card-product_bottom-left dark-background', 'catalog-mebel-11.png', 'Дизайнерская лестница', '149 990 грн.')
 
                     button.btn.btn-dark.catalog-container__btn Загрузить еще 12 товаров
-        .container
+        .container.other-types-furniture
             .row
                 .col-12
-                    .inner-page-slider
-                        +type-stair('type-stair-1.jpg', 'Винтовые', 'Это лестницы которые поворачивают')
-                        +type-stair('type-stair-2.jpg', 'Поворотные', 'Это лестницы которые поворачивают')
-                        +type-stair('type-stair-3.jpg', 'Прямые', 'Это лестницы которые поворачивают')
-                        //+type-stair('type-stair-3.jpg', 'Прямые', 'Это лестницы которые поворачивают')
-                        //+type-stair('type-stair-3.jpg', 'Прямые', 'Это лестницы которые поворачивают')
+                    span.h2.other-types-furniture__title Другие виды мебели
+                    .inner-page-slider.circle-slider-btn
+                        +type-stair('typeFurniture-img-1.jpg', 'Кухни', 'Создадим интерьер кухни специально под Вас, чтобы Вы готовили и наслаждались вкусной пищей в идеальной обстановке.')
+                        +type-stair('typeFurniture-img-2.jpg', 'Гостиные', 'Изготовим гостиную мебель, которая будет восхищать друзей и способствовать веселому общению.')
+                        +type-stair('typeFurniture-img-3.jpg', 'Спальни', 'Делаем на заказ мебель для спальни, благодаря которой сон будет по-настоящему комфортным.')
+                        +type-stair('typeFurniture-img-4.jpg', 'Прихожие', 'Наши прихожие создают отличное первое впечатление о доме и демонстрируют хороший вкус хозяев.')
+                        +type-stair('typeFurniture-img-5.jpg', 'Гардеробные', 'Мы позаботимся о максимально рациональной организации пространства гардеробной комнаты.')
+                        +type-stair('typeFurniture-img-6.jpg', 'Детские', 'Изготавливаем экологичную, безопасную и прочную мебель для детской комнаты. Учитываем требования родителей и предпочтения наших маленьких клиентов.')
+                        +type-stair('typeFurniture-img-7.jpg', 'Ванная', 'Функциональная, эргономичная, влагосто- йкая мебель для практич- ного обустройства и полезного задейство- вания пространства ванной комнаты.')
+                        +type-stair('typeFurniture-img-8.jpg', 'Для офиса', 'Изготовим износоустойчивую, функциональную, стильную мебель с учетом всех особенностей офисного помещения. Предложим комплексное интерьерное решение в соответствии с фирменным стилем.')
+                        +type-stair('typeFurniture-img-9.jpg', 'Для торговых помещений', 'Мебель с пользой для вашего бизнеса на любой бюджет: стеллажи, витрины, прилавки, стойки, ресепшн, островные конструкции и др.')
+                        +type-stair('typeFurniture-img-10.jpg', 'Дизайнерская ', 'Вместе с вами разработаем с нуля уникальный дизайн-проект и изготовим авторскую мебель.')
+
 
 
 block script

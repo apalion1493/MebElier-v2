@@ -15,25 +15,22 @@ block content
                             li.breadcrumb-item
                                 a(href='#') Главная
                             li.breadcrumb-item.active(aria-current='page') Двери
-                    h1.h1 Двери на заказ
-                    p.catalog-first-section__text Фабрика «Мебельер» изготавливает мебель на заказ “под ключ”, начиная от выезда замерщика и заканчивая сборкой изделия. Создаём мебель из натурального массива дерева, МДФ, ДСП и других мебельных материалов в стилях Лофт, Классика, Прованс, Модерн и др.
+                    h1.h1.mb-4 Двери на заказ
+                    p.catalog-first-section__text.mb-4.pb-2 Фабрика «Мебельер» изготавливает двери на заказ из тщательно отобранной древесины Закарпатских лесов, прошедшей естественную и камерную сушку. У нас можно заказать входные и межкомнатные двери из массива дуба, ясеня, ольхи.
                     .red-squares-list__wrapper
                         ul.red-squares-list
                             li.red-squares-list__item
                                 span Собственное производство
-                                p Мебель изготавливается на новейших автоматизированных производственных линиях опытными специалистами. Цены от производителя без накруток посредников. Гарантия 3 года.
+                                p Цены от производителя без наценок посредников. Производство находится в городе Бердичев (Житомирская область). Бесплатная доставка по Украине. Гарантия 3 года.
                             li.red-squares-list__item
-                                span Мебель на любой вкус и бюджет
-                                p Цены расчитаны под стандартный проект, ваши требования могут отличатся, мы бесплатно сделаем расчет.
+                                span Двери под ваш вкус и бюджет
+                                p Мы создаем двери из цельного и срощенного массива дерева на заказ для всех типов зданий (жилых, офисных, коммерческих) и видов помещений. Любой размер с шагом 1 см. Любая сложность — от простых недорогих до эксклюзивных дверей.
                             li.red-squares-list__item
-                                span Бесплатный сервис
-                                p Замер, визуализация проекта, доставка и сборка бесплатно!
-                            li.red-squares-list__item
-                                span Работаем по всей Украине
-                                p Фабрика находится в городе Бердичев (Житомирская область). Доставим мебель бесплатно в любую точку Украины.
+                                span Широкий выбор комплектации
+                                p Можем изготовить двери на заказ в комплектации с нашего каталога (выбор различных моделей полотен и к ним наличников, карнизов, резьб и т.д.) или по вашему эскизу/фото.
                 .col-xl-7
                     .catalog-slider.catalog-slider__door
-                        h4.catalog-slider__title Виды дверей
+                        h4.catalog-slider__title.mb-4.pb-2 Виды дверей
                         .catalog-slider__table.row
                             .col-lg-6.mb-3
                                 +elementView('elementView-img-1.jpg', 'Функциональность', 'Входные', 'Межкомнатные')
@@ -46,7 +43,7 @@ block content
 
 
 
-    section.catalog-second-section
+    section.catalog-second-section.pt-xl-0
         .container.catalog-filter
             .row
                 .col-xl-5
@@ -90,7 +87,7 @@ block content
                         +productCard('card-product card-product_top-left dark-background', 'door-img-4.png', 'Дизайнерская кухня', '149 990 грн.')
                         +productCard('card-product card-product_top-left', 'door-img-5.png', 'Винтовая дизайнерская', '79 990 грн.')
                         +productCard('card-product card-product_top-left', 'door-img-6.png', 'Винтовая дизайнерская', '79 990 грн.')
-                        +catalogInfo('shadow-white' ,'url("assets/img/door-bg.png")', 'Итальянские краски, лаки, фурнитура', 'Для отделки дверей используем только сертифицированные краски и лаки итальянских производителей. Любой цвет по RAL.', 'Двери оборудуются надежной фурнитурой AGB и петлями OTLAV.')
+                        +catalogInfo('shadow-white', 'false', 'url("assets/img/door-bg.png")', 'Итальянские краски, лаки, фурнитура', 'Для отделки дверей используем только сертифицированные краски и лаки итальянских производителей. Любой цвет по RAL.', 'Двери оборудуются надежной фурнитурой AGB и петлями OTLAV.')
                         +productCard('card-product card-product_top-left', 'door-img-7.png', 'Винтовая дизайнерская', '79 990 грн.')
                         +productCard('card-product card-product_top-left', 'door-img-8.png', 'Винтовая дизайнерская', '79 990 грн.')
                         +productCard('card-product card-product_top-left dark-background', 'door-img-9.png', 'Современная деревянная лестница', '79 990 грн.')
@@ -99,7 +96,7 @@ block content
 
                     button.btn.btn-dark.catalog-container__btn Загрузить еще 12 товаров
 
-    section.advantagesAndDisadvantages
+    section.advantagesAndDisadvantages.pt-xl-0
         .container
             .row
                 .col-12

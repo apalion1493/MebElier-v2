@@ -172,9 +172,9 @@ function slickNum() {
     });
 
     $('.inner-page-slider').slick({
-        centerMode: true,
-        slidesToShow: 3,
-        infinite: true,
+        centerMode: false,
+        slidesToShow: 4,
+        infinite: false,
         arrow: true,
         lazyLoad: 'progressive',
         dots: false,

@@ -52,17 +52,17 @@
   li {
     margin-bottom: 5px;
 
-    p {
-      font-weight: bold;
-      font-size: rem(14);
-      line-height: rem(17);
-      color: $mainFontColor;
-      margin-bottom: 0;
-    }
-
     &:last-of-type {
       margin-bottom: 0;
     }
+  }
+
+  p {
+    font-weight: bold;
+    font-size: rem(14);
+    line-height: rem(17);
+    color: $mainFontColor;
+    margin-bottom: 0;
   }
 }
 

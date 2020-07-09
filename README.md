@@ -1,6 +1,16 @@
 ## Pages
 https://apalion1493.github.io/MebElier-v2/dist/catalog.html
 
+https://apalion1493.github.io/MebElier-v2/dist/Catalog-internal-stairs.html
+
+https://apalion1493.github.io/MebElier-v2/dist/catalog-doors.html
+
+https://apalion1493.github.io/MebElier-v2/dist/Catalog-doors-internal.html
+
+https://apalion1493.github.io/MebElier-v2/dist/catalog-furniture.html
+
+https://apalion1493.github.io/MebElier-v2/dist/Catalog-furniture-internal.html
+
 https://apalion1493.github.io/MebElier-v2/dist/favorits.html
 
 https://apalion1493.github.io/MebElier-v2/dist/home.html

@@ -6,7 +6,7 @@ block variables
     - var pageClass = 'index-page';
 
 block content
-    section.catalog-first-section
+    section.catalog-first-section.pb-xl-0
         .container
             .row
                 .col-xl-5.bg-white-color
@@ -15,7 +15,7 @@ block content
                             li.breadcrumb-item
                                 a(href='#') Главная
                             li.breadcrumb-item.active(aria-current='page') Мебель
-                    h1.h1 Мебель на заказ
+                    h1.h1.mb-4 Мебель на заказ
                     p.catalog-first-section__text Фабрика «Мебельер» изготавливает мебель на заказ “под ключ”, начиная от выезда замерщика и заканчивая сборкой изделия. Создаём мебель из натурального массива дерева, МДФ, ДСП и других мебельных материалов в стилях Лофт, Классика, Прованс, Модерн и др.
                     .red-squares-list__wrapper
                         ul.red-squares-list
@@ -34,7 +34,7 @@ block content
                 .col-xl-7
                     .catalog-slider
                         h4.catalog-slider__title Виды Мебели
-                        .catalog-slider__list
+                        .catalog-slider__list.circle-slider-btn
                             +type-stair('typeFurniture-img-1.jpg', 'Кухни', 'Создадим интерьер кухни специально под Вас, чтобы Вы готовили и наслаждались вкусной пищей в идеальной обстановке.')
                             +type-stair('typeFurniture-img-2.jpg', 'Гостиные', 'Изготовим гостиную мебель, которая будет восхищать друзей и способствовать веселому общению.')
                             +type-stair('typeFurniture-img-3.jpg', 'Спальни', 'Делаем на заказ мебель для спальни, благодаря которой сон будет по-настоящему комфортным.')
@@ -46,7 +46,7 @@ block content
                             +type-stair('typeFurniture-img-9.jpg', 'Для торговых помещений', 'Мебель с пользой для вашего бизнеса на любой бюджет: стеллажи, витрины, прилавки, стойки, ресепшн, островные конструкции и др.')
                             +type-stair('typeFurniture-img-10.jpg', 'Дизайнерская ', 'Вместе с вами разработаем с нуля уникальный дизайн-проект и изготовим авторскую мебель.')
 
-    section.catalog-second-section
+    section.catalog-second-section.py-xl-0
         .container.catalog-filter
             .row
                 .col-xl-5
@@ -90,7 +90,7 @@ block content
                         +productCard('card-product card-product_top-left dark-background', 'catalog-mebel-4.png', 'Дизайнерская кухня', '149 990 грн.')
                         +productCard('card-product card-product_top-left', 'catalog-mebel-5.png', 'Винтовая дизайнерская', '79 990 грн.')
                         +productCard('card-product card-product_top-left', 'catalog-mebel-6.png', 'Винтовая дизайнерская', '79 990 грн.')
-                        +catalogInfo('shadow-black' ,'url("assets/img/mebel-info-img.jpg")', 'Подсветка', 'Светодиодные ленты высокого качества (не перегорят через неделю).', 'Монтаж выполняют опытные специалисты (ваша страховка от короткого замыкания и пожара вследствие непрофессионального монтажа).')
+                        +catalogInfo('shadow-black', 'true' ,'url("assets/img/mebel-info-img.jpg")', 'Подсветка', 'Светодиодные ленты высокого качества (не перегорят через неделю).', 'Монтаж выполняют опытные специалисты (ваша страховка от короткого замыкания и пожара вследствие непрофессионального монтажа).')
                         +productCard('card-product card-product_top-left', 'catalog-mebel-7.png', 'Винтовая дизайнерская', '79 990 грн.')
                         +productCard('card-product card-product_top-left', 'catalog-mebel-8.png', 'Винтовая дизайнерская', '79 990 грн.')
                         +productCard('card-product card-product_top-left', 'catalog-mebel-9.png', 'Современная деревянная лестница', '79 990 грн.')

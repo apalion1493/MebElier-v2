@@ -71,13 +71,14 @@ mixin stepMaking(wrapperClass, urlImage, altImage, text, num)
       p.card-text=text
 
 
-mixin catalogInfo(dopClass, bgImage, title, text1, text2)
+mixin catalogInfo(dopClass, btnFlag, bgImage, title, text1, text2)
   .backlight-block(style="background-image:"+bgImage+";" class=dopClass)
     .backlight-block__content
       span.backlight-block__content-title=title
       p.backlight-block__content-text=text1
       p.backlight-block__content-text=text2
-      a(href='#' class='btn btn-outline-light backlight-block__content-btn') Подробнее
+      if btnFlag==='true'
+        a(href='#' class='btn btn-outline-light backlight-block__content-btn') Подробнее
 
 mixin elementView(image, title, ...items)
   .elementView

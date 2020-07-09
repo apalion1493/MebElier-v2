@@ -475,7 +475,9 @@
 
 .home-section-noRestrictions__content {
   max-width: 484px;
-  margin: auto;
+  //margin: auto;
+  margin-left: 9%;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -665,7 +667,10 @@
     }
   }
 
-
+  .home-section-noRestrictions__content {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }
 

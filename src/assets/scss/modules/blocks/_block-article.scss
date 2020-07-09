@@ -37,11 +37,19 @@
   color: $fonts-color-3;
 }
 
+.block-article__tripleks button {
+  display: none;
+}
+
 @media (max-width: 1199.98px) {
   .block-article {
     flex-direction: row;
     padding: 40px 0 40px 25px;
     align-items: center;
+  }
+
+  .block-article__tripleks button {
+    display: block;
   }
 }
 
