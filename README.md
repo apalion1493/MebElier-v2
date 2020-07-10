@@ -21,6 +21,8 @@ https://apalion1493.github.io/MebElier-v2/dist/Portfolio-Inset.html
 
 https://apalion1493.github.io/MebElier-v2/dist/product.html
 
+https://apalion1493.github.io/MebElier-v2/dist/about.html
+
 ## Build Setup:
 
 ``` bash

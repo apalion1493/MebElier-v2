@@ -171,6 +171,45 @@ function slickNum() {
         ]
     });
 
+    $('.about-section-slider').slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrow: true,
+        lazyLoad: 'progressive',
+        dots: false,
+        adaptiveHeight: false,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    variableWidth: false,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 767.98,
+                settings: {
+                    variableWidth: false,
+                    slidesToScroll: 1,
+                    slidesToShow: 2,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 575.98,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: true,
+                    infinite: true,
+                }
+            }
+        ]
+    })
+
     $('.inner-page-slider').slick({
         centerMode: false,
         slidesToShow: 4,

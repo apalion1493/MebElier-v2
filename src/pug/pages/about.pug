@@ -1,0 +1,122 @@
+extends ../layout/main
+
+block variables
+    - var title = 'About';
+    - var description = 'About';
+    - var pageClass = 'index-page';
+
+block content
+    section.about-section.about-section__bg
+        span.about-section__logo
+    section.about-section__content
+        .container
+            .row
+                .col-xl-3.col-lg-2
+                .col-xl-6.col-lg-8
+                    h2.h2.about-section__title О компании
+                    p.about-section__text-first Фабрика была основана в 2005 году настоящими профессионалами деревообработки, обладающими обширным опытом работы с натуральной древесиной самых разнообразных пород.
+                    p.about-section__text-first Все началось с изготовления дверей из массива под брендом DW. Со временем мы решили расширить производство, начав изготавливать мебель и лестницы, а также реализовывать интерьерные решения под брендом «Мебельер».
+                    .about-section__list
+                        span.about-section__list-title За эти годы мы изготовили:
+                        .row
+                            .col-md-4
+                                .about-section__item
+                                    .about-section__item-img
+                                        img(src='assets/img/about-img-1.png')
+                                        span 3 <i>x</i>
+                                    .about-section__item-body
+                                        span 5,5 пог. км мебели
+                                        p (как 3 высоты горы Говерла)
+                            .col-md-4
+                                .about-section__item
+                                    .about-section__item-img
+                                        img(src='assets/img/about-img-2.png')
+                                        span 15 <i>x</i>
+                                    .about-section__item-body
+                                        span 2,2 км лестниц
+                                        p (как 15 Потемкинских лестниц в Одессе)
+                            .col-md-4
+                                .about-section__item
+                                    .about-section__item-img
+                                        img(src='assets/img/about-img-3.png')
+                                        span 12 <i>x</i>
+                                    .about-section__item-body
+                                        span 54 000 дверей
+                                        p (хватит, чтобы покрыть площадь 12 футбольных полей )
+                    .about-section__appeal
+                        .row
+                            .col-md-6
+                                img.w-100(src='assets/img/portrait-img.png')
+                            .col-md-6
+                                .about-section__appeal-wrapper
+                                    span.about-section__appeal-title Обращение руководителя компании "Мебельер"
+                                    p “Вот уже более 10 лет мы воплощаем в жизнь любые идеи наших клиентов, изготавливая отдельные предметы мебели на заказ и реализовывая интерьерные решения под ключ. Будем рады реализовать и вашу мечту!”
+                                    span.about-section__appeal-initials Имя Фамилия
+
+                    span.about-section__contentTitle.mb-2.pb-1 Производство в Бердичеве
+                    p.about-section__text.pb-1 Наши производственные мощности (распиловочный, сборочный, кромочный, покрасочный и другие цеха) площадью более 500 м² находятся в г. Бердичеве, в Житомирской области Украины.
+                    .row.mb-3
+                        .col-12.mb-3
+                            img.w-100(src='assets/img/production-img-1.jpg')
+                        .col-md-6.mb-3
+                            img.w-100(src='assets/img/production-img-2.jpg')
+                        .col-md-6.mb-3
+                            img.w-100(src='assets/img/production-img-3.jpg')
+
+                    p.about-section__text.pb-3 Собственный парк современного оборудования позволяет нам производить мебель, двери, лестницы и другие интерьерные решения по индивидуальным проектам заказчиков, используя как массив натуральной древесины, так и привычные для производства мебели материалы: ДСП, МДФ, фанера и т.д.
+                    p.about-section__text.mb-5 Мы закупаем отборную древесину Закарпатских лесов. На складе фабрики всегда достаточно массива благородных сортов, чтобы воплотить в жизнь самые смелые творческие решения.
+
+                    span.about-section__contentTitle.mb-3 Собственная обработка древесины
+                    p.about-section__text.mb-4 На территории фабрики расположены навесы, под которыми древесина проходит естественную сушку в течение 6-9 месяцев.
+                    .row.mb-4.pb-2
+                        .col-md-6.mb-md-0.mb-3
+                            img.w-100(src='assets/img/production-img-4.jpg')
+                        .col-md-6
+                            img.w-100(src='assets/img/production-img-5.jpg')
+                    p.about-section__text.pb-1 Затем в течение 2-3 месяцев она высушивается до требуемых показателей влажности в автоматических сушильных камерах.
+                    p.about-section__text.mb-5.pb-1 Вот почему наши лестницы не скрипят.
+
+                    span.about-section__contentTitle.mb-2.pb-1.text-left Наша команда
+                    .about-section-slider.circle-slider-btn
+                        .about-section-slider__item
+                            .about-section-slider__blockImg
+                                img(src='assets/img/command-1.jpg')
+                            .about-section-slider__item-body
+                                span.about-section-slider__title Василий Петрович
+                                p.about-section-slider__text Столяр высшей категории
+                                p.about-section-slider__text.mb-0 12 лет стажа
+                        .about-section-slider__item
+                            .about-section-slider__blockImg
+                                img(src='assets/img/command-2.jpg')
+                            .about-section-slider__item-body
+                                span.about-section-slider__title Максим Анатольевич
+                                p.about-section-slider__text Столяр высшей категории
+                                p.about-section-slider__text.mb-0 12 лет стажа
+                        .about-section-slider__item
+                            .about-section-slider__blockImg
+                                img(src='assets/img/command-3.jpg')
+                            .about-section-slider__item-body
+                                span.about-section-slider__title Имя Фамилия
+                                p.about-section-slider__text Столяр высшей категории
+                                p.about-section-slider__text.mb-0 12 лет стажа
+                        .about-section-slider__item
+                            .about-section-slider__blockImg
+                                img(src='assets/img/command-3.jpg')
+                            .about-section-slider__item-body
+                                span.about-section-slider__title Имя Фамилия
+                                p.about-section-slider__text Столяр высшей категории
+                                p.about-section-slider__text.mb-0 12 лет стажа
+
+                    p.about-section__text.mb-4 Фабрика «Мебельер» — команда опытных столяров, мастеров по корпусной мебели, маляров, технологов и дизайнеров, которая готова качественно и в срок воплотить ваши желания в жизнь.
+                    p.about-section__text.mb-5 Мы следим за всеми новинками отрасли, стремясь следовать в ногу с модными трендами и предугадывать спрос на те или иные решения. Готовы к любым экспериментам!
+
+                .col-xl-3.col-lg-2
+
+
+
+block script
+
+
+block head
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css' rel='stylesheet')
