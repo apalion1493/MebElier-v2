@@ -96,10 +96,7 @@
     background-size: 100% auto;
     width: 31px;
     height: 28px;
-  }
-
-  &.active {
-    .card-product__like {
+    &.active {
       background: url("../../../../assets/img/heart-icon-active.svg") no-repeat center;
       background-size: 100% auto;
     }
