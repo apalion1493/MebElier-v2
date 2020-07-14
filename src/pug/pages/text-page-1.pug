@@ -1,0 +1,205 @@
+extends ../layout/main
+
+block variables
+    - var title = 'article-page-1';
+    - var description = '';
+    - var pageClass = 'index-page';
+
+block content
+    section.text-page
+        .container
+            .row
+                .col-xl-2.col-lg-1.col-md-12
+                .col-xl-8.col-lg-10.col-md-12
+                    .text-page__background-wrapper
+                        .text-page__background-head(style='background-image: url("assets/img/text-page__img2.jpg")')
+                .col-xl-2.col-lg-1.col-md-12
+
+
+                .col-xl-3.col-lg-2.col-md-1
+                .col-xl-6.col-lg-8.col-md-10
+                    .text-page__wrapper
+                        span.text-page__title.mb-4 Стеклянные ограждения
+                        p.text-page__text.mb-4.pb-3 У нас можно заказать изготовление стеклянного лестничного ограждения любой сложности по индивидуальному проекту.
+                        span.text-page__subTitle.mb-4.pb-2 Ограждения из триплекса:
+                        .row.text-page__rowOne
+                            .col-md-4
+                                .text-page__rowOne-col
+                                    span.list-item Безопасны
+                                    p Ни одного осколка даже при сильном ударе. Они остаются на пленке.
+                            .col-md-4
+                                .text-page__rowOne-col
+                                    span.list-item Прочны
+                                    p Выдерживают большие нагрузки.
+                            .col-md-4
+                                .text-page__rowOne-col
+                                    span.list-item Стильны
+                                    p Смотрятся красиво в любом интерьера, благодаря широкому выбору цветов и вариантов декорирования.
+                        span.text-page__subTitle.mb-3.pb-1 Толщина стекла
+                        img.w-100.mb-4(src='assets/img/Glass-thickness.jpg')
+                        p.text-page__text Триплекс состоит из 2 слоев закаленного стекла, склеенных полимерной пленкой при высокой температуре.
+                        p.text-page__text Толщина триплекса подбирается в зависимости от размеров ограждения, предполагаемой нагрузки, соотношения высоты и ширины.
+                        p.text-page__text Самые востребованные варианты:
+                        .row.text-page__rowThree
+                            .col-md-4
+                                .text-page__rowThree-col
+                                    span.icon-layers
+                                    p 6+6 мм
+                            .col-md-4
+                                .text-page__rowThree-col
+                                    span.icon-layers
+                                    p 8+8 мм
+                            .col-md-4
+                                .text-page__rowThree-col
+                                    span.icon-layers
+                                    p 10+10 мм
+
+
+                        span.text-page__subTitle.mb-3.pb-1 Конфигурация
+                        p.text-page__text Вы можете заказать лестничное ограждение из стекла различной формы:
+                        .row.pt-2.mb-2
+                            .col-sm-4
+                                div.mb-4
+                                    img.w-100.mb-3(src='assets/img/configuration-img-1.jpg')
+                                    span.text-page__text.text-center.d-block прямоугольной
+                            .col-sm-4
+                                div
+                                    img.w-100.mb-3(src='assets/img/configuration-img-2.jpg')
+                                    span.text-page__text.text-center.d-block криволинейной
+                            .col-sm-4
+                                div
+                                    img.w-100.mb-3(src='assets/img/configuration-img-3.jpg')
+                                    span.text-page__text.text-center.d-block гнутой
+                        p.text-page__text Для винтовой, спиральной или радиусной лестницы можем изготовить ограждение из гнутого (моллированного) стекла.
+                        p.text-page__text Лист стекла помещается в специальную печь и нагревается в печи под температурой 600-650 °С. После того, как стекло стало мягким, его заливают в заготовку нужной формы. Затем подвергают закалке.
+                        p.text-page__text На моллированное стекло можно нанести  гравировку, рисунок, клеят декоративные наклейки, матируют и т.д.
+                        p.text-page__text При проектировании лестничных ограждений из гнутого стекла важно учесть, что минимальный радиус изгиба стекла толщиной 6 мм равен 900 мм, а стекла толщиной 10 мм — 1200 мм.
+
+                        span.text-page__subTitle.mb-3.pb-1.mt-5.pt-3 Дизайн
+                        p.text-page__text Предлагаем богатый выбор вариантов оформления стеклянного ограждения:
+                        .row.text-page__rowTwo
+                            .col-md-6
+                                .text-page__rowTwo-col
+                                    .text-page__rowTwo-col-img
+                                        i.clear-glass
+                                    .text-page__rowTwo-col-body
+                                        span.text-page__text.text-page__rowTwo-col-title Прозрачное
+                                        p.text-page__text Обычное бесцветное стекло с зеленоватым оттенком.
+                            .col-md-6
+                                .text-page__rowTwo-col
+                                    .text-page__rowTwo-col-img
+                                        i.colored-glass
+                                    .text-page__rowTwo-col-body
+                                        span.text-page__text.text-page__rowTwo-col-title Цветное
+                                        p.text-page__text Любой цвет и оттенок.
+                            .col-md-6
+                                .text-page__rowTwo-col
+                                    .text-page__rowTwo-col-img
+                                        i.glass-seal
+                                    .text-page__rowTwo-col-body
+                                        span.text-page__text.text-page__rowTwo-col-title УФ печать
+                                        p.text-page__text Фотопечать любой картинки, фото, коллажа и т.д.
+                            .col-md-6
+                                .text-page__rowTwo-col
+                                    .text-page__rowTwo-col-img
+                                        i.ultra-clear-glass
+                                    .text-page__rowTwo-col-body
+                                        span.text-page__text.text-page__rowTwo-col-title Ультрапрозрачное
+                                        p.text-page__text Абсолютно прозрачное стекло Extra Clear.
+                            .col-md-6
+                                .text-page__rowTwo-col
+                                    .text-page__rowTwo-col-img
+                                        i.glass-pattern
+                                    .text-page__rowTwo-col-body
+                                        span.text-page__text.text-page__rowTwo-col-title С узором
+                                        p.text-page__text Нанесение на стекло пескоструйного рисунка.
+                            .col-md-6
+                                .text-page__rowTwo-col
+                                    .text-page__rowTwo-col-img
+                                        i.frosted-glass
+                                    .text-page__rowTwo-col-body
+                                        span.text-page__text.text-page__rowTwo-col-title Матированное
+                                        p.text-page__text Придание стеклу матовости песком под высоким давлением.
+
+                        span.text-page__subTitle.mb-3.pb-1 Способ крепления
+                        p.text-page__text В зависимости от стиля интерьера можно выбрать один из 4 способов крепления стекла:
+                        .row.text-page__rowFour
+                            .col-md-6
+                                .card.border-0
+                                    img.card-img-top(src='assets/img/mount-img-1.jpg' alt='...')
+                                    .card-body
+                                        span.card-text.font-weight-bold.mb-3.d-block На точках
+                                        p.card-text.text-page__text Стекло крепится на практически незаметных коннекторах в боковой части лестницы.
+                                        p.card-text.text-page__text Такой способ крепления визуально добавляет лестнице легкости и не отбирает лишнее пространство.
+                            .col-md-6
+                                .card.border-0
+                                    img.card-img-top(src='assets/img/mount-img-2.jpg' alt='...')
+                                    .card-body
+                                        span.card-text.font-weight-bold.mb-3.d-block  На стойках
+                                        p.card-text.text-page__text Стеклянная панель устанавливается между двумя стойками и крепится непосредственно к ним.
+                                        p.card-text.text-page__text Используются пластинчатые (прочные, красивые) или зажимные (дешевле) держатели.
+                            .col-md-6
+                                .card.border-0
+                                    img.card-img-top(src='assets/img/mount-img-3.jpg' alt='...')
+                                    .card-body
+                                        span.card-text.font-weight-bold.mb-3.d-block  На профиле
+                                        p.card-text.text-page__text Стекло зажимается в алюминиевом профиле.
+                                        p.card-text.text-page__text Благодаря профилю стекло защищено снизу, где оно чаще всего подвержено ударам.
+                            .col-md-6
+                                .card.border-0
+                                    img.card-img-top(src='assets/img/mount-img-4.jpg' alt='...')
+                                    .card-body
+                                        span.card-text.font-weight-bold.mb-3.d-block  На мини-стойках
+                                        p.card-text.text-page__text Стекло фиксируется на мини-стойках, закрепленных в пол или в ступень.
+                                        p.card-text.text-page__text Отличная альтернатива, когда невозможно закрепить стекло в торцовой части.
+
+                        p.text-page__text Наш специалист подскажет, какой вариант крепления оптимально подойдет в вашем случае с учетом параметров проема, интерьера помещения и других факторов.
+
+                        span.text-page__subTitle.mb-2.pb-1.mt-4 Поручни
+                        p.text-page__text Вы сможете выбрать материал, форму и способ крепления поручня:
+                        .row.text-page__rowFive.mb-5
+                            .col-lg-3.col-md-4.col-sm-6
+                                .text-page__rowFive-col
+                                    img.w-100.mb-2.pb-1(src='assets/img/handrails-img-1.jpg')
+                                    span.text-page__text Евро-кромка
+                            .col-lg-3.col-md-4.col-sm-6
+                                .text-page__rowFive-col
+                                    img.w-100.mb-2.pb-1(src='assets/img/handrails-img-2.jpg')
+                                    span.text-page__text Круглый поручень из нержавейки
+                            .col-lg-3.col-md-4.col-sm-6
+                                .text-page__rowFive-col
+                                    img.w-100.mb-2.pb-1(src='assets/img/handrails-img-3.jpg')
+                                    span.text-page__text Прямоугольный поручень из нержавейки
+                            .col-lg-3.col-md-4.col-sm-6
+                                .text-page__rowFive-col
+                                    img.w-100.mb-2.pb-1(src='assets/img/handrails-img-4.jpg')
+                                    span.text-page__text Круглый поручень из дерева
+                            .col-lg-3.col-md-4.col-sm-6
+                                .text-page__rowFive-col
+                                    img.w-100.mb-2.pb-1(src='assets/img/handrails-img-5.jpg')
+                                    span.text-page__text Выносной круглый из нержавеющей стали
+                            .col-lg-3.col-md-4.col-sm-6
+                                .text-page__rowFive-col
+                                    img.w-100.mb-2.pb-1(src='assets/img/handrails-img-6.jpg')
+                                    span.text-page__text Выносной прямоугольный из нержавейки
+                            .col-lg-3.col-md-4.col-sm-6
+                                .text-page__rowFive-col
+                                    img.w-100.mb-2.pb-1(src='assets/img/handrails-img-7.jpg')
+                                    span.text-page__text Выносной круглый из дерева
+                            .col-lg-3.col-md-4.col-sm-6
+                                .text-page__rowFive-col
+                                    img.w-100.mb-2.pb-1(src='assets/img/handrails-img-8.jpg')
+                                    span.text-page__text С светодиодной подсветкой
+
+
+                .col-xl-3.col-lg-2.col-md-1
+    include ../includes/modules/text-page-bottom-section
+
+
+
+block script
+
+
+block head
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css' rel='stylesheet')

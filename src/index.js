@@ -57,6 +57,10 @@ $('.dropdown-toggle .dropdown-menu').on({'click': function(e) {
     }
 });
 
+$('.product-page__order-favorites').click(function () {
+    $(this).toggleClass('active')
+})
+
 $(".dropdown-menu li a").click(function(){
     $(this).parents(".dropdown").find('.btn').val($(this).data('value')).html($(this).html());
 });
@@ -244,6 +248,39 @@ function slickNum() {
                     slidesToScroll: 1,
                     variableWidth: true,
                     infinite: true,
+                }
+            }
+        ]
+    })
+
+    $('.text-page-bottom-section__slider').slick({
+        slidesToShow: 2,
+        infinite: false,
+        arrow: true,
+        lazyLoad: 'progressive',
+        dots: true,
+        adaptiveHeight: false,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    variableWidth: false
+                }
+            },
+            {
+                breakpoint: 767.98,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 575.98,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 }
             }
         ]

@@ -1,0 +1,38 @@
+section.text-page-bottom-section
+    .container
+        .row
+            .col-xl-2.col-lg-1.col-md-12
+            .col-xl-8.col-lg-10.col-md-12
+                span.text-page__subTitle.mb-3.pb-1 Другие статьи
+                .text-page__line
+                .row.text-page-bottom-section__rowOne
+                    .col-lg-6.mb-lg-0.mb-4
+                        .text-page-bottom-section__block.text-page-bottom-section__blum
+                            .text-page-bottom-section__blum-imgBlock
+                                img(src='assets/img/block-article-1.png')
+                            .text-page-bottom-section__blum-body
+                                span.text-page-bottom-section__blum-title Фурнитура Blum
+                                p.text-page-bottom-section__blum-text При повреждении не рассыпается на осколки. Можно изготовить в любом цвете, нанести художественную матировку, выполнить УФ-печать.
+                    .col-lg-6
+                        .text-page-bottom-section__block.text-page-bottom-section__backlight
+                            .text-page-bottom-section__backlight-body
+                                span.text-page-bottom-section__backlight-title Подсветка
+                                p.text-page-bottom-section__backlight-text Светодиодные ленты высокого качества (не перегорят через неделю).
+
+                span.text-page__subTitle.mb-3.pb-1 Наши товары
+                .text-page__line
+
+                .text-page-bottom-section__slider
+                    .text-page-bottom-section__item
+                        +productCard('card-product card-product_bottom-left active', 'catalog-1.png', 'Винтовая дизайнерская', '79 990 грн.')
+                    .text-page-bottom-section__item
+                        +productCard('card-product card-product_top-left', 'catalog-2.png', 'Со стеклянными ограждениями', '220 990 грн.')
+                    .text-page-bottom-section__item
+                        +productCard('card-product card-product_top-left', 'catalog-3.png', 'Дизайнерская лестница', '149 990 грн.')
+                    .text-page-bottom-section__item
+                        +productCard('card-product card-product_top-left dark-background', 'catalog-4.png', 'Дизайнерская лестница', '149 990 грн.')
+                    .text-page-bottom-section__item
+                        +productCard('card-product card-product_top-left', 'catalog-5.png', 'Винтовая дизайнерская', '79 990 грн.')
+                    .text-page-bottom-section__item
+                        +productCard('card-product card-product_top-left', 'catalog-6.png', 'Винтовая дизайнерская', '79 990 грн.')
+            .col-xl-2.col-lg-1.col-md-12
