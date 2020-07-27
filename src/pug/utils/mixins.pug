@@ -89,3 +89,30 @@ mixin elementView(image, title, ...items)
       ul.elementView__list.red-squares-list
         each item in items
           li.elementView__item.red-squares-list__item= item
+
+
+mixin cartBlock(image, title, textPrice, description1, description2, description3)
+  .cartBlock.row
+    .cartBlock__img.col-6
+      img.w-100(src='assets/img/' + image + '' alt='')
+    .cartBlock__body.col-6
+      a(href='#').cartBlock__title=title
+      span.cartBlock__price=textPrice
+      table.table.table-borderless.cartBlock__table
+        tbody
+          tr
+            td
+              span Ступени:
+            td
+              p=description1
+          tr
+            td
+              span Высота:
+            td
+              p=description2
+          tr
+            td
+              span Материал:
+            td
+              p=description3
+      button.cartBlock__delete <i></i> <span>Удалить</span>

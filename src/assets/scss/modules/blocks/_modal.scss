@@ -1,0 +1,126 @@
+.modal {
+
+  .modal-dialog {
+    max-width: 623px;
+  }
+
+  .modal-content {
+    border-radius: 0;
+    background: initial;
+  }
+
+  .modal-header {
+    background: $fonts-color-2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 36px;
+  }
+  
+  .modal-body {
+    background: #ffffff;
+    padding-bottom: 73px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+      max-width: 437px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & > div {
+        width: 100%;
+      }
+    }
+  }
+
+  button.close {
+    color: #ffffff;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    text-shadow: none;
+    font-weight: 300;
+    opacity: 1;
+    font-size: 24px;
+    background: url("../../../../assets/img/icon-close.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin-right: 0;
+    
+    span {
+      display: none;
+    }
+  }
+
+  .modal-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    color: $mainFontColor;
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
+.modal-button {
+  width: 239px;
+  height: 61px;
+  margin-top: 68px;
+}
+
+.error-explanation {
+  display: none;
+  margin-top: 19px;
+  background: rgba(255, 33, 60, .05);
+  padding: 16px 20px 18px 28px;
+  color: $danger-color;
+}
+
+.error-explanation__title {
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.error-explanation__item {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.modal-error {
+  .error-explanation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-button {
+    margin-top: 26px;
+  }
+}
+
+.modal-button_sended {
+  width: 181px;
+  height: 61px;
+  margin-top: 60px;
+}
+
+.modal-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $fonts-color-2;
+  max-width: 475px;
+}

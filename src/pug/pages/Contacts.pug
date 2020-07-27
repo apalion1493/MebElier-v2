@@ -6,9 +6,74 @@ block variables
     - var pageClass = 'index-page';
 
 block content
-    section.contacts-section
+
+    section.contacts-section.py-0
         .container
             .row
+                .col-8
+                    .contacts-section__container
+                        span.h1.contacts-section__title Контакты
+                        .row.mb-5.pb-1
+                            .col-xl-6.mb-4.mb-xl-0
+                                .contacts-section__column
+                                    span.contacts-section__column-title.contacts-section__subTitle Телефоны
+                                    .d-flex.align-items-center
+                                        ul.contacts-section__column-phone-list
+                                            li.contacts-section__column-phone-item
+                                                a.contacts-section__style-text(href='tel:+380676200115') <span class='kyivstar-icon'></span> + 38 (067)
+                                            li.contacts-section__column-phone-item
+                                                a.contacts-section__style-text(href='tel:+380506200115') <span class='vodafone-icon'></span> + 38 (050)
+                                            li.contacts-section__column-phone-item
+                                                a.contacts-section__style-text(href='tel:+380936200115') <span class='turkcell-icon'></span> + 38 (093)
+
+                                        span.contacts-section__phone 620 - 01 -15
+                            .col-xl-6
+                                .contacts-section__column
+                                    span.contacts-section__column-title.contacts-section__subTitle Email
+                                    a.contacts-section__style-text(href='mailto:info@mebelier.com.ua') info@mebelier.com.ua
+
+                        span.contacts-section__subTitle.mb-3 НАШ ШОУРУМ <p class='contacts-section__style-text'>Одесса, ул. Среднефонтанская 12А, «Гипермаркет дверей»</p>
+                        .contacts-section__imgOne-row.mb-3
+                            .contacts-section__imgOne-col-1
+                                img.w-100(src='assets/img/contacts-img-1.jpg')
+                            .contacts-section__imgOne-col-2
+                                img.w-100(src='assets/img/contacts-img-2.jpg')
+
+                        .contacts-section__map
+                            #wrapMap
+                                iframe.contacts-section__map-iframe(style='pointer-events: none' src='https://yandex.ru/map-widget/v1/?um=constructor%3A78983ea55134f18f08b7af21adb1ef48e811db8aa645b220b42f7c732a78b51a&source=constructor' height='394' frameborder='0')
+                            a.btn.btn-dark.contacts-section__map-btn(href='#') Схема проезда
+
+                        span.contacts-section__subTitle.mb-3 НАША ФАБРИКА <p class='contacts-section__style-text'>Украина, г.Бердичев, ул. Низгурецкая, 100</p>
+                        .row
+                            .col-lg-6.mb-3.mb-lg-0
+                                img.w-100(src='assets/img/contacts-img-3.jpg')
+                            .col-lg-6
+                                img.w-100(src='assets/img/contacts-img-4.jpg')
+
+                .col-4
+                    .shopping-cart-section__column
+                        .shopping-cart-section__ordering.mb-5.pb-2
+                            span.shopping-cart-section__ordering-title.shopping-cart-section__column-title Написать нам
+                            p.main-text.font-weight-bold Появились вопросы?
+                            p.main-text Отправьте заявки и мы с вами <br> свяжемся в течении
+                            form.shopping-cart-section__form
+                                .form-group.form-style
+                                    input#orderingName.form-control(type='text' placeholder='Ваше имя')
+                                .form-group.form-style
+                                    input#orderingPhone.form-control(type='text' placeholder='Ваш телефон')
+                                .form-group.form-style
+                                    input#orderingMessage.form-control(type='text' placeholder='Текст сообщения')
+                                button.btn.btn-dark.shopping-cart-section__form-btn(type='submit') Отправить
+                        .shopping-cart-section__requisites
+                            span.shopping-cart-section__column-title.mb-3.pb-1 Реквизиты
+                            p.shopping-cart-section__requisites-text ТОВ МЕБЕЛЬЄР
+                            p.shopping-cart-section__requisites-text ЄДРПОУ 43477299
+                            p.shopping-cart-section__requisites-text АТ КБ "ПРИВАТБАНК" рахунок:
+                            p.shopping-cart-section__requisites-text UA353287040000026009054237118
+
+
+
 
 
 block script

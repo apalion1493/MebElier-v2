@@ -69,6 +69,12 @@ section, .section {
   }
 }
 
+.main-text {
+  font-size: rem(14);
+  line-height: rem(17);
+  color: $fonts-color-1;
+}
+
 .app {
   min-height: 100vh;
   display: flex;
@@ -437,6 +443,76 @@ button {
   }
 }
 
+.form-style {
+  margin-bottom: 0;
+
+  input {
+    height: 61px;
+    border: none;
+    border-bottom: 1px solid #BBBBBB;
+    border-radius: 0;
+    padding-left: 0;
+
+    font-size: rem(14);
+    line-height: rem(17);
+    color: $mainFontColor;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      border-bottom: 1px solid #BBBBBB;
+    }
+  }
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  background-image: none;
+  border-color: $danger-color;
+  padding-right: 0;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &::-webkit-input-placeholder {color:$danger-color}
+  &::-moz-placeholder          {color:$danger-color}/* Firefox 19+ */
+  &:-moz-placeholder           {color:$danger-color}/* Firefox 18- */
+  &:-ms-input-placeholder      {color:$danger-color}
+}
+
+#wrapMap {
+  position: absolute;
+  cursor: help;
+  width: 100%;
+  height: 394px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.mapTitle {
+  position: absolute;
+  z-index: 1000;
+  box-shadow: rgba(0,0,0,.25) 0 0 5px;
+  display: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background: #fff;
+  border-image: initial;
+  border: 1px solid #ccc;
+}
+
+.contacts-section__map-iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1199.98px) {
   .bg-white-color {
     &:before {
@@ -506,9 +582,11 @@ button {
 @import "modules/page/contacts";
 @import "modules/page/about";
 @import "modules/page/text-page";
+@import "modules/page/shopping-cart-section";
 
 @import "modules/footer";
 @import "modules/header";
+@import "modules/blocks/modal";
 @import "modules/blocks/red-squares-list";
 @import "modules/blocks/card-product";
 @import "modules/blocks/form-search";
@@ -524,3 +602,4 @@ button {
 @import "modules/blocks/advantagesAndDisadvantages";
 @import "modules/blocks/elementView";
 @import "modules/blocks/content-info-block";
+@import "modules/blocks/cartBlock";

@@ -1,0 +1,71 @@
+#modalWish.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-header
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                span.modal-title Опишите свое пожелание
+                form
+                    .form-group.form-style
+                        input#orderingName.form-control(type='text' placeholder='Ваше имя')
+                    .form-group.form-style
+                        input#orderingPhone.form-control(type='text' placeholder='Ваш телефон')
+                    .form-group.form-style
+                        input#orderingMessage.form-control(type='text' placeholder='Ваше сообщение')
+
+                    .error-explanation
+                        span.error-explanation__title ОШИБКА
+                        ul.error-explanation__list
+                            li.error-explanation__item * Не указано имя
+                            li.error-explanation__item * Не указан email
+
+
+                    button.btn.btn-dark.modal-button(type='submit') Отправить
+
+
+#modalWishError.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-header
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                span.modal-title Опишите свое пожелание
+                form.modal-error
+                    .form-group.form-style
+                        input#orderingNameError.form-control.is-invalid(type='text' placeholder='Ваше имя')
+                    .form-group.form-style
+                        input#orderingPhoneError.form-control.is-invalid(type='text' placeholder='Ваш телефон')
+                    .form-group.form-style
+                        input#orderingMessageError.form-control(type='text' placeholder='Ваше сообщение')
+
+                    .error-explanation
+                        span.error-explanation__title ОШИБКА
+                        ul.error-explanation__list
+                            li.error-explanation__item * Не указано имя
+                            li.error-explanation__item * Не указан email
+
+
+                    button.btn.btn-dark.modal-button.disabled(type='submit' disabled='disabled') Отправить
+
+#modalWishSended.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-header
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                span.modal-title Сообщение отправленно
+                p.modal-text Ответим вам в ближайшее время. Спасибо за ваш интерес!
+                button.btn.btn-dark.modal-button_sended(type='submit' data-dismiss="modal") Ок
+
+
+button.btn.btn-primary(type='button' data-toggle='modal' data-target='#modalWish')
+    | button1
+
+button.btn.btn-primary(type='button' data-toggle='modal' data-target='#modalWishError')
+    | button2
+
+button.btn.btn-primary(type='button' data-toggle='modal' data-target='#modalWishSended')
+    | button3
