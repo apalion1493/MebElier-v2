@@ -185,6 +185,18 @@
   margin-bottom: 0;
 }
 
+.shopping-cart-section__mob-container {
+  margin-top: 40px;
+
+  .form-style input {
+    background: initial;
+  }
+
+  .shopping-cart-section__form {
+    max-width: 437px;
+  }
+}
+
 @media (max-width: 1199.98px) {
 
 }

@@ -10,11 +10,11 @@ block content
     section.contacts-section.py-0
         .container
             .row
-                .col-8
+                .col-xl-8.content-sideBar
                     .contacts-section__container
                         span.h1.contacts-section__title Контакты
                         .row.mb-5.pb-1
-                            .col-xl-6.mb-4.mb-xl-0
+                            .col-lg-6.mb-5.mb-xl-0
                                 .contacts-section__column
                                     span.contacts-section__column-title.contacts-section__subTitle Телефоны
                                     .d-flex.align-items-center
@@ -27,10 +27,33 @@ block content
                                                 a.contacts-section__style-text(href='tel:+380936200115') <span class='turkcell-icon'></span> + 38 (093)
 
                                         span.contacts-section__phone 620 - 01 -15
-                            .col-xl-6
+                            .col-lg-6.mb-5.mb-xl-0
                                 .contacts-section__column
                                     span.contacts-section__column-title.contacts-section__subTitle Email
                                     a.contacts-section__style-text(href='mailto:info@mebelier.com.ua') info@mebelier.com.ua
+
+                            .col-lg-6.mb-5.mb-xl-0.d-block.d-xl-none
+                                .contacts-section__column
+                                    span.contacts-section__subTitle.mb-3 Написать нам
+                                    p.main-text.font-weight-bold Появились вопросы?
+                                        p.main-text Отправьте заявки и мы с вами <br> свяжемся в течении
+                                        form.shopping-cart-section__form.contacts-section__form
+                                            .form-group.form-style
+                                                input#orderingName1.form-control(type='text' placeholder='Ваше имя')
+                                            .form-group.form-style
+                                                input#orderingPhone1.form-control(type='text' placeholder='Ваш телефон')
+                                            .form-group.form-style
+                                                input#orderingMessage1.form-control(type='text' placeholder='Текст сообщения')
+                                            button.btn.btn-dark.shopping-cart-section__form-btn(type='submit') Отправить
+
+                            .col-lg-6.d-xl-none
+                                .contacts-section__column
+                                    span.contacts-section__subTitle.mb-3 Реквизиты
+                                    p.shopping-cart-section__requisites-text ТОВ МЕБЕЛЬЄР
+                                    p.shopping-cart-section__requisites-text ЄДРПОУ 43477299
+                                    p.shopping-cart-section__requisites-text АТ КБ "ПРИВАТБАНК" рахунок:
+                                    p.shopping-cart-section__requisites-text UA353287040000026009054237118
+
 
                         span.contacts-section__subTitle.mb-3 НАШ ШОУРУМ <p class='contacts-section__style-text'>Одесса, ул. Среднефонтанская 12А, «Гипермаркет дверей»</p>
                         .contacts-section__imgOne-row.mb-3
@@ -51,32 +74,51 @@ block content
                             .col-lg-6
                                 img.w-100(src='assets/img/contacts-img-4.jpg')
 
-                .col-4
-                    .shopping-cart-section__column
-                        .shopping-cart-section__ordering.mb-5.pb-2
-                            span.shopping-cart-section__ordering-title.shopping-cart-section__column-title Написать нам
-                            p.main-text.font-weight-bold Появились вопросы?
-                            p.main-text Отправьте заявки и мы с вами <br> свяжемся в течении
-                            form.shopping-cart-section__form
-                                .form-group.form-style
-                                    input#orderingName.form-control(type='text' placeholder='Ваше имя')
-                                .form-group.form-style
-                                    input#orderingPhone.form-control(type='text' placeholder='Ваш телефон')
-                                .form-group.form-style
-                                    input#orderingMessage.form-control(type='text' placeholder='Текст сообщения')
-                                button.btn.btn-dark.shopping-cart-section__form-btn(type='submit') Отправить
-                        .shopping-cart-section__requisites
-                            span.shopping-cart-section__column-title.mb-3.pb-1 Реквизиты
-                            p.shopping-cart-section__requisites-text ТОВ МЕБЕЛЬЄР
-                            p.shopping-cart-section__requisites-text ЄДРПОУ 43477299
-                            p.shopping-cart-section__requisites-text АТ КБ "ПРИВАТБАНК" рахунок:
-                            p.shopping-cart-section__requisites-text UA353287040000026009054237118
+                .col-xl-4
+                    .shopping-cart-section__column.d-none.d.d-xl-flex
+                        .sidebar
+                            .sidebar__inner
+                                .shopping-cart-section__ordering.mb-5.pb-2
+                                    span.shopping-cart-section__ordering-title.shopping-cart-section__column-title Написать нам
+                                    p.main-text.font-weight-bold Появились вопросы?
+                                    p.main-text Отправьте заявки и мы с вами <br> свяжемся в течении
+                                    form.shopping-cart-section__form
+                                        .form-group.form-style
+                                            input#orderingName.form-control(type='text' placeholder='Ваше имя')
+                                        .form-group.form-style
+                                            input#orderingPhone.form-control(type='text' placeholder='Ваш телефон')
+                                        .form-group.form-style
+                                            input#orderingMessage.form-control(type='text' placeholder='Текст сообщения')
+                                        button.btn.btn-dark.shopping-cart-section__form-btn(type='submit') Отправить
+                                .shopping-cart-section__requisites
+                                    span.shopping-cart-section__column-title.mb-3.pb-1 Реквизиты
+                                    p.shopping-cart-section__requisites-text ТОВ МЕБЕЛЬЄР
+                                    p.shopping-cart-section__requisites-text ЄДРПОУ 43477299
+                                    p.shopping-cart-section__requisites-text АТ КБ "ПРИВАТБАНК" рахунок:
+                                    p.shopping-cart-section__requisites-text UA353287040000026009054237118
 
 
 
 
 
 block script
+    script(type='text/javascript').
+        let mapTitle = document.createElement('div'); mapTitle.className = 'mapTitle';
+        mapTitle.textContent = 'Для активации карты нажмите по ней';
+        wrapMap.appendChild(mapTitle);
+        wrapMap.onclick = function () {
+            this.children[0].removeAttribute('style');
+            mapTitle.parentElement.removeChild(mapTitle);
+        };
+        wrapMap.onmousemove = function (event) {
+            mapTitle.style.display = 'block';
+            if (event.offsetY > 10) mapTitle.style.top = event.offsetY + 20 + 'px';
+            if (event.offsetX > 10) mapTitle.style.left = event.offsetX + 20 + 'px';
+        };
+        wrapMap.onmouseleave = function () {
+            mapTitle.style.display = 'none';
+        };
+
 
 
 block head

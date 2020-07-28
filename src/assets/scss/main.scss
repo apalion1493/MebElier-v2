@@ -513,6 +513,16 @@ button {
   height: 100%;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sidebar__inner {
+  padding-bottom: 30px;
+}
+
 @media (max-width: 1199.98px) {
   .bg-white-color {
     &:before {

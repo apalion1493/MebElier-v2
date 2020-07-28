@@ -9,7 +9,7 @@ block content
     section.shopping-cart-section
         .container
             .row
-                .col-8
+                .col-xl-8.content-sideBar
                     .shopping-cart-section__wrapper
                         span.h1 Корзина
                         .shopping-cart-section__list
@@ -17,52 +17,109 @@ block content
                             +cartBlock('cartBlock-img-2.jpg', 'Дизайнерская лестница', '149 990 грн.', 'Ступени: 14 шт', 'Высота: 3 200 мм', 'Материал: Дерово')
                             +cartBlock('cartBlock-img-3.jpg', 'Дизайнерская лестница', '149 990 грн.', 'Ступени: 14 шт', 'Высота: 3 200 мм', 'Материал: Дерово')
                             +cartBlock('cartBlock-img-4.jpg', 'Дизайнерская лестница', '149 990 грн.', 'Ступени: 14 шт', 'Высота: 3 200 мм', 'Материал: Дерово')
-                .col-4
-                    .shopping-cart-section__column
-                        .shopping-cart-section__ordering
-                            span.shopping-cart-section__ordering-title.shopping-cart-section__column-title Оформление заказа
-                            form.shopping-cart-section__form
-                                .form-group.form-style
-                                    input#orderingName.form-control(type='text' placeholder='Ваше имя')
-                                .form-group.form-style
-                                    input#orderingPhone.form-control(type='text' placeholder='Ваш телефон')
-                                button.btn.btn-dark.shopping-cart-section__form-btn(type='submit') Отправить
+                            +cartBlock('cartBlock-img-4.jpg', 'Дизайнерская лестница', '149 990 грн.', 'Ступени: 14 шт', 'Высота: 3 200 мм', 'Материал: Дерово')
+                            +cartBlock('cartBlock-img-4.jpg', 'Дизайнерская лестница', '149 990 грн.', 'Ступени: 14 шт', 'Высота: 3 200 мм', 'Материал: Дерово')
+                            +cartBlock('cartBlock-img-4.jpg', 'Дизайнерская лестница', '149 990 грн.', 'Ступени: 14 шт', 'Высота: 3 200 мм', 'Материал: Дерово')
+                            +cartBlock('cartBlock-img-4.jpg', 'Дизайнерская лестница', '149 990 грн.', 'Ступени: 14 шт', 'Высота: 3 200 мм', 'Материал: Дерово')
+                            +cartBlock('cartBlock-img-4.jpg', 'Дизайнерская лестница', '149 990 грн.', 'Ступени: 14 шт', 'Высота: 3 200 мм', 'Материал: Дерово')
+                            +cartBlock('cartBlock-img-4.jpg', 'Дизайнерская лестница', '149 990 грн.', 'Ступени: 14 шт', 'Высота: 3 200 мм', 'Материал: Дерово')
+                        .shopping-cart-section__mob-container.row.d-flex.d-xl-none
+                            .col-lg-6
+                                .shopping-cart-section__ordering
+                                    span.shopping-cart-section__ordering-title.shopping-cart-section__column-title Оформление заказа
+                                    form.shopping-cart-section__form
+                                        .form-group.form-style
+                                            input#orderingName2.form-control(type='text' placeholder='Ваше имя')
+                                        .form-group.form-style
+                                            input#orderingPhone2.form-control(type='text' placeholder='Ваш телефон')
+                                        button.btn.btn-dark.shopping-cart-section__form-btn(type='submit') Отправить
 
-                            p.shopping-cart-section__ordering-text Мы свяжемся с вами через 10ть <br> минут после отправки формы
-
-
-
-                        .shopping-cart-section__ordering.shopping-cart-section__ordering-success
-                            span.shopping-cart-section__ordering-title.shopping-cart-section__column-title Ваш заказ оформлен!
-                            .shopping-cart-section__ordering-success-wrapper
-                                p.main-text.font-weight-bold.mb-3.pb-1 Спасибо за ваш заказ
-                                p.main-text.mb-3.pb-1 Наш менеджер свяжется с вами в течении 10 минут.
-                                p.main-text.mb-4 Если хотите поторопить его, звоните  по номерам
-
-                            ul.shopping-cart-section__ordering-num
-                                li.shopping-cart-section__ordering-numItem
-                                    a(href='tel:+380676200115') <span class='kyivstar-icon'></span> + 38 (067) 620 01 15
-                                li.shopping-cart-section__ordering-numItem
-                                    a(href='tel:+380506200115') <span class='vodafone-icon'></span> + 38 (050) 620 01 15
-                                li.shopping-cart-section__ordering-numItem
-                                    a(href='tel:+380936200115') <span class='turkcell-icon'></span> + 38 (093) 620 01 15
+                                    p.shopping-cart-section__ordering-text Мы свяжемся с вами через 10ть <br> минут после отправки формы
 
 
-                        .shopping-cart-section__orderSteps
-                            span.shopping-cart-section__orderSteps-title.shopping-cart-section__column-title Как происходит заказ
-                            ul.shopping-cart-section__orderSteps-list
-                                li.shopping-cart-section__orderSteps-item
-                                    span.shopping-cart-section__orderSteps-num 1
-                                    p.shopping-cart-section__orderSteps-text Вы отправляете форму с заказом
-                                li.shopping-cart-section__orderSteps-item
-                                    span.shopping-cart-section__orderSteps-num 2
-                                    p.shopping-cart-section__orderSteps-text С вами связывается наш менеджер
-                                li.shopping-cart-section__orderSteps-item
-                                    span.shopping-cart-section__orderSteps-num 3
-                                    p.shopping-cart-section__orderSteps-text Специалист БЕСПЛАТНО оценивает ваш проект
-                                li.shopping-cart-section__orderSteps-item
-                                    span.shopping-cart-section__orderSteps-num 4
-                                    p.shopping-cart-section__orderSteps-text Заключаем договор, и приступаем далеть ваш заказ
+
+
+
+                                .shopping-cart-section__ordering.shopping-cart-section__ordering-success
+                                    span.shopping-cart-section__ordering-title.shopping-cart-section__column-title Ваш заказ оформлен!
+                                    .shopping-cart-section__ordering-success-wrapper
+                                        p.main-text.font-weight-bold.mb-3.pb-1 Спасибо за ваш заказ
+                                        p.main-text.mb-3.pb-1 Наш менеджер свяжется с вами в течении 10 минут.
+                                        p.main-text.mb-4 Если хотите поторопить его, звоните  по номерам
+
+                                    ul.shopping-cart-section__ordering-num
+                                        li.shopping-cart-section__ordering-numItem
+                                            a(href='tel:+380676200115') <span class='kyivstar-icon'></span> + 38 (067) 620 01 15
+                                        li.shopping-cart-section__ordering-numItem
+                                            a(href='tel:+380506200115') <span class='vodafone-icon'></span> + 38 (050) 620 01 15
+                                        li.shopping-cart-section__ordering-numItem
+                                            a(href='tel:+380936200115') <span class='turkcell-icon'></span> + 38 (093) 620 01 15
+
+                            .col-lg-6
+                                .shopping-cart-section__orderSteps
+                                    span.shopping-cart-section__orderSteps-title.shopping-cart-section__column-title Как происходит заказ
+                                    ul.shopping-cart-section__orderSteps-list
+                                        li.shopping-cart-section__orderSteps-item
+                                            span.shopping-cart-section__orderSteps-num 1
+                                            p.shopping-cart-section__orderSteps-text Вы отправляете форму с заказом
+                                        li.shopping-cart-section__orderSteps-item
+                                            span.shopping-cart-section__orderSteps-num 2
+                                            p.shopping-cart-section__orderSteps-text С вами связывается наш менеджер
+                                        li.shopping-cart-section__orderSteps-item
+                                            span.shopping-cart-section__orderSteps-num 3
+                                            p.shopping-cart-section__orderSteps-text Специалист БЕСПЛАТНО оценивает ваш проект
+                                        li.shopping-cart-section__orderSteps-item
+                                            span.shopping-cart-section__orderSteps-num 4
+                                            p.shopping-cart-section__orderSteps-text Заключаем договор, и приступаем далеть ваш заказ
+
+                .col-xl-4
+                    .shopping-cart-section__column.d-none.d.d-xl-flex
+                        .sidebar
+                            .sidebar__inner
+                                .shopping-cart-section__ordering
+                                    span.shopping-cart-section__ordering-title.shopping-cart-section__column-title Оформление заказа
+                                    form.shopping-cart-section__form
+                                        .form-group.form-style
+                                            input#orderingName.form-control(type='text' placeholder='Ваше имя')
+                                        .form-group.form-style
+                                            input#orderingPhone.form-control(type='text' placeholder='Ваш телефон')
+                                        button.btn.btn-dark.shopping-cart-section__form-btn(type='submit') Отправить
+
+                                    p.shopping-cart-section__ordering-text Мы свяжемся с вами через 10ть <br> минут после отправки формы
+
+
+
+                                .shopping-cart-section__ordering.shopping-cart-section__ordering-success
+                                    span.shopping-cart-section__ordering-title.shopping-cart-section__column-title Ваш заказ оформлен!
+                                    .shopping-cart-section__ordering-success-wrapper
+                                        p.main-text.font-weight-bold.mb-3.pb-1 Спасибо за ваш заказ
+                                        p.main-text.mb-3.pb-1 Наш менеджер свяжется с вами в течении 10 минут.
+                                        p.main-text.mb-4 Если хотите поторопить его, звоните  по номерам
+
+                                    ul.shopping-cart-section__ordering-num
+                                        li.shopping-cart-section__ordering-numItem
+                                            a(href='tel:+380676200115') <span class='kyivstar-icon'></span> + 38 (067) 620 01 15
+                                        li.shopping-cart-section__ordering-numItem
+                                            a(href='tel:+380506200115') <span class='vodafone-icon'></span> + 38 (050) 620 01 15
+                                        li.shopping-cart-section__ordering-numItem
+                                            a(href='tel:+380936200115') <span class='turkcell-icon'></span> + 38 (093) 620 01 15
+
+
+                                .shopping-cart-section__orderSteps
+                                    span.shopping-cart-section__orderSteps-title.shopping-cart-section__column-title Как происходит заказ
+                                    ul.shopping-cart-section__orderSteps-list
+                                        li.shopping-cart-section__orderSteps-item
+                                            span.shopping-cart-section__orderSteps-num 1
+                                            p.shopping-cart-section__orderSteps-text Вы отправляете форму с заказом
+                                        li.shopping-cart-section__orderSteps-item
+                                            span.shopping-cart-section__orderSteps-num 2
+                                            p.shopping-cart-section__orderSteps-text С вами связывается наш менеджер
+                                        li.shopping-cart-section__orderSteps-item
+                                            span.shopping-cart-section__orderSteps-num 3
+                                            p.shopping-cart-section__orderSteps-text Специалист БЕСПЛАТНО оценивает ваш проект
+                                        li.shopping-cart-section__orderSteps-item
+                                            span.shopping-cart-section__orderSteps-num 4
+                                            p.shopping-cart-section__orderSteps-text Заключаем договор, и приступаем далеть ваш заказ
 
 
 

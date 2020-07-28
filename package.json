@@ -59,6 +59,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "float-sidebar": "^1.2.3",
     "jquery": "^3.5.1",
     "popper.js": "^1.14.3",
     "slick-lightbox": "^0.2.12",

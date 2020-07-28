@@ -132,7 +132,15 @@
   color: #F7F2EF;
 }
 
-@media (max-width: 1315px) {
+.contacts-section__form {
+  max-width: 437px;
+
+  .form-style input {
+    background: initial;
+  }
+}
+
+@media (max-width: 1315.981px) {
   .contacts-section__phone {
     font-size: 44px;
   }
@@ -171,5 +179,17 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+@media (max-width: 575.981px) {
+  .contacts-section__phone {
+    font-size: 28px;
+  }
+
+  .contacts-section__map-btn {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
   }
 }

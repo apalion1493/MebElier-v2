@@ -93,9 +93,9 @@ mixin elementView(image, title, ...items)
 
 mixin cartBlock(image, title, textPrice, description1, description2, description3)
   .cartBlock.row
-    .cartBlock__img.col-6
+    .cartBlock__img.col-md-6
       img.w-100(src='assets/img/' + image + '' alt='')
-    .cartBlock__body.col-6
+    .cartBlock__body.col-md-6
       a(href='#').cartBlock__title=title
       span.cartBlock__price=textPrice
       table.table.table-borderless.cartBlock__table
