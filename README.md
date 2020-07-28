@@ -23,6 +23,14 @@ https://apalion1493.github.io/MebElier-v2/dist/product.html
 
 https://apalion1493.github.io/MebElier-v2/dist/about.html
 
+https://apalion1493.github.io/MebElier-v2/dist/text-page-1.html
+
+https://apalion1493.github.io/MebElier-v2/dist/text-page-2.html
+
+https://apalion1493.github.io/MebElier-v2/dist/text-page-3.html
+
+https://apalion1493.github.io/MebElier-v2/dist/shopping-cart.html
+
 ## Build Setup:
 
 ``` bash
