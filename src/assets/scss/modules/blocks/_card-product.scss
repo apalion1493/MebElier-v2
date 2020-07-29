@@ -45,24 +45,30 @@
   color: $mainFontColor;
 }
 
-.card-product__info-list {
-  margin-bottom: 0;
-  margin-top: 12px;
+.card-product {
+  .product-description {
+    margin-bottom: 0;
+    margin-top: 12px;
 
-  li {
-    margin-bottom: 5px;
+    .product-description__item {
+      margin-bottom: 5px;
 
-    &:last-of-type {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    p, span {
+      font-weight: bold;
+      font-size: rem(14);
+      line-height: rem(17);
+      color: $mainFontColor;
       margin-bottom: 0;
     }
-  }
 
-  p {
-    font-weight: bold;
-    font-size: rem(14);
-    line-height: rem(17);
-    color: $mainFontColor;
-    margin-bottom: 0;
+    span {
+      margin-left: 5px;
+    }
   }
 }
 

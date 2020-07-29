@@ -28,7 +28,7 @@
 
 @mixin smallCard {
   .card-product__info-description,
-  .card-product__info-list {
+  .product-description {
     display: none;
   }
 }

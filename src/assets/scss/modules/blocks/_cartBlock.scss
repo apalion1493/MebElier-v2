@@ -45,24 +45,30 @@
   margin-bottom: 24px;
 }
 
-.cartBlock__table {
-  margin-bottom: 21px;
+.cartBlock {
+  .product-description {
+    margin-bottom: 21px;
 
-  span, p {
-    font-size: rem(14);
-    line-height: rem(17);
-    color: $mainFontColor;
-    display: block;
-    margin-bottom: 0;
+    span, p {
+      font-size: rem(14);
+      line-height: rem(17);
+      color: $mainFontColor;
+      display: block;
+      margin-bottom: 0;
+    }
+
+    p {
+      min-width: 100px;
+      font-weight: bold;
+    }
   }
 
-  span {
-    font-weight: bold;
-  }
+  .product-description__item {
+    margin-bottom: 10px;
 
-  td {
-    padding: 0;
-    padding-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

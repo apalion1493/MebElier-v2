@@ -951,7 +951,8 @@
       .header__nav-phone,
       .dropdown.header__nav-phone-number,
       .header__nav-phone .dropdown-toggle,
-      .form-search__input {
+      .form-search__input,
+      .language-list button {
         color: #ffffff;
       }
 
@@ -959,6 +960,11 @@
         background: url("../../../assets/img/check-menu-icon__white.svg") no-repeat center;
         width: 10px;
         height: 5px;
+      }
+
+      .form-search__close {
+        background: url(../../img/input-close__white.svg) no-repeat 50%;
+        background-size: 100% auto;
       }
 
       .form-search__input {

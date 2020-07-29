@@ -4,22 +4,6 @@ mixin item(title, descr)
     p.item-descr= descr
 
 
-mixin productCard(productClass, bgImage, textName, textPrice)
-  a(href='#' style="background-image: url('assets/img/"+bgImage+"')", class=productClass)
-    span.card-product__like
-    .card-product__info
-      p.card-product__info-text=textName
-      span.card-product__info-price=textPrice
-      ul.card-product__info-list
-        li
-          p Ступени: 14 шт
-        li
-          p Высота: 3 200 мм
-        li
-          p Материал: Дерово
-      p.card-product__info-description Превосходная лестница, с уникальным дизайном поручней, который украсит ваш особняк!
-
-
 mixin miniProductCard(bgImage, textName, textPrice)
   .min-product-card
     .min-product-card__img(style="background-image: url('assets/img/"+bgImage+"')")
@@ -36,23 +20,41 @@ mixin type-stair(bgImage, textTitle, textDescription)
         span.type-stair__title=textTitle
         p.type-stair__text=textDescription
 
+mixin productCard(productClass, bgImage, textName, textPrice)
+  a(href='#' style="background-image: url('assets/img/"+bgImage+"')", class=productClass)
+    span.card-product__like
+    .card-product__info
+      p.card-product__info-text=textName
+      span.card-product__info-price=textPrice
+      ul.product-description
+        li.product-description__item
+          p Ступени:
+          span 14 шт
+        li.product-description__item
+          p Высота:
+          span 3 200 мм
+        li.product-description__item
+          p Материал:
+          span Дерово
+      p.card-product__info-description Превосходная лестница, с уникальным дизайном поручней, который украсит ваш особняк!
+
 mixin portfolioCard(bgImage, titleText, regionText, expirationDate, dataText)
-    .portfolioCard(style="background-image: url('assets/img/"+bgImage+"')")
-      span.icon-like.portfolioCard__like
-      .portfolioCard__body
-        span.portfolioCard__body-title=titleText
-        table.table.portfolioCard__table
-          tbody
-            tr
-              td Регион:
-              td=regionText
-            tr
-              td Срок производства:
-              td=expirationDate
-            tr
-              td Дата:
-              td=dataText
-        a(href='#').btn.btn-outline-light.portfolioCard__btn подробнее
+  .portfolioCard(style="background-image: url('assets/img/"+bgImage+"')")
+    span.icon-like.portfolioCard__like
+    .portfolioCard__body
+      span.portfolioCard__body-title=titleText
+      table.table.portfolioCard__table
+        tbody
+          tr
+            td Регион:
+            td=regionText
+          tr
+            td Срок производства:
+            td=expirationDate
+          tr
+            td Дата:
+            td=dataText
+      a(href='#').btn.btn-outline-light.portfolioCard__btn подробнее
 
 mixin customProducts(title, text, altImage, urlImage, wrapperClass)
   .card(class=wrapperClass)
@@ -98,21 +100,17 @@ mixin cartBlock(image, title, textPrice, description1, description2, description
     .cartBlock__body.col-md-6
       a(href='#').cartBlock__title=title
       span.cartBlock__price=textPrice
-      table.table.table-borderless.cartBlock__table
-        tbody
-          tr
-            td
-              span Ступени:
-            td
-              p=description1
-          tr
-            td
-              span Высота:
-            td
-              p=description2
-          tr
-            td
-              span Материал:
-            td
-              p=description3
+
+      ul.product-description
+        li.product-description__item
+          p Ступени:
+          span=description1
+        li.product-description__item
+          p Высота:
+          span=description2
+        li.product-description__item
+          p Материал:
+          span=description3
+
+
       button.cartBlock__delete <i></i> <span>Удалить</span>

@@ -527,6 +527,16 @@ button {
   padding-bottom: 30px;
 }
 
+.product-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-description__item {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 1199.98px) {
   .bg-white-color {
     &:before {

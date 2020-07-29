@@ -33,6 +33,8 @@ https://apalion1493.github.io/MebElier-v2/dist/shopping-cart.html
 
 https://apalion1493.github.io/MebElier-v2/dist/Contacts.html
 
+https://apalion1493.github.io/MebElier-v2/dist/index.html
+
 ## Build Setup:
 
 ``` bash
