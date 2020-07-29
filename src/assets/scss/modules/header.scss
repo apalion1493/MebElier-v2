@@ -239,6 +239,7 @@
     border: 1px solid #D9D9D9;
     box-shadow: none;
     outline: none;
+    padding-top: 12px;
     
     li {
       margin-bottom: 14px;
@@ -249,6 +250,10 @@
         font-size: rem(14);
         line-height: rem(17);
         color: #201F1D;
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 1;
       }
     }
   }
@@ -549,7 +554,6 @@
 
         &:after {
           transform: rotate(-45deg) translate(7px,-8px);
-          //transform: rotate(-45deg) translate(4px,-4px);
         }
       }
     }
@@ -696,6 +700,14 @@
       text-decoration: none;
       color: #201F1D;
     }
+  }
+
+  .header__nav-phone {
+    margin-left: 20px;
+  }
+
+  .language-list {
+    margin-left: auto;
   }
 }
 
@@ -849,12 +861,39 @@
   .navbar-collapse {
     top: 48px;
   }
+
+  .header__nav-phone {
+    margin-right: 0;
+  }
+
+  .language-list button {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    
+    &:after {
+      display: none;
+    }
+  }
+
+  .language-list .dropdown-menu {
+    width: 30px;
+    padding-top: 4px;
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .language-list .dropdown-menu li a {
+    font-size: 12px;
+  }
 }
 
-@media (max-width: 625px) {
+@media (max-width: 670px) {
   .phone-icon-mob {
     display: block;
-    margin-left: auto;
+    margin-left: 10px;
     background: url("../../../assets/img/phone-icon.svg") no-repeat center;
     background-size: 100% auto;
     width: 15px;
@@ -866,11 +905,7 @@
   .header__nav-phone {
     display: none;
   }
-}
 
-
-
-@media (max-width: 345px)  {
   .form-search {
     margin-left: 10px;
   }
@@ -881,6 +916,16 @@
 
   .header__shopCard {
     margin-left: 10px;
+  }
+
+  .header__nav .navbar-brand {
+    margin-right: 8px;
+  }
+
+  .phone-mobil-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
   }
 }
 
