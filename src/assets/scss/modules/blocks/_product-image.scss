@@ -9,18 +9,6 @@
   z-index:99;
   padding-right: 8px;
 
-  span {
-    position: absolute;
-    left: 20px;
-    bottom: 40px;
-    width: 40px;
-    height: 40px;
-    background: url("../../../../assets/img/arrows-gallery.svg") no-repeat center;
-    background-size: 100% auto;
-    cursor: pointer;
-    z-index: 1;
-  }
-
   .slick-slide {
     overflow: hidden;
 
@@ -66,7 +54,7 @@
 
   .slick-prev {
     left: auto;
-    right: 88px;
+    right: 80px;
 
     &:before {
      transform: rotate(180deg);
@@ -74,8 +62,27 @@
   }
 
   .slick-next {
-    right: 8px;
+    right: 0;
   }
+}
+
+.product-image__list {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.product-image__galery {
+  position: absolute;
+  left: 20px;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+  background: url("../../../../assets/img/arrows-gallery.svg") no-repeat center;
+  background-size: 100% auto;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .product-image__block {
@@ -98,13 +105,10 @@
     height: 100%;
     object-fit: cover;
     max-width: initial;
-    //position: absolute;
-    //min-width: 100%;
-    //bottom: 0;
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .product-image .slick-arrow {
     width: 53px;
     height: 53px;

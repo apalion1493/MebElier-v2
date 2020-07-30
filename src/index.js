@@ -287,7 +287,7 @@ function slickNum() {
         ]
     })
 
-    $('.product-image').each(function() {
+    $('.product-image__list').each(function() {
         let slider = $(this);
         slider.slick({
             infinite: false,

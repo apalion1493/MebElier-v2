@@ -1,6 +1,7 @@
 .cartBlock {
   display: flex;
   margin-bottom: 20px;
+  overflow: hidden;
 
   &:last-child {
     margin-bottom: 0;
@@ -8,10 +9,13 @@
 }
 
 .cartBlock__img {
+  overflow: hidden;
 
   img {
-    height: 100%;
+    height: 261px;
     object-fit: cover;
+    object-position: center;
+    max-height: 261px;
   }
 }
 

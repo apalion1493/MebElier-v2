@@ -9,6 +9,12 @@
     padding-right: 16px;
     overflow: hidden;
 
+    & > div {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     &:first-of-type {
       border-top: 1px solid #BABABA;
     }
@@ -225,7 +231,7 @@
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991.981px) {
   .information-container__NoCreak {
     padding-top: 209px;
     padding-bottom: 32px;
@@ -245,6 +251,10 @@
 
   .information-container__NoCreak-text {
     max-width: 100%;
+  }
+
+  .information-container__handrails:before {
+    display: block;
   }
 }
 
@@ -290,5 +300,9 @@
 
   .information-container__backlight-title {
     margin-bottom: 17px;
+  }
+
+  .information-container__handrails:before {
+    display: none;
   }
 }
