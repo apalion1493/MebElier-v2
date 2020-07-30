@@ -10,7 +10,16 @@ import FloatSidebar from 'float-sidebar';
 import 'bootstrap/dist/js/bootstrap.min';
 import 'popper.js/dist/popper.min';
 import 'slick-carousel';
-import 'slick-lightbox';
+
+// import 'slick-lightbox';
+
+// import 'photoswipe/dist/photoswipe.min';
+// import 'photoswipe/dist/photoswipe-ui-default.min'
+
+// import 'lightgallery.js/dist/js/lightgallery.min'
+
+import '@fancyapps/fancybox/dist/jquery.fancybox.min'
+
 import './js/index';
 
 $('.catalog-filter__list select').change(function(){
@@ -98,14 +107,6 @@ $(window).scroll(function() {
 
     scrollPrev = scrolled;
 });
-
-function imgSize() {
-    $('.product-image__block img').css({
-        'position': 'absolute',
-        'min-width': '100%',
-        'bottom': '0',
-    });
-}
 
 function slickNum() {
     let $status = $('.pagingInfo');
@@ -296,12 +297,10 @@ function slickNum() {
             swipe: false,
         });
 
-        let sLightbox = $(this);
-        sLightbox.slickLightbox({
-            src: 'data-src',
-            itemSelector: '.product-image__wrapper span',
-            lazy: true,
+        $('#gallery-btn').on('click', function() {
+            $.fancybox.open( $('.product-image__hidden-item'), {});
         });
+
     });
 
     slickNum()

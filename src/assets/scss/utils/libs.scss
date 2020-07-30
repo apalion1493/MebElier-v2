@@ -5,4 +5,9 @@ $slick-font-path: "~slick-carousel/slick/fonts/";
 $slick-loader-path: "~slick-carousel/slick/";
 
 @import '~slick-carousel/slick/slick', '~slick-carousel/slick/slick-theme';
-@import '~slick-lightbox/src/styles/slick-lightbox';
+//@import '~slick-lightbox/src/styles/slick-lightbox';
+//@import '~lightgallery.js/dist/css/lightgallery.css';
+//@import '~photoswipe/dist/photoswipe.css';
+//@import '~photoswipe/dist/default-skin/default-skin.css';
+
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css';

@@ -10,26 +10,35 @@ block content
     section.product-section
         .container
             .row
-                .col-md-6
+                .col-lg-6.position-relative
                     .product-image.items
-                        .product-image__wrapper
-                            span(data-src='assets/img/product-img-2.jpg')
-                            .product-image__block
-                                img(src='assets/img/product-img-2.jpg' )
-                        .product-image__wrapper
-                            span(data-src='assets/img/product-img-2.jpg')
-                            .product-image__block
-                                img(src='assets/img/product-img-2.jpg')
-                        .product-image__wrapper
-                            span(data-src='assets/img/product-img-2.jpg')
-                            .product-image__block
-                                img(src='assets/img/product-img-2.jpg')
-                        .product-image__wrapper
-                            span(data-src='assets/img/product-img-2.jpg')
-                            .product-image__block
-                                img(src='assets/img/product-img-2.jpg')
+                        .product-image__list
+                            .product-image__wrapper
+                                .product-image__block
+                                    img(src='assets/img/product-img-2.jpg' )
+                            .product-image__wrapper
+                                .product-image__block
+                                    img(src='assets/img/product-img-2.jpg')
+                            .product-image__wrapper
+                                .product-image__block
+                                    img(src='assets/img/product-img-2.jpg')
+                            .product-image__wrapper
+                                .product-image__block
+                                    img(src='assets/img/product-img-2.jpg')
+                        span#gallery-btn.product-image__galery
 
-                .col-md-6
+
+                    .product-image__hidden-list.d-none
+                        .product-image__hidden-item
+                            img(src='assets/img/product-img-2.jpg' )
+                        .product-image__hidden-item
+                            img(src='assets/img/product-img-2.jpg' )
+                        .product-image__hidden-item
+                            img(src='assets/img/product-img-2.jpg' )
+                        .product-image__hidden-item
+                            img(src='assets/img/product-img-2.jpg' )
+
+                .col-lg-6
                     .product-page.product-page_wrapper
                         nav(aria-label='breadcrumb')
                             ol.breadcrumb

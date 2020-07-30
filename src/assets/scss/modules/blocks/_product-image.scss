@@ -79,10 +79,11 @@
   bottom: 40px;
   width: 40px;
   height: 40px;
-  background: url("../../../../assets/img/arrows-gallery.svg") no-repeat center;
+  background: rgba(85, 85, 85, .3) url("../../../../assets/img/arrows-gallery.svg") no-repeat center;
   background-size: 100% auto;
   cursor: pointer;
   z-index: 1;
+  border-radius: 50%;
 }
 
 .product-image__block {
@@ -161,15 +162,23 @@
 
   .product-image__block img {
     object-position: bottom;
-    min-width: 100%;
+    min-width: auto;
     width: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (max-width: 767.981px) {
   .product-image__block img {
-    object-position: bottom;
-    min-width: 120%;
+    object-position: center bottom;
+    min-width: auto;
     width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .product-image__galery {
+    display: none;
   }
 }
