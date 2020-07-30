@@ -25,12 +25,12 @@ module.exports = {
   },
   entry: {
     app: PATHS.src,
-    // module: `${PATHS.src}/your-module.js`,
+    sidebar: `${PATHS.src}/js/sidebar.js`,
   },
   output: {
     filename: `assets/js/[name].[hash].js`,
     path: PATHS.dist,
-    // publicPath: '/'
+    publicPath: '/'
   },
   optimization: {
     splitChunks: {
