@@ -125,7 +125,7 @@
 
   .product-image {
     position: static;
-    height: 396px;
+    height: 500px;
     max-width: calc(100% + 30px);
     min-height: auto;
     padding-right: 0;
@@ -152,5 +152,24 @@
   .product-image span {
     left: 10px;
     bottom: 10px;
+  }
+
+  .product-image__list {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .product-image__block img {
+    object-position: bottom;
+    min-width: 100%;
+    width: auto;
+  }
+}
+
+@media (max-width: 767.981px) {
+  .product-image__block img {
+    object-position: bottom;
+    min-width: 120%;
+    width: auto;
   }
 }

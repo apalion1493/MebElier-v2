@@ -132,7 +132,7 @@ function slickNum() {
         dots: true
     });
 
-    imgSize();
+    // imgSize();
 }
 
 (function slickAdd() {
