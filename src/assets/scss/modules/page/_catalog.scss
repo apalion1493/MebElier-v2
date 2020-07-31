@@ -105,6 +105,27 @@
 
     @include bigCard;
   }
+
+  &.first-view .card-product:nth-child(11),
+  &.first-view > div:nth-child(11) {
+    grid-area: 5 / 2 / 6 / 3;
+
+    @include smallCard;
+  }
+
+  &.first-view .card-product:nth-child(12),
+  &.first-view > div:nth-child(12) {
+    grid-area: 5/3/5/4;
+
+    @include smallCard;
+  }
+
+  &.first-view .card-product:nth-child(13),
+  &.first-view > div:nth-child(13) {
+    grid-area: 5/4/5/5;
+
+    @include smallCard;
+  }
 }
 
 .catalog-first-section {
