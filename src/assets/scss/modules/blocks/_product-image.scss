@@ -93,9 +93,11 @@
   min-height: 100vh;
   height: calc(100vh + 16px);
   display: flex;
+  justify-content: center;
   overflow-x: scroll;
   overflow-y: hidden;
   min-width: 100%;
+  background: #FFFFFF;
 
   &:active {
     cursor: grabbing;
