@@ -219,6 +219,17 @@
   flex-direction: column;
   align-items: center;
 
+  &:hover {
+    text-decoration: none;
+
+    .card-img-block:before {
+      opacity: 1;
+      transition: 0.2s;
+      width: 93px;
+      height: 93px;
+    }
+  }
+
   .card-img-block {
     width: 168px;
     height: 168px;
@@ -227,9 +238,31 @@
     justify-content: center;
     border-radius: 50%;
     background: #FFFFFF;
-    border: 6px solid $fonts-color-8;
+    border: 8px solid $fonts-color-8;
     overflow: hidden;
     margin-bottom: 27px;
+    position: relative;
+
+    &:before {
+      content: 'Подробнее';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      color: #201F1D;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .9);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: 0.2s;
+    }
   }
 
   .card-title {
@@ -246,6 +279,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 

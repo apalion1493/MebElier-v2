@@ -57,7 +57,7 @@ mixin portfolioCard(bgImage, titleText, regionText, expirationDate, dataText)
       a(href='#').btn.btn-outline-light.portfolioCard__btn подробнее
 
 mixin customProducts(title, text, altImage, urlImage, wrapperClass)
-  .card(class=wrapperClass)
+  a.card(class=wrapperClass href='#')
     .card-img-block
       img.card-img-top(src='assets/img/'+urlImage+'' alt=altImage)
     .card-body

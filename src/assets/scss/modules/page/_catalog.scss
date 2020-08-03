@@ -13,7 +13,6 @@
 .catalog-second-section__wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  //grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   margin-bottom: 16px;
@@ -125,6 +124,32 @@
     grid-area: 5/4/5/5;
 
     @include smallCard;
+  }
+}
+
+.catalog-second-section__list {
+  .catalog-second-section__wrapper:first-of-type {
+
+    .card-product:nth-child(11),
+    & > div:nth-child(11) {
+      grid-area: 5/2/6/3;
+
+      @include smallCard;
+    }
+
+    .card-product:nth-child(12),
+    & > div:nth-child(12) {
+      grid-area: 5/3/5/4;
+
+      @include smallCard;
+    }
+
+    .card-product:nth-child(13),
+    & > div:nth-child(13) {
+      grid-area: 5/4/5/5;
+
+      @include smallCard;
+    }
   }
 }
 
@@ -609,6 +634,17 @@
 
 .manufacturing-stages__item-7 { grid-area: manufacturing-stages__item-7; }
 
+
+
+@media (min-width: 1200px) {
+  .catalog-second-section__wrapper.lessFiveElements {
+    .catalog-second-section__wrapper .card-product:nth-child(4),
+    .catalog-second-section__wrapper>div:nth-child(4) {
+      grid-area: 2/1/3/4;
+    }
+  }
+}
+
 @media (max-width: 1300px) {
   .catalog-filter__item {
     .form-control {
@@ -661,7 +697,6 @@
   .catalog-second-section__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    //grid-template-rows: repeat(10, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     margin-bottom: 16px;
@@ -752,6 +787,32 @@
       grid-area: 9 / 1 / 11 / 3;
 
       @include bigCard;
+    }
+  }
+
+  .catalog-second-section__list {
+    .catalog-second-section__wrapper:first-of-type {
+
+      .card-product:nth-child(11),
+      & > div:nth-child(11) {
+        grid-area: 9 / 2 / 8 / 3;
+
+        @include smallCard;
+      }
+
+      .card-product:nth-child(12),
+      & > div:nth-child(12) {
+        grid-area: 9 / 1 / 11 / 3;
+
+        @include bigCard;
+      }
+
+      .card-product:nth-child(13),
+      & > div:nth-child(13) {
+        grid-area: 11/1/14/3;
+
+        @include bigCard;
+      }
     }
   }
 
