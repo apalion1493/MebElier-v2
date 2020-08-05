@@ -36,10 +36,14 @@
 
 .header__nav {
   .red-squares-list {
-    width: 33%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .red-squares-list__item {
+    width: 33%;
     a {
       font-size: 14px;
       line-height: 17px;

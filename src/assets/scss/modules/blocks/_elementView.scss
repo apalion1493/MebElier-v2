@@ -24,6 +24,17 @@
   margin-bottom: 15px;
   color: #201F1D;
 
+  a {
+    color: #201F1D;
+    font-size: rem(16);
+    line-height: rem(20);
+
+    &:hover {
+      color: #201F1D;
+      text-decoration: none;
+    }
+  }
+
   &:last-child {
     margin-bottom: 0;
   }

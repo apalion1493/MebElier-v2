@@ -90,7 +90,8 @@ mixin elementView(image, title, ...items)
       span.elementView__title=title
       ul.elementView__list.red-squares-list
         each item in items
-          li.elementView__item.red-squares-list__item= item
+          li.elementView__item.red-squares-list__item
+            a(href='#')= item
 
 
 mixin cartBlock(image, title, textPrice, description1, description2, description3)
