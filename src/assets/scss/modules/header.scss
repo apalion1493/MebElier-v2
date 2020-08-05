@@ -451,23 +451,23 @@
 @media (min-width: 1600px) {
   .header__nav {
     .navbar-nav {
-      li {
+      .nav-item {
         display: none;
       }
 
-      li:nth-last-child(4) {
+      .nav-item:nth-last-child(4) {
         display: none !important;
       }
 
-      li:nth-last-child(n + 3) {
+      .nav-item:nth-last-child(n + 3) {
         display: flex;
       }
 
-      li:nth-last-child(n + 2) {
+      .nav-item:nth-last-child(n + 2) {
         display: flex;
       }
 
-      li:nth-last-child(n + 1) {
+      .nav-item:nth-last-child(n + 1) {
         display: flex;
       }
     }
