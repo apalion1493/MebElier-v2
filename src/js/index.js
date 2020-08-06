@@ -9,7 +9,7 @@ slider.forEach(function (elem) {
         elem.classList.add('active');
         startX = e.pageX - elem.offsetLeft;
         scrollLeft = elem.scrollLeft;
-    });
+    });``
 
     elem.addEventListener('mouseleave', () => {
         isDown = false;

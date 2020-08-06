@@ -62,7 +62,7 @@ $('.dropdown-toggle').on('hide.bs.dropdown', function () {
     return false;
 });
 
-$('.dropdown-toggle .dropdown-menu').on({'click': function(e) {
+$('.navbar-nav .dropdown-toggle .dropdown-menu').on({'click': function(e) {
         e.stopPropagation();
     }
 });
