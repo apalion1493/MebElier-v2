@@ -284,6 +284,12 @@
       text-decoration: none;
     }
   }
+
+  .card-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+  }
 }
 
 .home-section-popularModels {
@@ -745,15 +751,19 @@
     padding: 0;
   }
 
-  .home-section-quality__card .card-img-block {
-    margin-bottom: 0;
-  }
-
   .home-section-quality__card {
     margin-bottom: 35px;
 
     .card-text {
       text-align: center;
+    }
+
+    .card-title {
+      min-height: auto;
+    }
+
+    .card-img-block {
+      margin-bottom: 0;
     }
   }
 

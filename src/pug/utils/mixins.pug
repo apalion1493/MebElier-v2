@@ -58,11 +58,11 @@ mixin portfolioCard(bgImage, titleText, regionText, expirationDate, dataText)
 
 mixin customProducts(title, text, altImage, urlImage, wrapperClass)
   a.card(class=wrapperClass href='#')
-    .card-img-block
+    span.card-img-block
       img.card-img-top(src='assets/img/'+urlImage+'' alt=altImage)
-    .card-body
-      h5.card-title=title
-      p.card-text=text
+    span.card-body
+      span.card-title=title
+      span.card-text=text
 
 mixin stepMaking(wrapperClass, urlImage, altImage, text, num)
   .card(class=wrapperClass)
