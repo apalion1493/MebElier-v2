@@ -12,7 +12,7 @@
                     .form-group.form-style
                         input#orderingPhone.form-control(type='text' placeholder='Ваш телефон')
                     .form-group.form-style
-                        input#orderingMessage.form-control(type='text' placeholder='Ваше сообщение')
+                        textarea#orderingMessage.form-control(v-model.trim='text' placeholder='Ваше сообщение' rows='3')
 
                     .error-explanation
                         span.error-explanation__title ОШИБКА
@@ -38,7 +38,7 @@
                     .form-group.form-style
                         input#orderingPhoneError.form-control.is-invalid(type='text' placeholder='Ваш телефон')
                     .form-group.form-style
-                        input#orderingMessageError.form-control(type='text' placeholder='Ваше сообщение')
+                        textarea#orderingMessage.form-control(v-model.trim='text' placeholder='Ваше сообщение' rows='3')
 
                     .error-explanation
                         span.error-explanation__title ОШИБКА

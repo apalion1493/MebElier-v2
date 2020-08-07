@@ -38,6 +38,27 @@
         width: 100%;
       }
     }
+
+    .form-style input {
+      padding-left: 20px;
+    }
+
+    .form-style textarea {
+      border: none;
+      border-bottom: 1px solid #BBBBBB;
+      min-height: 169px;
+      font-size: 14px;
+      line-height: 17px;
+      color: #201F1D;
+      padding-top: 22px;
+      resize: none;
+      padding-left: 20px;
+
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
   }
 
   button.close {
