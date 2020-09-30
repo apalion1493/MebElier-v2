@@ -166,6 +166,20 @@
       margin-left: 0;
       padding-right: 22px;
       padding-left: 12px;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      span.phone {
+        margin-left: auto;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #5D4F44;
+      }
     }
   }
 
@@ -191,12 +205,13 @@
     &.show {
       top: -3px;
       background: #FFFFFF;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
       border-radius: 12px;
-      max-width: 128px;
+      max-width: 100%;
       width: 100%;
       min-width: auto;
       left: 0;
+      padding-bottom: 24px;
     }
 
     li {
@@ -489,18 +504,28 @@
 }
 
 @media (max-width: 1420px) {
-  .header__nav-phone {
-    margin-right: 20px;
-  }
+  //.header__nav-phone {
+  //  margin-right: 20px;
+  //}
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1400px) {
   .header__nav .navbar-brand {
     margin-right: 20px;
   }
 
   .header__nav .nav-item {
-    margin-right: 15px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .header__shopCard {
+    margin-left: 8px;
+  }
+
+  .header__favorites {
+    margin-left: 5px;
   }
 }
 

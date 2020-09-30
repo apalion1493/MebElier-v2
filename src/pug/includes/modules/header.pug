@@ -56,11 +56,11 @@ header.header#header
                   | Двери
                 .dropdown-menu.noclose(aria-labelledby='navbarDropdown3')
                   a.dropdown-item(href='#') ДВЕРИ
-              //li.nav-item
-              //  a#navbarDropdown4.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-              //    | Интерьерные решения
-              //  .dropdown-menu.noclose(aria-labelledby='navbarDropdown4')
-              //    a.dropdown-item(href='#') Интерьерные решения
+              li.nav-item
+                a#navbarDropdown4.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                  | Интерьер <span class='text-secondary'>+</span>
+                .dropdown-menu.noclose(aria-labelledby='navbarDropdown4')
+                  a.dropdown-item(href='#') Интерьер <span class='text-secondary'>+</span>
               li.nav-item
                 a#navbarDropdown5.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                   | Другое
@@ -139,6 +139,17 @@ header.header#header
                         li
                           a(href='#') Дизайнерская
 
+                .card
+                  #headingFourth.card-header
+                    h5.mb-0
+                      button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseFourth' aria-expanded='false' aria-controls='collapseFourth')
+                        | Интерьер <span class='text-secondary'>+</span>
+                  #collapseFourth.collapse(aria-labelledby='headingFourth' data-parent='#accordionExample')
+                    .card-body
+                      ul
+                        li
+                          a(href='#') Интерьер <span class='text-secondary'>+</span>
+
                 a.menu-list-mob__link(href='#') Портфолио
                 a.menu-list-mob__link(href='#') О нас
                 a.menu-list-mob__link(href='#') Контакты
@@ -152,15 +163,25 @@ header.header#header
 
 
           .dropdown.header__nav-phone.order-4
-            button#myselectPhone.btn.btn-default.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true' data-value='+38 (067) 620 01 15') <i class='kyivstar-icon header__nav-phone-icon'></i> Киiвстар
-
-            ul.dropdown-menu(aria-labelledby='myselectPhone')
+            button#myselectPhone.btn.btn-default.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' data-value='+38 (067) 620 01 15')
+              i.kyivstar-icon.header__nav-phone-icon
+              |                             &Kcy;&icy;i&vcy;&scy;&tcy;&acy;&rcy;
+            ul.dropdown-menu.phone-dropdown
               li
-                a(href='#' data-value='+38 (067) 620 01 15') <i class='kyivstar-icon header__nav-phone-icon'></i> Киiвстар
+                a(href='tel:+380676200115' data-value='+38 (067) 620 01 15')
+                  i.kyivstar-icon.header__nav-phone-icon
+                  |                                     &Kcy;&icy;i&vcy;&scy;&tcy;&acy;&rcy;
+                  span.phone +38 (067) 620 01 15
               li
-                a(href='#' data-value='+38 (050) 620 01 15') <i class='vodafone-icon header__nav-phone-icon'></i> Vodafone
+                a(href='tel:+380506200115' data-value='+38 (050) 620 01 15')
+                  i.vodafone-icon.header__nav-phone-icon
+                  |                                     Vodafone
+                  span.phone +38 (050) 620 01 15
               li
-                a(href='#' data-value='+38 (093) 620 01 15') <i class='turkcell-icon header__nav-phone-icon'></i> Lifecell
+                a(href='tel:+380936200115' data-value='+38 (093) 620 01 15')
+                  i.turkcell-icon.header__nav-phone-icon
+                  |                                     Lifecell
+                  span.phone +38 (093) 620 01 15
             #myTextPhone
               a.dropdown.header__nav-phone-number(href='tel:+380676200115') +38 (067) 620 01 15
 
