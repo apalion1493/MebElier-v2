@@ -610,11 +610,11 @@
 
     .card-header {
       background: #ffffff;
-      padding: 17px 0;
+      padding: 23px 0;
       margin-bottom: 0 !important;
 
       button {
-        width: 100%;
+        width: 30px;
         text-align: left;
         font-weight: bold;
         font-size: 14px;
@@ -683,6 +683,24 @@
         }
       }
     }
+
+    .card-header__wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .card-header__wrapperLink {
+      width: 100%;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      color: #201F1D;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
   }
 
   .navbar-collapse {

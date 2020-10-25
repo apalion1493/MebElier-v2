@@ -6,153 +6,204 @@ header.header#header
           a.navbar-brand(href='#').order-1.order-xl-0 mebElier
           button.navbar-toggler.order-0.order-xl-1.collapsed(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
             span.navbar-toggler-icon
-          #navbarSupportedContent.collapse.navbar-collapse.order-2
+          #navbarSupportedContent.navbar-collapse.order-2.collapse(style='')
             ul.navbar-nav
-              li.nav-item
-                a#navbarDropdown1.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  | Мебель
+              li.nav-item.dropdown.active
+                a#navbarDropdown1.nav-link.dropdown-toggle(href='https://mebelier.com.ua/mebel/' role='button' aria-haspopup='true' aria-expanded='false') Мебель
                 .dropdown-menu.noclose(aria-labelledby='navbarDropdown1')
                   .row
                     .col-lg-8.d-flex.flex-column
-                      div.dropdown-menu__list
+                      .dropdown-menu__list
                         span.dropdown-menu__title Категории
-                        div.d-flex.dropdown-menu__roster
+                        .d-flex.dropdown-menu__roster
                           ul.red-squares-list
                             li.red-squares-list__item
-                              a(href='#') Гостинные
+                              a(href='https://mebelier.com.ua/mebel/gostinnye/') Гостинные
                             li.red-squares-list__item
-                              a(href='#') Спальни
+                              a(href='https://mebelier.com.ua/mebel/spalni/') Спальни
                             li.red-squares-list__item
-                              a(href='#') Прихожие
+                              a(href='https://mebelier.com.ua/mebel/prihozhie/') Прихожие
                             li.red-squares-list__item
-                              a(href='#') Детские
+                              a(href='https://mebelier.com.ua/mebel/dizaynerskaya/') Дизайнерская
                             li.red-squares-list__item
-                              a(href='#') Кухни
+                              a(href='https://mebelier.com.ua/mebel/garderobnye/') Гардеробные
                             li.red-squares-list__item
-                              a(href='#') Дизайнерская
-
-                      div.dropdown-menu__list
+                              a(href='https://mebelier.com.ua/mebel/vannaya/') Ванная
+                            li.red-squares-list__item
+                              a(href='https://mebelier.com.ua/mebel/kuhni/') Кухни
+                            li.red-squares-list__item
+                              a(href='https://mebelier.com.ua/mebel/detskie/') Детские
+                      .dropdown-menu__list
                         span.dropdown-menu__title Подборки
-                        div.d-flex.dropdown-menu__roster
+                        .d-flex.dropdown-menu__roster
                           ul.red-squares-list
                             li.red-squares-list__item
-                              a(href='#') Дизайнерские
+                              a(href='https://mebelier.com.ua/mebel/dlya-ofisa/') Для офиса
                             li.red-squares-list__item
-                              a(href='#') Бюджетный вариант
+                              a(href='https://mebelier.com.ua/mebel/dlya-torgovyh-pomeshcheniy/') Для торговых помещений
                             li.red-squares-list__item
-                              a(href='#') Мечта танкиста
-
+                              a(href='https://mebelier.com.ua/mebel/dizaynerskaya/') Дизайнерская
+                            li.red-squares-list__item
+                              a(href='https://mebelier.com.ua/mebel/byudzhetnyy-variant/') Бюджетный вариант
+                            li.red-squares-list__item
+                              a(href='https://mebelier.com.ua/mebel/mechta-tankista/') Мечта танкиста
                     .col-lg-4
-                      div.dropdown-menu__goods
-                        span.dropdown-menu__goods-title Товар дня
-                        +miniProductCard('min-product-card-img.jpg', 'Кухня из дерева', '220 990 грн.')
-              li.nav-item.active
-                a#navbarDropdown2.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  | Лестницы
+                      .dropdown-menu__goods
+                        span.dropdown-menu__goods-title Свежая идея
+                        .min-product-card
+                          .min-product-card__img(style='background-image: url("assets/img/min-product-card-img.jpg");')
+                          .min-product-card__content
+                            p.min-product-card__title
+                              | Кухня из дерева
+                            span.min-product-card__price 220 990 грн.
+                            a.min-product-card__link(href='#') Подробнее
+              li.nav-item.dropdown
+                a#navbarDropdown2.nav-link.dropdown-toggle(href='https://mebelier.com.ua/lestnicy/' role='button' aria-haspopup='true' aria-expanded='false') Лестницы
                 .dropdown-menu.noclose(aria-labelledby='navbarDropdown2')
-                  a.dropdown-item(href='#') ЛЕСТНИЦЫ
-              li.nav-item
-                a#navbarDropdown3.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  | Двери
+                  .dropdown-menu__list
+                    span.dropdown-menu__title Категории
+                    .d-flex.dropdown-menu__roster
+                      ul.red-squares-list
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/lestnicy/metallicheskie/') Металлические
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/lestnicy/derevyannye/') Деревянные
+                  .dropdown-menu__list
+                    span.dropdown-menu__title Подборки
+                    .d-flex.dropdown-menu__roster
+                      ul.red-squares-list
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/lestnicy/vintovye/') Винтовые
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/lestnicy/pryamye/') Прямые
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/lestnicy/s-povorotom/') Поворотные
+              li.nav-item.dropdown
+                a#navbarDropdown3.nav-link.dropdown-toggle(href='https://mebelier.com.ua/dveri/' role='button' aria-haspopup='true' aria-expanded='false') Двери
                 .dropdown-menu.noclose(aria-labelledby='navbarDropdown3')
-                  a.dropdown-item(href='#') ДВЕРИ
-              li.nav-item
-                a#navbarDropdown4.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  | Интерьер <span class='text-secondary'>+</span>
+                  .dropdown-menu__list
+                    span.dropdown-menu__title Категории
+                    .d-flex.dropdown-menu__roster
+                      ul.red-squares-list
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/dveri/vhodnye/') Входные
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/dveri/mezhkomnatnye/') Межкомнатные
+                  .dropdown-menu__list
+                    span.dropdown-menu__title Подборки
+                    .d-flex.dropdown-menu__roster
+                      ul.red-squares-list
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/dveri/otkatnye/') Откатные
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/dveri/gluhie/') Глухие
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/dveri/raspashnye/') Распашные
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/dveri/razdvizhnye/') Раздвижные
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/dveri/s-ostekleniem/') С остеклением
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/dveri/odnostvorchatye/') Одностворчатые
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/dveri/dvustvorchatye/') Двустворчатые
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/dveri/trehstvorchatye/') Трехстворчатые
+                        li.red-squares-list__item
+                          a(href='https://mebelier.com.ua/dveri/chetyrehstvorchatye/') Четырехстворчатые
+              li.nav-item.dropdown
+                a#navbarDropdown4.nav-link.dropdown-toggle(href='https://mebelier.com.ua/interior/' role='button' aria-haspopup='true' aria-expanded='false')
+                  | Интерьер
                 .dropdown-menu.noclose(aria-labelledby='navbarDropdown4')
-                  a.dropdown-item(href='#') Интерьер <span class='text-secondary'>+</span>
-              li.nav-item
-                a#navbarDropdown5.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  | Другое
+                  a.dropdown-item(href='https://mebelier.com.ua/interior/') Интерьер
+              li.nav-item.dropdown
+                a#navbarDropdown5.nav-link.dropdown-toggle(href='#' role='button' aria-haspopup='true' aria-expanded='false') Другое
                 .dropdown-menu.noclose(aria-labelledby='navbarDropdown5')
                   .content-block
-                    a.dropdown-item(href='#') О нас
-                    a.dropdown-item(href='#') Портфолио
-                    a.dropdown-item(href='#') Контакты
-
+                    a.dropdown-item(href='https://mebelier.com.ua/albums/') Портфолио
+                    a.dropdown-item(href='https://mebelier.com.ua/about/') О компании
+                    a.dropdown-item(href='https://mebelier.com.ua/guarantee/') Гарантии
+                    a.dropdown-item(href='https://mebelier.com.ua/contact/') Контакты
               li.nav-item
-                a.nav-link(href='#') О нас
+                a.nav-link(href='https://mebelier.com.ua/albums/') Портфолио
               li.nav-item
-                a.nav-link(href='#') Портфолио
+                a.nav-link(href='https://mebelier.com.ua/about/') О компании
               li.nav-item
-                a.nav-link(href='#') Контакты
+                a.nav-link(href='https://mebelier.com.ua/guarantee/') Гарантии
+              li.nav-item
+                a.nav-link(href='https://mebelier.com.ua/contact/') Контакты
             .menu-list-mob
               #accordionExample.accordion
                 .card
                   #headingOne.card-header
-                    h5.mb-0
-                      button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
-                        | Мебель
-                  #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                    .mb-0.h5
+                      .card-header__wrapper
+                        a(href='#').card-header__wrapperLink Мебель
+                        button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+                          //| Мебель
+                  #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordionExample')
                     .card-body
                       ul
                         li
-                          a(href='#') Спальни
+                          a(href='https://mebelier.com.ua/mebel/gostinnye/') Гостинные
                         li
-                          a(href='#') Прихожие
+                          a(href='https://mebelier.com.ua/mebel/spalni/') Спальни
                         li
-                          a(href='#') Гостинные
+                          a(href='https://mebelier.com.ua/mebel/prihozhie/') Прихожие
                         li
-                          a(href='#') Детские
+                          a(href='https://mebelier.com.ua/mebel/dizaynerskaya/') Дизайнерская
                         li
-                          a(href='#') Кухни
+                          a(href='https://mebelier.com.ua/mebel/garderobnye/') Гардеробные
                         li
-                          a(href='#') Дизайнерская
+                          a(href='https://mebelier.com.ua/mebel/vannaya/') Ванная
+                        li
+                          a(href='https://mebelier.com.ua/mebel/kuhni/') Кухни
+                        li
+                          a(href='https://mebelier.com.ua/mebel/detskie/') Детские
                 .card
                   #headingTwo.card-header
-                    h5.mb-0
-                      button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
-                        | Лестницы
+                    .mb-0.h5
+                      .card-header__wrapper
+                        a(href='#').card-header__wrapperLink Лестницы
+                        button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                        //| Лестницы
                   #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
                     .card-body
                       ul
                         li
-                          a(href='#') Спальни
+                          a(href='https://mebelier.com.ua/lestnicy/metallicheskie/') Металлические
                         li
-                          a(href='#') Прихожие
-                        li
-                          a(href='#') Гостинные
-                        li
-                          a(href='#') Детские
-                        li
-                          a(href='#') Кухни
-                        li
-                          a(href='#') Дизайнерская
+                          a(href='https://mebelier.com.ua/lestnicy/derevyannye/') Деревянные
                 .card
                   #headingThree.card-header
-                    h5.mb-0
-                      button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
-                        | Двери
+                    .mb-0.h5
+                      .card-header__wrapper
+                        a(href='#').card-header__wrapperLink Двери
+                        button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                        //| Двери
                   #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
                     .card-body
                       ul
                         li
-                          a(href='#') Спальни
+                          a(href='https://mebelier.com.ua/dveri/vhodnye/') Входные
                         li
-                          a(href='#') Прихожие
-                        li
-                          a(href='#') Гостинные
-                        li
-                          a(href='#') Детские
-                        li
-                          a(href='#') Кухни
-                        li
-                          a(href='#') Дизайнерская
-
+                          a(href='https://mebelier.com.ua/dveri/mezhkomnatnye/') Межкомнатные
                 .card
                   #headingFourth.card-header
                     h5.mb-0
-                      button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseFourth' aria-expanded='false' aria-controls='collapseFourth')
-                        | Интерьер <span class='text-secondary'>+</span>
+                      .card-header__wrapper
+                        a(href='#').card-header__wrapperLink Интерьер
+                        button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseFourth' aria-expanded='false' aria-controls='collapseFourth')
+                          //| Интерьер
                   #collapseFourth.collapse(aria-labelledby='headingFourth' data-parent='#accordionExample')
                     .card-body
                       ul
                         li
-                          a(href='#') Интерьер <span class='text-secondary'>+</span>
-
-                a.menu-list-mob__link(href='#') Портфолио
-                a.menu-list-mob__link(href='#') О нас
-                a.menu-list-mob__link(href='#') Контакты
+                          a(href='https://mebelier.com.ua/interior/') Интерьер
+                a.menu-list-mob__link(href='https://mebelier.com.ua/albums/') Портфолио
+                a.menu-list-mob__link(href='https://mebelier.com.ua/about/') О компании
+                a.menu-list-mob__link(href='https://mebelier.com.ua/guarantee/') Гарантии
+                a.menu-list-mob__link(href='https://mebelier.com.ua/contact/') Контакты
           .language-list.dropdown.order-3
             button#myselectlanguage.btn.btn-default.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true' data-value='Ru') Ru
             ul.dropdown-menu(aria-labelledby='myselectlanguage')
