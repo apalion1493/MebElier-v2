@@ -1,5 +1,5 @@
 ## Pages
-https://apalion1493.github.io/MebElier-v2/dist/catalog.html
+https://apalion1493.github.io/MebElier-v2/build/catalog.html
 
 https://apalion1493.github.io/MebElier-v2/dist/Catalog-internal-stairs.html
 
